@@ -1,0 +1,12 @@
+
+k	java:S117/"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(İôÔÃşÿÿÿÿ
+k	java:S1173"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(÷ÌëÂşÿÿÿÿ
+k	java:S1175"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(äœş‘øÿÿÿÿ
+f
+java:S36550"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(¼¹ÛÀ
+f
+java:S3655."PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Ë”ğŸ
+[
+java:S1117+"@Rename "pharmaNummer" which hides the field declared at line 15.(ïíƒÒıÿÿÿÿ
+T
+java:S11171">Rename "laufNummer" which hides the field declared at line 18.(Ÿöøì

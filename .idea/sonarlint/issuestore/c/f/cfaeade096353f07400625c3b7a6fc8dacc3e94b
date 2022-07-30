@@ -1,0 +1,26 @@
+
+h
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(À‰ôº
+Q	java:S125 "<This block of commented-out lines of code should be removed.(Öæœ
+h
+java:S6204*"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
+h
+java:S62046"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(œçÖß
+m
+java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¸–ùúÿÿÿÿ
+C
+java:S1172Y"(Remove this unused method parameter "d".(¸–ùúÿÿÿÿ
+?
+java:S1168^"$Return an empty map instead of null.(èö¸Èùÿÿÿÿ
+i
+java:S1612c"SReplace this lambda with method reference 'WirkstoffInformation::getPharWirkstoff'.(‰µÙœ
+h
+java:S6204k"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’
+n
+java:S1612h"SReplace this lambda with method reference 'WirkstoffInformation::getWirkWirkstoff'.(±âîíúÿÿÿÿ
+X
+java:S1612i"=Replace this lambda with method reference 'Objects::nonNull'.(‹Á‚üÿÿÿÿ
+h
+java:S6204q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
+;
+java:S1168’"$Return an empty map instead of null.(¥¹ï

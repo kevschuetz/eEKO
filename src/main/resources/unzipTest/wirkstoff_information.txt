@@ -1,0 +1,1094 @@
+|0001376|;|Natr. sulfobituminat (hell) 0,01, Salicylsäure 0,005/g|
+|0002973|;|Lactobac. casei var. rhamnosus 2 Mrd.|
+|0004297|;|Acetylsalicylsäure 0,5, Ascorbinsäure 0,02|
+|0005078|;|Triamcinolonacetonid 0,001, Chlortetracyclin 0,03/g|
+|0005865|;|Bacitracin 250 IE, Neomycin 5000 IE/g|
+|0005871|;|Bacitracin 250 IE, Neomycin 5000 IE/g|
+|0007114|;|Betamethason 0,001, Neomycinsulfat 0,005/ml|
+|0012032|;|Ephedrin laevulin. 0,02, Silbereiweiß 0,025/ml|
+|0012049|;|Naphazolin 0,0005, Diphenhydramin 0,001/ml|
+|0014628|;|Flupredniden 0,001, Gentamicin 0,001/g|
+|0015384|;|Lebertran 0,13, Zinkoxid 0,3/g|
+|0020385|;|Bacitracin 0,0075, Dequaliniumchlorid 0,004, Diphenylpyralin 0,001/g|
+|0021002|;|Sulfamethoxazol 0,4, Trimethoprim 0,08|
+|0021657|;|Amidephrinmesylat 0,001/ml|
+|0025738|;|Heparinoide entspr. 250 IE Heparin/g|
+|0026502|;|Stoffwechselprodukte von Milchsäurebildnern (Lactobac. helvetic. u. a.) 100 Mrd./ml|
+|0026519|;|Stoffwechselprodukte von Milchsäurebildnern (Lactobac. helvetic. u. a.) 100 Mrd./ml|
+|0027594|;|Amm. sulfobituminat 0,01, Hamamelisfluidextrakt 0,01, Zinkoxid 0,15, Titandioxid 0,05/g|
+|0027602|;|Amm. sulfobituminat 0,01, Hamamelisfluidextrakt 0,01, Zinkoxid 0,15, Titandioxid 0,05/g|
+|0029392|;|Kaliumcitrat 1,94, Kaliumhydrogencarbonat 2,0 (= 39 mval K+)|
+|0030389|;|Natr. lactat 0,16 (= 1,43 mval Lactat)/ml|
+|0031294|;|Kal. hydrogentartrat 0,9, Natr. hydrogencarbonat 0,54|
+|0035955|;|Dexamethason 0,001, Diphenhydramin 0,015/g|
+|0037931|;|Thiamin 0,1, Pyridoxin 0,1, Cyanocobalamin 0,001|
+|0038528|;|Orphenadrin 0,035, Paracetamol 0,45|
+|0040040|;|Lactobac. gasseri Kulturlyoph. 0,025, Bifidobact. longum Kulturlyoph. 0,025 (je 20-200 Mio. KBE/Kaps.)|
+|0040100|;|Naphazolin 0,0004, Zinksulfat 0,002/ml|
+|0041849|;|Dihydrocodein 0,01|
+|0041855|;|Dihydrocodein 0,01/g|
+|0050015|;|Terpene 0,031, Camphen 0,015, Borneol 0,01, Cineol 0,003, Anethol 0,004, Fenchon 0,004, Cineol 0,003|
+|0052899|;|Natr. sulfobituminat (hell) 0,005/g|
+|0055455|;|Gerbstoff (synth.) 0,4/g|
+|0060048|;|Hexakalium-hexanatrium-trihydrogen-pentacitrat 0,96/g|
+|0061970|;|Dimenhydrinat 0,05, Pyridoxin 0,025|
+|0061987|;|Dimenhydrinat 0,05, Pyridoxin 0,025|
+|0062975|;|Triamcinolon (Depot) 0,01/ml|
+|0062981|;|Triamcinolon (Depot) 0,04/ml|
+|0063756|;|Heparinoide entspr. 250 IE Heparin/g|
+|0064543|;|Sulfamethoxazol 0,04, Trimethoprim 0,008/ml|
+|0068481|;|Betamethason (Depot) 0,0027, Betamethason 0,003/ml|
+|0072821|;|Eisen(II)sulfat 0,285 (= 0,105 Fe II), Folsäure 0,00035|
+|0073134|;|Levothyroxin-Natrium 0,0001, Liothyronin-Natrium 0,00002|
+|0073401|;|Levothyroxin-Natrium 0,0001, Liothyronin-Natrium 0,00002|
+|0087076|;|Diphenhydramin 0,01, Chlorhexidin 0,0005/g|
+|0119273|;|Lebensfähige Bakterien E. coli (Stamm Nissle 1917) 2,5 - 25 Mrd.|
+|0119296|;|Lebensfähige Bakterien E. coli (Stamm Nissle 1917) 2,5 - 25 Mrd.|
+|0119304|;|Lebensfähige Bakterien E. coli (Stamm Nissle 1917) 0,5 - 5 Mrd.|
+|0154140|;|Dihydrocodein 0,01/g|
+|0155777|;|Triamcinolon (Depot) 0,08|
+|0182136|;|Triamcinolonacetonid 0,001, Chlortetracyclin 0,03/g|
+|0182225|;|Betamethason 0,0005, Gentamicin 0,001/g|
+|0182260|;|Betamethason 0,0005, Gentamicin 0,001/g|
+|0193105|;|Rifampicin 0,3, Isoniazid 0,15|
+|0193111|;|Carboxymethylcellulose Natr. 0,005, Natr. chlorid 0,00085, Kal. chlorid 0,0012, Kal. monohydrogenphosphat 0,00035, Calc. chlorid 0,0001115, Magn. chlorid 0,00003/ml|
+|0438400|;|Naphazolin 0,0005, Diphenhydramin 0,001/ml|
+|0453701|;|Sulfamethoxazol 0,8, Trimethoprim 0,16|
+|0455404|;|Eisen(II)sulfat 0,0342 (= 0,0068 Fe II), DL-Serin 0,0258/ml|
+|0455410|;|Eisen(II)sulfat 0,0472 (= 0,0093 Fe II), DL-Serin 0,0356/ml|
+|0456220|;|Aescin 0,02|
+|0458638|;|Hydrochlorothiazid 0,025, Triamteren 0,05|
+|0489952|;|Bacitracin 250 IE, Neomycin 5000 IE/g|
+|0508141|;|Codein 0,01, Guaifenesin 0,1/ml|
+|0508158|;|Codein 0,01, Guaifenesin 0,1/ml|
+|0515974|;|Triamcinolon (Depot) 0,04/ml|
+|0519742|;|Betamethason (Depot) 0,0027, Betamethason 0,003/ml|
+|0520188|;|Salicylsäure 0,02, Mucopolysaccharidpolyschwefelsäureester 0,002, Nebennierenextrakt (stand. Gesamtketosteroidgehalt 2 %) 0,01/g|
+|0522709|;|Betamethason (Depot) 0,005, Betamethason 0,002/ml|
+|0522715|;|Betamethason (Depot) 0,005, Betamethason 0,002/ml|
+|0522744|;|Betamethason 0,0005, Salicylsäure 0,03/g|
+|0523614|;|Betamethason 0,0005, Salicylsäure 0,02/ml|
+|0528528|;|Butizid 0,01, Spironolacton 0,1|
+|0533021|;|Hydrochlorothiazid 0,025, Triamteren 0,05|
+|0533222|;|Benserazid 0,0125, Levodopa 0,05|
+|0533239|;|Benserazid 0,0125, Levodopa 0,05|
+|0533280|;|Dexamethason 0,001, Diphenhydramin 0,015/g|
+|0589234|;|Dihydroergotaminmesilat 0,0025|
+|0609043|;|Lebertran 0,13, Zinkoxid 0,3/g|
+|0614601|;|Betamethason (Depot) 0,005, Betamethason 0,002/ml|
+|0632295|;|Kalium-4-aminobenzoat 3,0/ED|
+|0632361|;|Atenolol 0,1, Chlortalidon 0,025|
+|0632378|;|Atenolol 0,1, Chlortalidon 0,025|
+|0632384|;|Isoconazolnitrat 0,01, Diflucortolonvalerat 0,001/g|
+|0633308|;|Spiköl 0,15|
+|0633314|;|Estradiol 0,002 (12 Tabl.); Estradiol 0,002 + Norethisteron 0,001 (10 Tabl.); Estradiol 0,001 (6 Tabl.)|
+|0659012|;|Atenolol 0,05, Chlortalidon 0,0125|
+|0659029|;|Atenolol 0,05, Chlortalidon 0,0125|
+|0678854|;|Sulfamethoxazol 0,04, Trimethoprim 0,008/ml|
+|0678943|;|Furosemid 0,02, Spironolacton 0,05|
+|0678966|;|Furosemid 0,02, Spironolacton 0,05|
+|0678972|;|Furosemid 0,02, Spironolacton 0,1|
+|0694008|;|Lactobac. casei var. rhamnosus 1,4 Mrd./ED|
+|0727529|;|Benserazid 0,05, Levodopa 0,2|
+|0727535|;|Benserazid 0,05, Levodopa 0,2|
+|0742428|;|Gerinnungsfaktor VII|
+|0743190|;|Hexetidin 0,001, 2-Propanol 0,314, 1-Propanol 0,281/ml|
+|0743209|;|Hexetidin 0,001, 2-Propanol 0,314, 1-Propanol 0,281/ml|
+|0751700|;|Fenoterol 0,0005, Ipratropiumbromid 0,00025/ml|
+|0751858|;|Lebensfähige lyophilisierte Lactobac. acidophilus 2 Mrd.|
+|0754176|;|Faktor-VIII-Inhibitor bypass Aktivität|
+|0760780|;|Haloperidol (decanoat) 0,05/ml|
+|0760805|;|Haloperidol (decanoat) 0,05/ml|
+|0773423|;|Zuclopenthixol (decanoat) 0,2|
+|0774523|;|Pankreatin 0,15 (= Lipase 10000 FIP-E, Amylase 8000 FIP-E, Protease 600 FIP-E)|
+|0774546|;|Pankreatin 0,15 (= Lipase 10000 FIP-E, Amylase 8000 FIP-E, Protease 600 FIP-E)|
+|0774552|;|Pankreatin 0,15 (= Lipase 10000 FIP-E, Amylase 8000 FIP-E, Protease 600 FIP-E)|
+|0786762|;|Heparin 300 IE, Dexpanthenol 0,05/g|
+|0802917|;|Amoxicillin 0,5, Clavulansäure 0,125|
+|0892607|;|Polyvidon 0,02/ml|
+|0903386|;|Diphenhydramin 0,01, Chlorhexidin 0,0005/g|
+|0903392|;|Diphenhydramin 0,01, Chlorhexidin 0,0005/g|
+|0916561|;|Natriumfluorid 0,0221, Olaflur 0,03032, Dectaflur 0,00287/g|
+|0921220|;|Lyophilisierte lebende Keime Streptococcus faecium (Stamm Cernelle 68) 75 Mio.|
+|0955727|;|Thiamin 0,1, Pyridoxin 0,2, Cyanocobalamin 0,0005|
+|0955733|;|Thiamin 0,1, Pyridoxin 0,2, Cyanocobalamin 0,0005|
+|0967156|;|Lyophil., norm. Bakterienlysat 0,0035 zu gleichen Teilen aus den 8 wichtigsten Erregern v. Atemwegserkrankungen|
+|0967162|;|Lyophil., norm. Bakterienlysat 0,0035 zu gleichen Teilen aus den 8 wichtigsten Erregern v. Atemwegserkrankungen|
+|0967179|;|Lyophil., norm. Bakterienlysat 0,007 zu gleichen Teilen aus den 8 wichtigsten Erregern v. Atemwegserkrankungen|
+|0967185|;|Lyophil., norm. Bakterienlysat 0,007 zu gleichen Teilen aus den 8 wichtigsten Erregern v. Atemwegserkrankungen|
+|0981558|;|Ambroxol 0,0015, Clenbuterol 0,000001/ml|
+|0981564|;|Ambroxol 0,03, Clenbuterol 0,00002|
+|1015765|;|Benzoylperoxid 0,05, Miconazolnitrat 0,02/g|
+|1016210|;|Eisen(II)sulfat 0,26 (= 0,08 Fe II), Folsäure 0,00035|
+|1041001|;|Heparin 300 IE, Dexpanthenol 0,05/g|
+|1064545|;|Etofenamat 1,0|
+|1073455|;|Calc. digluconat 0,95, Calc. saccharat 0,036 (entspr. Ca++ 0,089 = 2,23 mmol)|
+|1079050|;|Flunarizin 0,01|
+|1127151|;|Enoxaparin Na 0,02 entspr. 2.000 IE anti-Faktor Xa|
+|1127168|;|Enoxaparin Na 0,04 entspr. 4.000 IE anti-Faktor Xa|
+|1141122|;|Dalteparin Na entspr. 10.000 IE anti-Faktor Xa|
+|1141139|;|Dalteparin Na entspr. 10.000 IE anti-Faktor Xa|
+|1166866|;|Enoxaparin Na 0,02 entspr. 2.000 IE anti-Faktor Xa|
+|1178421|;|Glucose wasserfrei 4,00, Natr. chlorid 0,35, Natr. citrat 0,59, Kal. chlorid 0,3/ED|
+|1242923|;|Salicylsäure 0,1/g|
+|1253111|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|1253157|;|Eisen(II)fumarat 0,15 (= 0,05 Fe II), Folsäure 0,0005|
+|1253163|;|Eisen(II)fumarat 0,15 (= 0,05 Fe II), Folsäure 0,0005|
+|1253223|;|Lidocain 0,02, Chlorhexidin 0,0005/g|
+|1253246|;|Lidocain 0,02, Chlorhexidin 0,0005/g|
+|1253252|;|Lidocain 0,02, Chlorhexidin 0,0005/g|
+|1254659|;|Atenolol 0,1, Chlortalidon 0,025|
+|1254671|;|Atenolol 0,05, Chlortalidon 0,0125|
+|1254903|;|Benserazid 0,025, Levodopa 0,1|
+|1254926|;|Benserazid 0,025, Levodopa 0,1|
+|1256210|;|Thiamin 0,1, Pyridoxin 0,2, Cyanocobalamin 0,0002|
+|1256457|;|Flupentixol (decanoat) 0,1|
+|1256575|;|Atenolol 0,1, Chlortalidon 0,025|
+|1256598|;|Atenolol 0,05, Chlortalidon 0,0125|
+|1256612|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|1257770|;|Thiamin 0,1, Pyridoxin 0,2, Cyanocobalamin 0,0002|
+|1259042|;|Furosemid 0,02, Spironolacton 0,05|
+|1259059|;|Furosemid 0,02, Spironolacton 0,05|
+|1259065|;|Furosemid 0,02, Spironolacton 0,1|
+|1263523|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|1265060|;|Levothyroxin-Natrium 0,0001, Kaliumiodid entspr. Iod 0,0001|
+|1265077|;|Levothyroxin-Natrium 0,0001, Kaliumiodid entspr. Iod 0,0001|
+|1265143|;|Sojaöl 0,8295, Polidocanol 0,15/g|
+|1266088|;|Betamethason 0,0005, Gentamicin 0,001/g|
+|1266094|;|Betamethason 0,0005, Gentamicin 0,001/g|
+|1266102|;|Betamethason 0,0005, Salicylsäure 0,03/g|
+|1266237|;|Sojaöl  0,8475/g|
+|1267426|;|Sulfamethoxazol 0,8, Trimethoprim 0,16|
+|1268696|;|Zuclopenthixol (decanoat) 0,5|
+|1271273|;|Glucose 5 %|
+|1272114|;|Natr. chlorid 0,9 %|
+|1272120|;|Natr. chlorid 0,9 %|
+|1272166|;|Natr. chlorid 0,9 %|
+|1272290|;|Ringer-Lactat (Zusammensetzung s. Austria Codex Fachinformation)|
+|1274395|;|Terazosin 0,001|
+|1274857|;|Diphenhydramin 0,01, Chlorhexidin 0,0005/g|
+|1276075|;|Pankreatin 0,30 (= Lipase 25000 FIP-E, Amylase 18000 FIP-E, Protease 1000 FIP-E)|
+|1276081|;|Pankreatin 0,30 (= Lipase 25000 FIP-E, Amylase 18000 FIP-E, Protease 1000 FIP-E)|
+|1276810|;|Quinapril 0,01, Hydrochlorothiazid 0,0125|
+|1276827|;|Quinapril 0,02, Hydrochlorothiazid 0,0125|
+|1278594|;|Natr. chlorid 0,9 %|
+|1281202|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|1281219|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|1281231|;|Dimenhydrinat 0,05, Pyridoxin 0,05|
+|1282348|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|1282354|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|1283508|;|Humaninsulin gelöst 100 IE/ml|
+|1283514|;|Protamin-Humaninsulin 100 IE/ml|
+|1283543|;|Humaninsulin gelöst 30 IE, Protamin-Humaninsulin 70 IE/ml|
+|1283951|;|Flupredniden 0,001, Gentamicin 0,001/g|
+|1285016|;|Enoxaparin Na 0,04 entspr. 4.000 IE anti-Faktor Xa|
+|1285855|;|Metoprololtartrat 0,1, Hydrochlorothiazid 0,0125|
+|1285861|;|Metoprololtartrat 0,1, Hydrochlorothiazid 0,0125|
+|1285973|;|Flupentixol (decanoat) 0,02|
+|1287794|;|Gerbstoff (synth.) 0,01/g|
+|1288227|;|Aescin 0,05|
+|1288233|;|Aescin 0,05|
+|1289480|;|Diclofenac 0,05, Thiamin 0,05, Pyridoxin 0,05, Cyanocobalamin 0,00025|
+|1289505|;|Diclofenac 0,05, Thiamin 0,05, Pyridoxin 0,05, Cyanocobalamin 0,00025|
+|1289942|;|Cilazapril 0,005, Hydrochlorothiazid 0,0125|
+|1290773|;|Hydroxypropylmethylcellulose 0,005/ml|
+|1292039|;|Diclofenac 0,0003, Orphenadrincitrat 0,00012/ml|
+|1292789|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|1293375|;|Quinagolid 0,025 mg (3 Tabl.); Quinagolid 0,05 mg (3 Tabl.)|
+|1293872|;|Gerinnungsfaktor XIII|
+|1293889|;|Gerinnungsfaktor XIII|
+|1294334|;|Amm. sulfobituminat 0,2/g|
+|1294340|;|Amm. sulfobituminat 0,5/g|
+|1297640|;|L-Ornithin-L-Aspartat 3,0/ED|
+|1297657|;|L-Ornithin-L-Aspartat 3,0/ED|
+|1301531|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|1302772|;|Terazosin 0,002|
+|1302789|;|Terazosin 0,005|
+|1303435|;|Gerinnungsfaktor IX|
+|1303441|;|Gerinnungsfaktor IX|
+|1303671|;|Estradiol 0,002 (14 Filmtabl.); Estradiol 0,002 + Dydrogesteron 0,01 (14 Filmtabl.)|
+|1303719|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1303725|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1303748|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1303754|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1303783|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1303820|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1303866|;|Nadroparin Ca entspr. 9.500 IE anti-Faktor Xa/ml|
+|1304133|;|Enoxaparin Na 0,06 entspr. 6.000 IE anti-Faktor Xa|
+|1304156|;|Enoxaparin Na 0,08 entspr. 8.000 IE anti-Faktor Xa|
+|1304162|;|Enoxaparin Na 0,1 entspr. 10.000 IE anti-Faktor Xa|
+|1304481|;|Salbutamol 0,003, Ipratropiumbromid 0,00052/ED|
+|1306161|;|Polyvidon 0,05/ml|
+|1306439|;|Glucose wasserfrei 10,00, Natr. chlorid 0,875, Natr. citrat 1,475, Kal. chlorid 0,75/ED|
+|1306557|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|1306669|;|Ringer-Lactat (Zusammensetzung s. Austria Codex Fachinformation)|
+|1307321|;|Calciumcarbonat 2,5 (entspr. Ca++ 1,0), Colecalciferol 880 IE|
+|1307798|;|Benserazid 0,025, Levodopa 0,1|
+|1307806|;|Benserazid 0,025, Levodopa 0,1|
+|1309432|;|Enalapril 0,02, Hydrochlorothiazid 0,006|
+|1310375|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|1310895|;|Furosemid 0,02, Spironolacton 0,05|
+|1310903|;|Furosemid 0,02, Spironolacton 0,05|
+|1310926|;|Furosemid 0,02, Spironolacton 0,1|
+|1310990|;|Fosinopril 0,02, Hydrochlorothiazid 0,0125|
+|1311564|;|Dexamethason 0,0003, Gentamicin 0,003/g|
+|1311570|;|Dexamethason 0,001, Gentamicin 0,003/ml|
+|1311682|;|Enoxaparin Na 0,1 entspr. 10.000 IE anti-Faktor Xa|
+|1312374|;|Salbutamol 0,003, Ipratropiumbromid 0,00052/ED|
+|1314723|;|Oxerutin 0,5|
+|1318193|;|Insulin lispro 100 E/ml|
+|1318359|;|Von-Willebrand-Faktor, Gerinnungsfaktor VIII|
+|1318365|;|Von-Willebrand-Faktor, Gerinnungsfaktor VIII|
+|1319784|;|Zidovudin 0,3, Lamivudin 0,15|
+|1320385|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|1320422|;|Dalteparin Na entspr. 25.000 IE anti-Faktor Xa|
+|1321108|;|Gerinnungsfaktor VIII|
+|1321114|;|Gerinnungsfaktor VIII|
+|1321120|;|Gerinnungsfaktor VIII|
+|1321539|;|Harnstoff 0,05, Polidocanol 0,03/g|
+|1322125|;|Carbomer 0,0025/g|
+|1322668|;|Von-Willebrand-Faktor, Gerinnungsfaktor VIII|
+|1322674|;|Von-Willebrand-Faktor, Gerinnungsfaktor VIII|
+|1322740|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|1323567|;|Amoxicillin 0,08, Clavulansäure 0,0114/ml|
+|1323573|;|Amoxicillin 0,08, Clavulansäure 0,0114/ml|
+|1324667|;|Humaninsulin gelöst 100 IE/ml|
+|1324696|;|Humaninsulin gelöst 25 IE, Protamin-Humaninsulin 75 IE/ml|
+|1324704|;|Humaninsulin gelöst 50 IE, Protamin-Humaninsulin 50 IE/ml|
+|1324710|;|Protamin-Humaninsulin 100 IE/ml|
+|1325247|;|Morphin 0,09|
+|1325253|;|Morphin 0,15|
+|1325945|;|Danaparoid Na entspr. 750 IE anti-Faktor Xa|
+|1327677|;|Carvedilol 0,025, Hydrochlorothiazid 0,0125|
+|1328814|;|Insulin lispro 25 E, Protamin-Insulin lispro 75 E/ml|
+|1330509|;|Salmeterol 0,00005, Fluticasonpropionat 0,00025/Hub|
+|1330515|;|Salmeterol 0,00005, Fluticasonpropionat 0,0005/Hub|
+|1330596|;|Insulin lispro 50 E, Protamin-Insulin lispro 50 E/ml|
+|1331489|;|Diclofenac 0,075, Misoprostol 0,0002|
+|1331495|;|Diclofenac 0,075, Misoprostol 0,0002|
+|1331851|;|Estradiol 0,001, Norethisteron 0,0005|
+|1332141|;|Diclofenac 0,0003, Orphenadrincitrat 0,00012/ml|
+|1332951|;|Benserazid 0,025, Levodopa 0,1|
+|1332968|;|Benserazid 0,025, Levodopa 0,1|
+|1335151|;|Dexamethason 0,001, Tobramycin 0,003/g|
+|1335168|;|Dexamethason 0,001, Tobramycin 0,003/ml|
+|1338451|;|Estradiol 0,001 (14 Filmtabl.); Estradiol 0,001 + Dydrogesteron 0,01 (14 Filmtabl.)|
+|1340502|;|Amoxicillin 0,5, Clavulansäure 0,125|
+|1340519|;|Amoxicillin 0,025, Clavulansäure 0,00625/ml|
+|1340525|;|Amoxicillin 0,025, Clavulansäure 0,00625/ml|
+|1340531|;|Amoxicillin 0,05, Clavulansäure 0,0125/ml|
+|1340548|;|Amoxicillin 0,05, Clavulansäure 0,0125/ml|
+|1344032|;|Gamma-Hydroxybuttersäure 0,175/ml|
+|1344049|;|Morphin 0,15|
+|1344055|;|Morphin 0,15|
+|1344061|;|Calciumcarbonat 1,5 (entspr. Ca++ 0,6), Colecalciferol 400 IE|
+|1344150|;|Lysat 0,003 aus mind. 10 Mrd. Keimen (7 versch. Erreger v. Atemwegserkrankungen)|
+|1344167|;|Lysat 0,003 aus mind. 10 Mrd. Keimen (7 versch. Erreger v. Atemwegserkrankungen)|
+|1344641|;|Amoxicillin 0,5, Clavulansäure 0,125|
+|1345037|;|Estradiol 0,00005, Norethisteron 0,00025/die|
+|1345557|;|Zidovudin 0,3, Lamivudin 0,15, Abacavir 0,3|
+|1345847|;|Insulin aspart 30 E, Protamin-Insulin aspart 70 E/ml|
+|1346568|;|Kaliumiodid 0,000138 (entspr. 0,0001 Iod)|
+|1346574|;|Kaliumiodid 0,000138 (entspr. 0,0001 Iod)|
+|1346918|;|Formoterol 0,0000045, Budesonid 0,00008/Hub|
+|1346924|;|Formoterol 0,0000045, Budesonid 0,00016/Hub|
+|1348633|;|HMG entspr. FSH 75 IE, LH 75 IE|
+|1348656|;|HMG entspr. FSH 75 IE, LH 75 IE|
+|1348981|;|Ringer-Lsg. (Zusammensetzung s. Austria Codex Fachinformation)|
+|1349325|;|Diclofenac 0,05, Misoprostol 0,0002|
+|1349331|;|Diclofenac 0,05, Misoprostol 0,0002|
+|1349526|;|Harnstoff 0,05, Polidocanol 0,03/g|
+|1350357|;|Fenoterol 0,00005, Ipratropiumbromid 0,00002/Hub|
+|1351003|;|Salmeterol 0,000025, Fluticasonpropionat 0,000125/Hub|
+|1351026|;|Salmeterol 0,000025, Fluticasonpropionat 0,00025/Hub|
+|1391793|;|Econazolnitrat 0,01, Triamcinolonacetonid 0,001/g|
+|1520434|;|Magn. hydroxid 0,4, Aluminiumhydroxid 0,4/ED (= 23 mval)|
+|1751168|;|Amm. sulfobituminat 0,1/g|
+|1800688|;|Amm. sulfobituminat 0,88/g|
+|1876987|;|Octenidin 0,001, 2-Phenoxyethanol 0,02/ml|
+|2394948|;|Fe (III) 0,02/ml als Eisen(III)oxid-Saccharose-Komplex|
+|2420433|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|2420456|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|2421504|;|Gerinnungsfaktor VIII|
+|2422142|;|Estradiol 0,001, Dydrogesteron 0,005|
+|2422225|;|Enoxaparin Na 0,12 entspr. 12.000 IE anti-Faktor Xa|
+|2422248|;|Enoxaparin Na 0,15 entspr. 15.000 IE anti-Faktor Xa|
+|2422254|;|Enoxaparin Na 0,3 entspr. 30.000 IE anti-Faktor Xa|
+|2423472|;|Lopinavir 0,08, Ritonavir 0,02/ml|
+|2424164|;|Tiotropium 0,000018/Hub|
+|2425301|;|Calcium-natrium-hydrogencitrat (6:6:3:7) 2,5/ED|
+|2426039|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2426571|;|Morphin 0,09|
+|2426588|;|Morphin 0,15|
+|2427004|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2427010|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2428073|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|2429380|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|2429635|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2429687|;|Insulin aspart 30 E, Protamin-Insulin aspart 70 E/ml|
+|2430354|;|Tiotropium 0,000018/Hub|
+|2431129|;|Protamin-Humaninsulin 100 IE/ml|
+|2431141|;|Humaninsulin gelöst 100 IE/ml|
+|2431158|;|Humaninsulin gelöst 30 IE, Protamin-Humaninsulin 70 IE/ml|
+|2431425|;|Insulin lispro 100 E/ml|
+|2431483|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2437126|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2437391|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2438798|;|Ciprofloxacin 0,5|
+|2438806|;|Ciprofloxacin 0,5|
+|2439071|;|Oxerutin 1,0|
+|2441406|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|2443003|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|2443032|;|Bisoprolol(fumarat) 0,01, Hydrochlorothiazid 0,025|
+|2443842|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|2443859|;|Bisoprolol(fumarat) 0,005, Hydrochlorothiazid 0,0125|
+|2446094|;|Bemiparin Na entspr. 2.500 IE anti-Faktor Xa/ED|
+|2446102|;|Bemiparin Na entspr. 2.500 IE anti-Faktor Xa/ED|
+|2446125|;|Bemiparin Na entspr. 3.500 IE anti-Faktor Xa/ED|
+|2446131|;|Bemiparin Na entspr. 3.500 IE anti-Faktor Xa/ED|
+|2446556|;|Carvedilol 0,00625|
+|2446579|;|Carvedilol 0,025|
+|2446622|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|2447188|;|Formoterol 0,000009, Budesonid 0,00032/Hub|
+|2449856|;|Carbidopa 0,05, Levodopa 0,2|
+|2449862|;|Carbidopa 0,05, Levodopa 0,2|
+|2450026|;|Trockenhefe aus Saccharomyces boulardii 0,25 (entspr. mind. 2,5 Mrd. lebensfähige Zellen)|
+|2450150|;|Amlodipin 0,005|
+|2450167|;|Amlodipin 0,01|
+|2450517|;|Morphin 0,075|
+|2450523|;|Morphin 0,075|
+|2450546|;|Morphin 0,228|
+|2450552|;|Morphin 0,228|
+|2450664|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|2450776|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|2450782|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|2450799|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|2451327|;|Triamcinolonacetonid 0,002, Salicylsäure 0,02/ml|
+|2451563|;|Humaninsulin gelöst 30 IE, Protamin-Humaninsulin 70 IE/ml|
+|2451586|;|Protamin-Humaninsulin 100 IE/ml|
+|2451652|;|Humaninsulin gelöst 100 IE/ml|
+|2451669|;|Protamin-Humaninsulin 100 IE/ml|
+|2451712|;|Humaninsulin gelöst 50 IE, Protamin-Humaninsulin 50 IE/ml|
+|2451801|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|2451818|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|2451824|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|2451830|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|2451936|;|Citalopram 0,01|
+|2451942|;|Citalopram 0,02|
+|2452321|;|Benserazid 0,025, Levodopa 0,1|
+|2452338|;|Benserazid 0,025, Levodopa 0,1|
+|2452344|;|Benserazid 0,025, Levodopa 0,1|
+|2452350|;|Benserazid 0,025, Levodopa 0,1|
+|2452628|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|2452634|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|2452717|;|Triamcinolonacetonid 0,002, Salicylsäure 0,02/ml|
+|2453728|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|2453734|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|2453740|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|2454679|;|Calciumcarbonat 1,25 (entspr. Ca++ 0,5), Colecalciferol 400 IE|
+|2454691|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|2454716|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|2454722|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|2454900|;|Enalapril 0,01, Nitrendipin 0,02|
+|2455733|;|Terazosin 0,002|
+|2455756|;|Terazosin 0,002|
+|2455762|;|Terazosin 0,005|
+|2458080|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|2458097|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|2458766|;|Amoxicillin 0,08, Clavulansäure 0,0114/ml|
+|2458772|;|Amoxicillin 0,08, Clavulansäure 0,0114/ml|
+|2459889|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|2459895|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|2459955|;|Cyproteron 0,002, Ethinylestradiol 0,000035|
+|2460237|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|2460243|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|2460527|;|Eprosartan 0,6, Hydrochlorothiazid 0,0125|
+|2460585|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|2460591|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|2460697|;|Carvedilol 0,0125|
+|2462414|;|Dimeticon 0,04, Siliciumdioxid 0,002|
+|2462420|;|Dimeticon 0,04, Siliciumdioxid 0,002|
+|2462443|;|Dimeticon 0,04, Siliciumdioxid 0,001/ml|
+|2463678|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|2463885|;|Sojaöl  0,8475/g|
+|2463916|;|Sojaöl 0,8295, Polidocanol 0,15/g|
+|2466197|;|Triamcinolon (Depot) 0,01/ml|
+|2466607|;|Immunaktive Fraktionen 0,006 aus 18 Stämmen von E. coli|
+|2470158|;|Citalopram 0,01|
+|2470164|;|Citalopram 0,02|
+|2471867|;|Insulin aspart 70 E, Protamin-Insulin aspart 30 E/ml|
+|2472111|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|2472157|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|2472163|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|2474506|;|Formoterol 0,0000045, Budesonid 0,00016/Hub|
+|2475598|;|Sildenafil 0,02|
+|2477545|;|Triamcinolon (Depot) 0,04/ml|
+|2478390|;|Interferon beta-1a  8,8 mcg (6 ED); Interferon beta-1a 22 mcg (6 ED)|
+|2478616|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2478622|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|2479308|;|Timolol 0,005, Travoprost 0,00004/ml|
+|2479863|;|Dalteparin Na entspr. 12.500 IE anti-Faktor Xa/ml|
+|2479886|;|Dalteparin Na entspr. 12.500 IE anti-Faktor Xa/ml|
+|2479900|;|Dalteparin Na entspr. 25.000 IE anti-Faktor Xa/ml|
+|2479917|;|Dalteparin Na entspr. 25.000 IE anti-Faktor Xa/ml|
+|2479923|;|Dalteparin Na entspr. 7.500 IE anti-Faktor Xa|
+|2479946|;|Dalteparin Na entspr. 10.000 IE anti-Faktor Xa|
+|2479969|;|Dalteparin Na entspr. 12.500 IE anti-Faktor Xa|
+|2479981|;|Dalteparin Na entspr. 15.000 IE anti-Faktor Xa|
+|3500039|;|Dalteparin Na entspr. 18.000 IE anti-Faktor Xa|
+|3500683|;|L-Ornithin-L-Aspartat 5,0/ED|
+|3500708|;|L-Ornithin-L-Aspartat 5,0/ED|
+|3500795|;|Atorvastatin 0,01, Amlodipin 0,005|
+|3500826|;|Atorvastatin 0,01, Amlodipin 0,01|
+|3501346|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|3501352|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|3501369|;|Amoxicillin 0,5, Clavulansäure 0,125|
+|3502216|;|Timolol 0,005, Bimatoprost 0,0003/ml|
+|3502558|;|Timolol 0,005, Brimonidin 0,0013/ml|
+|3502937|;|Lopinavir 0,2, Ritonavir 0,05|
+|3505019|;|Gerinnungsfaktor IX|
+|3505025|;|Gerinnungsfaktor IX|
+|3505031|;|Gerinnungsfaktor IX|
+|3505048|;|Gerinnungsfaktor IX|
+|3505574|;|Metformin 0,85, Pioglitazon 0,015|
+|3505611|;|Enalapril 0,02, Hydrochlorothiazid 0,006|
+|3506562|;|Buprenorphin 0,002, Naloxon 0,0005|
+|3506579|;|Buprenorphin 0,002, Naloxon 0,0005|
+|3506585|;|Buprenorphin 0,008, Naloxon 0,002|
+|3506591|;|Buprenorphin 0,008, Naloxon 0,002|
+|3508288|;|Timolol 0,005, Dorzolamid 0,02/ml|
+|3510115|;|Formoterol 0,000006, Beclometasondipropionat 0,0001/Hub|
+|3510658|;|Salicylsäure 0,1/ml|
+|3511971|;|Fosinopril 0,02, Hydrochlorothiazid 0,0125|
+|3514076|;|Fosinopril 0,02, Hydrochlorothiazid 0,0125|
+|3514892|;|Natr. perchlorat 0,3/ml|
+|3518039|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|3518045|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|3518312|;|Tiotropium 0,0000025/Hub|
+|3519197|;|Metformin 0,85, Vildagliptin 0,05|
+|3519205|;|Metformin 0,85, Vildagliptin 0,05|
+|3519211|;|Metformin 1,0, Vildagliptin 0,05|
+|3519228|;|Metformin 1,0, Vildagliptin 0,05|
+|3522934|;|Octenidin 0,001, 2-Phenoxyethanol 0,02/ml|
+|3523945|;|Memantin 0,005 (7 Filmtabl.); Memantin 0,01 (7 Filmtabl.); Memantin 0,015 (7 Filmtabl.); Memantin 0,02 (7 Filmtabl.)|
+|3525737|;|Glimepirid 0,002, Pioglitazon 0,03|
+|3525743|;|Glimepirid 0,004, Pioglitazon 0,03|
+|3526033|;|Metformin 1,0, Sitagliptin 0,05|
+|3526056|;|Metformin 0,85, Sitagliptin 0,05|
+|3526228|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|3526234|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|3526317|;|Metformin 0,85, Sitagliptin 0,05|
+|3526346|;|Metformin 1,0, Sitagliptin 0,05|
+|3527096|;|Venlafaxin 0,05 (nicht retardiert)|
+|3527104|;|Venlafaxin 0,05 (nicht retardiert)|
+|3527110|;|Venlafaxin 0,075 (nicht retardiert)|
+|3527127|;|Venlafaxin 0,075 (nicht retardiert)|
+|3527133|;|Venlafaxin 0,05 (nicht retardiert)|
+|3527156|;|Venlafaxin 0,05 (nicht retardiert)|
+|3527162|;|Venlafaxin 0,075 (nicht retardiert)|
+|3527179|;|Venlafaxin 0,075 (nicht retardiert)|
+|3531442|;|Timolol 0,005, Brinzolamid 0,01/ml|
+|3533300|;|Calciumacetat 0,435, Magnesiumcarbonat 0,235|
+|3534699|;|Magn. hydroxid 0,4, Aluminiumhydroxid 0,4/ED (= 23 mval)|
+|3537261|;|Insulin lispro 100 E/ml|
+|3537278|;|Insulin lispro 25 E, Protamin-Insulin lispro 75 E/ml|
+|3537284|;|Insulin lispro 50 E, Protamin-Insulin lispro 50 E/ml|
+|3538088|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|3538094|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|3538102|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|3538616|;|Losartan 0,1, Hydrochlorothiazid 0,025|
+|3539722|;|Interferon beta-1a  8,8 mcg (6 ED); Interferon beta-1a 22 mcg (6 ED)|
+|3541050|;|Gerinnungsfaktor IX|
+|3541498|;|Enalapril 0,01, Lercanidipin 0,01|
+|3541506|;|Enalapril 0,02, Lercanidipin 0,01|
+|3543267|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3543273|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3543735|;|Nebivolol 0,005, Hydrochlorothiazid 0,0125|
+|3543741|;|Nebivolol 0,005, Hydrochlorothiazid 0,025|
+|3545504|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|3545527|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|3545556|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,0125|
+|3545579|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|3546449|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|3546691|;|Natr. chlorid 0,9 %|
+|3547696|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|3547704|;|Glucose 5 %|
+|3547727|;|Natr. chlorid 0,9 %|
+|3547762|;|Natr. chlorid 0,9 %|
+|3547785|;|Ringer-Lsg. (Zusammensetzung s. Austria Codex Fachinformation)|
+|3548106|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3548112|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3548655|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3548678|;|Losartan 0,1, Hydrochlorothiazid 0,025|
+|3549057|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3549181|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3549206|;|Losartan 0,1, Hydrochlorothiazid 0,025|
+|3549695|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3757525|;|Fe (III) 0,02/ml als Eisen(III)oxid-Saccharose-Komplex|
+|3757620|;|Tadalafil 0,02|
+|3758074|;|Salmeterol 0,00005, Fluticasonpropionat 0,0001/Hub|
+|3758080|;|Salmeterol 0,000025, Fluticasonpropionat 0,00005/Hub|
+|3758134|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3758157|;|Losartan 0,1, Hydrochlorothiazid 0,025|
+|3758393|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3758401|;|Losartan 0,1, Hydrochlorothiazid 0,025|
+|3760272|;|Fe (III) 0,02/ml als Eisen(III)oxid-Saccharose-Komplex|
+|3760510|;|Trockenextrakt aus Grünteeblättern 0,1/g|
+|3761107|;|Macrogol (3350) 13,125, Natr. chlorid 0,35, Natr. hydrogencarbonat 0,1785, Kal. chlorid 0,0466/ED|
+|3761113|;|Macrogol (3350) 13,125, Natr. chlorid 0,35, Natr. hydrogencarbonat 0,1785, Kal. chlorid 0,0466/ED|
+|3761596|;|Ramipril 0,005, Hydrochlorothiazid 0,0125|
+|3761768|;|Gräserpollen 100 IR (3 Tabl.); Gräserpollen 300 IR (28 Tabl.)|
+|3761857|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|3761917|;|Losartan 0,1, Hydrochlorothiazid 0,0125|
+|3762118|;|Levomethadon 0,005/ml|
+|3762124|;|Levomethadon 0,005/ml|
+|3764301|;|Estradiol 0,0005, Dydrogesteron 0,0025|
+|3764436|;|Telmisartan 0,04, Amlodipin 0,005|
+|3764459|;|Telmisartan 0,04, Amlodipin 0,01|
+|3764471|;|Telmisartan 0,08, Amlodipin 0,005|
+|3764494|;|Telmisartan 0,08, Amlodipin 0,01|
+|3769617|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3769646|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3769669|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3769681|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3769706|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3769729|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3769741|;|Valsartan 0,32, Hydrochlorothiazid 0,0125|
+|3769764|;|Valsartan 0,32, Hydrochlorothiazid 0,025|
+|3770247|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3770253|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3770276|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3773441|;|Protamin-Humaninsulin 100 IE/ml|
+|3773458|;|Humaninsulin gelöst 100 IE/ml|
+|3773464|;|Humaninsulin gelöst 25 IE, Protamin-Humaninsulin 75 IE/ml|
+|3773725|;|Interferon beta-1a  8,8 mcg (6 ED); Interferon beta-1a 22 mcg (6 ED)|
+|3774699|;|Losartan 0,1, Hydrochlorothiazid 0,0125|
+|3775380|;|Dexamethason 0,0004, Lidocain 0,02/g|
+|3775629|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|3775635|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|3776913|;|Naproxen 0,5, Esomeprazol 0,02|
+|3776936|;|Naproxen 0,5, Esomeprazol 0,02|
+|3777290|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3777315|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3777338|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3778757|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|3780530|;|Timolol 0,005, Dorzolamid 0,02/ml|
+|3781506|;|Enalapril 0,02, Hydrochlorothiazid 0,0125|
+|3783511|;|Timolol 0,005, Dorzolamid 0,02/ml|
+|3783675|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3783712|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3783735|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3783758|;|Valsartan 0,32, Hydrochlorothiazid 0,0125|
+|3783770|;|Valsartan 0,32, Hydrochlorothiazid 0,025|
+|3784746|;|Calcipotriol 0,00005, Betamethason 0,0005/g|
+|3784752|;|Calcipotriol 0,00005, Betamethason 0,0005/g|
+|3784982|;|Protamin-Humaninsulin 100 IE/ml|
+|3786857|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3786863|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3786923|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3786946|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3787555|;|Gerinnungsfaktor VIII|
+|3787638|;|Timolol 0,005, Dorzolamid 0,02/ml|
+|3788218|;|Gerinnungsfaktor VIII|
+|3788224|;|Gerinnungsfaktor VIII|
+|3788359|;|Delta-9-Tetrahydrocannabinol (THC) 0,0027, Cannabidiol (CBD) 0,0025/ED|
+|3788365|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245, Rilpivirin 0,025|
+|3788721|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3788738|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3900129|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|3901465|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3901471|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3901488|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3901494|;|Valsartan 0,32, Hydrochlorothiazid 0,025|
+|3901956|;|Metformin 0,85, Saxagliptin 0,0025|
+|3901979|;|Metformin 1,0, Saxagliptin 0,0025|
+|3902358|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3902364|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3902424|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3902430|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3903168|;|Valsartan 0,08, Hydrochlorothiazid 0,0125|
+|3903174|;|Valsartan 0,16, Hydrochlorothiazid 0,0125|
+|3903180|;|Valsartan 0,16, Hydrochlorothiazid 0,025|
+|3903748|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3903754|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3904423|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|3904601|;|Calciumcarbonat 1,25 (entspr. Ca++ 0,5), Colecalciferol 800 IE|
+|3906416|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3906439|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3906451|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3906474|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3906847|;|Metformin 1,0, Linagliptin 0,0025|
+|3906853|;|Metformin 1,0, Linagliptin 0,0025|
+|3906876|;|Metformin 0,85, Linagliptin 0,0025|
+|3906882|;|Metformin 0,85, Linagliptin 0,0025|
+|3907568|;|Natr. citrat 0,45, Natr. laurylsulfoacetat 0,045, Sorbit 3,125|
+|3907829|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|3909018|;|Von-Willebrand-Faktor, Gerinnungsfaktor VIII|
+|3909024|;|Von-Willebrand-Faktor, Gerinnungsfaktor VIII|
+|3909248|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3909254|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3909840|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3909857|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3909892|;|Calciumcarbonat 1,25 (entspr. Ca++ 0,5), Colecalciferol 800 IE|
+|3910010|;|Tegafur 0,015, Gimeracil 0,00435, Oteracil 0,0118|
+|3910033|;|Tegafur 0,02, Gimeracil 0,0058, Oteracil 0,0158|
+|3910056|;|Tegafur 0,02, Gimeracil 0,0058, Oteracil 0,0158|
+|3910978|;|Melitracen 0,01, Flupentixol 0,0005|
+|3910984|;|Melitracen 0,01, Flupentixol 0,0005|
+|3911624|;|Formoterol 0,000005, Fluticasonpropionat 0,00005/Hub|
+|3911630|;|Formoterol 0,000005, Fluticasonpropionat 0,000125/Hub|
+|3911676|;|Glycopyrronium 0,000044/Hub|
+|3914404|;|Telmisartan 0,04, Hydrochlorothiazid 0,0125|
+|3914427|;|Telmisartan 0,08, Hydrochlorothiazid 0,0125|
+|3914456|;|Telmisartan 0,08, Hydrochlorothiazid 0,025|
+|3915958|;|Aclidinium 0,000322/Hub|
+|3915964|;|Aclidinium 0,000322/Hub|
+|3917064|;|Fluorouracil 0,005, Salicylsäure 0,1/g|
+|3918075|;|Losartan 0,05, Hydrochlorothiazid 0,0125|
+|3918081|;|Losartan 0,1, Hydrochlorothiazid 0,025|
+|3918141|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3918158|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3918164|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3918170|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3918224|;|Formoterol 0,000006, Beclometasondipropionat 0,0001/Hub|
+|3918253|;|Lisinopril 0,005|
+|3918276|;|Lisinopril 0,01|
+|3918282|;|Lisinopril 0,02|
+|3918313|;|Fe (III) 0,1/ml als Eisen(III)-Isomaltosid|
+|3918336|;|Fe (III) 0,1/ml als Eisen(III)-Isomaltosid|
+|3919620|;|Insulin aspart 50 E, Protamin-Insulin aspart 50 E/ml|
+|3919637|;|Insulin aspart 70 E, Protamin-Insulin aspart 30 E/ml|
+|3919873|;|Gerinnungsfaktor VIII|
+|3920451|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3920474|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3920876|;|Harnstoff 0,12, Tretinoin 0,0003/g|
+|3920882|;|Harnstoff 0,12, Tretinoin 0,0003/g|
+|3921195|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|3921203|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|3921835|;|Memantin 0,005 (7 Filmtabl.); Memantin 0,01 (7 Filmtabl.); Memantin 0,015 (7 Filmtabl.); Memantin 0,02 (7 Filmtabl.)|
+|3922036|;|Memantin 0,005 (7 Filmtabl.); Memantin 0,01 (7 Filmtabl.); Memantin 0,015 (7 Filmtabl.); Memantin 0,02 (7 Filmtabl.)|
+|3923053|;|Candesartan 0,008, Hydrochlorothiazid 0,0125|
+|3923076|;|Candesartan 0,016, Hydrochlorothiazid 0,0125|
+|3923082|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3923099|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3924377|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245, Elvitegravir 0,15, Cobicistat 0,15|
+|3924472|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3924489|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3924495|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|3924503|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|3924762|;|Fluticason 0,00005, Azelastin 0,000125/Hub|
+|3924785|;|Gerinnungsfaktor VIII|
+|3925313|;|Timolol 0,005, Bimatoprost 0,0003/ml|
+|3928642|;|Vilanterol 0,000022, Fluticasonfuroat 0,000092/Hub|
+|3928949|;|Bemiparin Na entspr. 2.500 IE anti-Faktor Xa/ED|
+|3928955|;|Bemiparin Na entspr. 3.500 IE anti-Faktor Xa/ED|
+|3929363|;|Simvastatin 0,02, Fenofibrat 0,145|
+|3929386|;|Simvastatin 0,04, Fenofibrat 0,145|
+|3929529|;|Metformin 0,85, Alogliptin 0,0125|
+|3929535|;|Metformin 1,0, Alogliptin 0,0125|
+|3929541|;|Pioglitazon 0,03, Alogliptin 0,0125|
+|3929558|;|Pioglitazon 0,03, Alogliptin 0,025|
+|3930188|;|Enalapril 0,01, Lercanidipin 0,01|
+|3930194|;|Enalapril 0,02, Lercanidipin 0,01|
+|3930202|;|Enalapril 0,02, Lercanidipin 0,01|
+|3930337|;|Telmisartan 0,04, Hydrochlorothiazid 0,0125|
+|3930343|;|Telmisartan 0,08, Hydrochlorothiazid 0,0125|
+|3930366|;|Telmisartan 0,08, Hydrochlorothiazid 0,025|
+|3930521|;|Memantin 0,005 (7 Filmtabl.); Memantin 0,01 (7 Filmtabl.); Memantin 0,015 (7 Filmtabl.); Memantin 0,02 (7 Filmtabl.)|
+|3930596|;|Amlodipin 0,005, Indapamid 0,0015|
+|3930604|;|Amlodipin 0,01, Indapamid 0,0015|
+|3930691|;|Vilanterol 0,000022, Umeclidinium 0,000055/Hub|
+|3931153|;|Gerinnungsfaktor VIII|
+|3931176|;|Gerinnungsfaktor VIII|
+|3931182|;|Gerinnungsfaktor VIII|
+|3931199|;|Gerinnungsfaktor VIII|
+|3931207|;|Gerinnungsfaktor VIII|
+|3931213|;|Gerinnungsfaktor VIII|
+|3931383|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|3931408|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4161036|;|Fe (III) 0,05/ml als Eisen(III)-Carboxymaltose|
+|4162030|;|Fe (III) 0,05/ml als Eisen(III)-Carboxymaltose|
+|4200121|;|Macrogol (3350) 13,125, Natr. chlorid 0,35, Natr. hydrogencarbonat 0,1785, Kal. chlorid 0,0466/ED|
+|4200138|;|Macrogol (3350) 13,125, Natr. chlorid 0,35, Natr. hydrogencarbonat 0,1785, Kal. chlorid 0,0466/ED|
+|4200210|;|Metformin 0,85, Dapagliflozin 0,005|
+|4200233|;|Metformin 1,0, Dapagliflozin 0,005|
+|4201451|;|Irbesartan 0,3, Hydrochlorothiazid 0,025|
+|4201468|;|Irbesartan 0,3, Hydrochlorothiazid 0,0125|
+|4201474|;|Irbesartan 0,15, Hydrochlorothiazid 0,0125|
+|4201623|;|Candesartan 0,032, Hydrochlorothiazid 0,0125|
+|4201646|;|Candesartan 0,032, Hydrochlorothiazid 0,025|
+|4203065|;|Ramipril 0,0025, Amlodipin 0,005|
+|4203071|;|Ramipril 0,005, Amlodipin 0,005|
+|4203088|;|Ramipril 0,005, Amlodipin 0,01|
+|4203094|;|Ramipril 0,01, Amlodipin 0,005|
+|4203102|;|Ramipril 0,01, Amlodipin 0,01|
+|4203639|;|Telmisartan 0,08, Hydrochlorothiazid 0,0125|
+|4203645|;|Telmisartan 0,08, Hydrochlorothiazid 0,025|
+|4205414|;|Peginterferon beta-1a  63 mcg (1 ED); Peginterferon beta-1a 94 mcg (1 ED)|
+|4205437|;|Peginterferon beta-1a  63 mcg (1 ED); Peginterferon beta-1a 94 mcg (1 ED)|
+|4205868|;|Umeclidinium 0,000055/Hub|
+|4206997|;|Telmisartan 0,04, Hydrochlorothiazid 0,0125|
+|4207005|;|Telmisartan 0,08, Hydrochlorothiazid 0,0125|
+|4207011|;|Telmisartan 0,08, Hydrochlorothiazid 0,025|
+|4207264|;|Gerinnungsfaktor VIII|
+|4207270|;|Gerinnungsfaktor VIII|
+|4207287|;|Gerinnungsfaktor VIII|
+|4207293|;|Gerinnungsfaktor VIII|
+|4207689|;|Lamivudin 0,3, Abacavir 0,6, Dolutegravir 0,05|
+|4208252|;|Formoterol 0,000012, Aclidinium 0,00034/Hub|
+|4209286|;|Ramipril 0,005, Amlodipin 0,005|
+|4209292|;|Ramipril 0,005, Amlodipin 0,01|
+|4209300|;|Ramipril 0,01, Amlodipin 0,005|
+|4209317|;|Ramipril 0,01, Amlodipin 0,01|
+|4209412|;|Gerinnungsfaktor VIII|
+|4209429|;|Gerinnungsfaktor VIII|
+|4209435|;|Gerinnungsfaktor VIII|
+|4209441|;|Gerinnungsfaktor VIII|
+|4209458|;|Gerinnungsfaktor VIII|
+|4209464|;|Gerinnungsfaktor VIII|
+|4209719|;|Olodaterol 0,0000025, Tiotropium 0,0000025/Hub|
+|4209955|;|Formoterol 0,000012, Aclidinium 0,00034/Hub|
+|4210378|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4210384|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4210390|;|Levodopa 0,075, Carbidopa 0,01875, Entacapon 0,2|
+|4210409|;|Levodopa 0,075, Carbidopa 0,01875, Entacapon 0,2|
+|4210415|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4210421|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4210438|;|Levodopa 0,125, Carbidopa 0,03125, Entacapon 0,2|
+|4210444|;|Levodopa 0,125, Carbidopa 0,03125, Entacapon 0,2|
+|4210450|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4210467|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4210473|;|Levodopa 0,175, Carbidopa 0,04375, Entacapon 0,2|
+|4210496|;|Levodopa 0,175, Carbidopa 0,04375, Entacapon 0,2|
+|4210504|;|Levodopa 0,2, Carbidopa 0,05, Entacapon 0,2|
+|4210510|;|Levodopa 0,2, Carbidopa 0,05, Entacapon 0,2|
+|4210763|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4210786|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4210898|;|Salmeterol 0,00005, Fluticasonpropionat 0,00025/Hub|
+|4210906|;|Salmeterol 0,00005, Fluticasonpropionat 0,0005/Hub|
+|4211596|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4211604|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4211610|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4211946|;|Estradiol 0,001, Dienogest 0,002|
+|4211975|;|Metformin 0,85, Empagliflozin 0,005|
+|4211998|;|Metformin 1,0, Empagliflozin 0,005|
+|4212012|;|Metformin 0,85, Empagliflozin 0,0125|
+|4212035|;|Metformin 1,0, Empagliflozin 0,0125|
+|4212041|;|Apremilast 0,01 (4 Filmtabl.); Apremilast 0,02 (4 Filmtabl.); Apremilast 0,03 (19 Filmtabl.)|
+|4212118|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4212124|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4212147|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4212176|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4214028|;|Enalapril 0,01, Lercanidipin 0,01|
+|4214034|;|Enalapril 0,02, Lercanidipin 0,01|
+|4214235|;|Natr. chlorid 0,9 %|
+|4214241|;|Natr. chlorid 0,9 %|
+|4214258|;|Natr. chlorid 0,9 %|
+|4214264|;|Natr. chlorid 0,9 %|
+|4214287|;|Salmeterol 0,000025, Fluticasonpropionat 0,000125/Hub|
+|4214293|;|Salmeterol 0,000025, Fluticasonpropionat 0,00025/Hub|
+|4215298|;|Gerinnungsfaktor VIII|
+|4215306|;|Gerinnungsfaktor VIII|
+|4215861|;|Natriumhydrogencarbonat 0,5|
+|4215878|;|Natriumhydrogencarbonat 0,84|
+|4216010|;|Timolol 0,005, Dorzolamid 0,02/ml|
+|4216671|;|Gerinnungsfaktor VIII|
+|4216688|;|Gerinnungsfaktor VIII|
+|4216694|;|Gerinnungsfaktor VIII|
+|4216702|;|Gerinnungsfaktor VIII|
+|4216719|;|Gerinnungsfaktor VIII|
+|4217512|;|Valsartan 0,026, Sacubitril 0,024|
+|4217529|;|Valsartan 0,051, Sacubitril 0,049|
+|4217535|;|Valsartan 0,051, Sacubitril 0,049|
+|4217541|;|Valsartan 0,103, Sacubitril 0,097|
+|4218316|;|Linagliptin 0,005; Empagliflozin 0,01|
+|4218339|;|Linagliptin 0,005; Empagliflozin 0,025|
+|4220483|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4220508|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4220997|;|Natriumhydrogencarbonat 0,5|
+|4221005|;|Natriumhydrogencarbonat 0,84|
+|4221100|;|Timolol 0,005, Tafluprost 0,000015/ml|
+|4222306|;|Amoxicillin 0,5, Clavulansäure 0,125|
+|4222312|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4222329|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4223300|;|Salmeterol 0,00005, Fluticasonpropionat 0,0001/Hub|
+|4223317|;|Salmeterol 0,00005, Fluticasonpropionat 0,00025/Hub|
+|4223323|;|Salmeterol 0,00005, Fluticasonpropionat 0,0005/Hub|
+|4225919|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4225925|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4225931|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4226178|;|Natr. chlorid 0,9 %|
+|4226184|;|Natr. chlorid 0,9 %|
+|4226190|;|Natr. chlorid 0,9 %|
+|4226209|;|Natr. chlorid 0,9 %|
+|4226221|;|Ringer-Lsg. (Zusammensetzung s. Austria Codex Fachinformation)|
+|4226238|;|Ringer-Lsg. (Zusammensetzung s. Austria Codex Fachinformation)|
+|4226250|;|Ringer-Lactat (Zusammensetzung s. Austria Codex Fachinformation)|
+|4226267|;|Ringer-Lactat (Zusammensetzung s. Austria Codex Fachinformation)|
+|4227829|;|Emtricitabin 0,2, Tenofovir Alafenamid 0,01, Elvitegravir 0,15, Cobicistat 0,15|
+|4228680|;|Indacaterol 0,000085, Glycopyrronium 0,000043/Hub|
+|4228697|;|Lisinopril 0,01, Amlodipin 0,005|
+|4228705|;|Lisinopril 0,02, Amlodipin 0,005|
+|4228711|;|Lisinopril 0,02, Amlodipin 0,01|
+|4229509|;|Miconazolnitrat 0,02, Fluprednidenacetat 0,001/g|
+|4230234|;|Ivacaftor 0,125, Lumacaftor 0,2|
+|4450065|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4450071|;|Levodopa 0,05, Carbidopa 0,0125, Entacapon 0,2|
+|4450088|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4450094|;|Levodopa 0,1, Carbidopa 0,025, Entacapon 0,2|
+|4450102|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4450119|;|Levodopa 0,15, Carbidopa 0,0375, Entacapon 0,2|
+|4450125|;|Levodopa 0,2, Carbidopa 0,05, Entacapon 0,2|
+|4450131|;|Levodopa 0,2, Carbidopa 0,05, Entacapon 0,2|
+|4451076|;|Gerinnungsfaktor IX|
+|4451082|;|Gerinnungsfaktor IX|
+|4451099|;|Gerinnungsfaktor IX|
+|4451107|;|Gerinnungsfaktor IX|
+|4451113|;|Gerinnungsfaktor IX|
+|4452176|;|Elbasvir 0,05, Grazoprevir 0,1|
+|4452182|;|Sulfametrol 0,8, Trimethoprim 0,16|
+|4452199|;|Sulfametrol 0,8, Trimethoprim 0,16|
+|4453164|;|Calcipotriol 0,00005, Betamethason 0,0005/g|
+|4454407|;|Atorvastatin 0,02, Acetylsalicylsäure 0,1, Ramipril 0,005|
+|4454413|;|Atorvastatin 0,02, Acetylsalicylsäure 0,1, Ramipril 0,01|
+|4454442|;|Telmisartan 0,04, Hydrochlorothiazid 0,0125|
+|4454459|;|Telmisartan 0,08, Hydrochlorothiazid 0,0125|
+|4454465|;|Telmisartan 0,08, Hydrochlorothiazid 0,025|
+|4454525|;|Emtricitabin 0,2, Tenofovir Alafenamid 0,025, Rilpivirin 0,025|
+|4454637|;|Simvastatin 0,01, Ezetimib 0,01|
+|4454643|;|Simvastatin 0,02, Ezetimib 0,01|
+|4454815|;|Sildenafil 0,02|
+|4455973|;|Sofosbuvir 0,4, Velpatasvir 0,1|
+|4456004|;|Saxagliptin 0,005, Dapagliflozin 0,01|
+|4456398|;|Candesartan 0,008, Amlodipin 0,005|
+|4456406|;|Candesartan 0,016, Amlodipin 0,005|
+|4456412|;|Candesartan 0,016, Amlodipin 0,01|
+|4458121|;|Betamethason 0,001, Fusidinsäure 0,02/g|
+|4458865|;|Lamivudin 0,3, Abacavir 0,6|
+|4460483|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245|
+|4460827|;|Valsartan 0,08, Amlodipin 0,005|
+|4460833|;|Valsartan 0,16, Amlodipin 0,005|
+|4460856|;|Valsartan 0,16, Amlodipin 0,01|
+|4460951|;|Sildenafil 0,02|
+|4462068|;|Sildenafil 0,02|
+|4462683|;|Simvastatin 0,01, Ezetimib 0,01|
+|4462714|;|Simvastatin 0,02, Ezetimib 0,01|
+|4463062|;|Gerinnungsfaktor VIII|
+|4463079|;|Gerinnungsfaktor VIII|
+|4463085|;|Gerinnungsfaktor VIII|
+|4463091|;|Gerinnungsfaktor VIII|
+|4463116|;|Gerinnungsfaktor VIII|
+|4463122|;|Gerinnungsfaktor VIII|
+|4463211|;|Ramipril 0,0025, Hydrochlorothiazid 0,0125|
+|4463228|;|Ramipril 0,005, Hydrochlorothiazid 0,025|
+|4463984|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4463990|;|Amoxicillin 0,875, Clavulansäure 0,125|
+|4464156|;|Valsartan 0,08, Amlodipin 0,005|
+|4464162|;|Valsartan 0,16, Amlodipin 0,005|
+|4464179|;|Valsartan 0,16, Amlodipin 0,01|
+|4464191|;|Sildenafil 0,02|
+|4465339|;|Sildenafil 0,02|
+|4465658|;|Candesartan 0,008, Amlodipin 0,005|
+|4465664|;|Candesartan 0,008, Amlodipin 0,01|
+|4465670|;|Candesartan 0,016, Amlodipin 0,005|
+|4465687|;|Candesartan 0,016, Amlodipin 0,01|
+|4466818|;|Lamivudin 0,3, Abacavir 0,6|
+|4466936|;|Sildenafil 0,02|
+|4468042|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245|
+|4468786|;|Valsartan 0,08, Amlodipin 0,005|
+|4468800|;|Valsartan 0,16, Amlodipin 0,01|
+|4468970|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245|
+|4469308|;|Formoterolfumarat Dihydrat 0,000005, Glycopyrronium 0,000009, Beclometasondipropionat 0,000087/Hub|
+|4469515|;|Enoxaparin Na 0,02 entspr. 2.000 IE anti-Faktor Xa|
+|4469521|;|Enoxaparin Na 0,04 entspr. 4.000 IE anti-Faktor Xa|
+|4469538|;|Enoxaparin Na 0,04 entspr. 4.000 IE anti-Faktor Xa|
+|4469567|;|Enoxaparin Na 0,06 entspr. 6.000 IE anti-Faktor Xa|
+|4469573|;|Enoxaparin Na 0,08 entspr. 8.000 IE anti-Faktor Xa|
+|4469596|;|Enoxaparin Na 0,08 entspr. 8.000 IE anti-Faktor Xa|
+|4469604|;|Enoxaparin Na 0,1 entspr. 10.000 IE anti-Faktor Xa|
+|4469610|;|Enoxaparin Na 0,1 entspr. 10.000 IE anti-Faktor Xa|
+|4471630|;|Gerinnungsfaktor IX|
+|4471647|;|Gerinnungsfaktor IX|
+|4471653|;|Gerinnungsfaktor IX|
+|4472173|;|Valsartan 0,026, Sacubitril 0,024|
+|4472196|;|Valsartan 0,051, Sacubitril 0,049|
+|4472204|;|Valsartan 0,051, Sacubitril 0,049|
+|4472210|;|Valsartan 0,103, Sacubitril 0,097|
+|4473540|;|Valsartan 0,08, Amlodipin 0,005|
+|4473557|;|Valsartan 0,16, Amlodipin 0,005|
+|4473563|;|Valsartan 0,16, Amlodipin 0,01|
+|4473586|;|Valsartan 0,08, Amlodipin 0,005|
+|4473592|;|Valsartan 0,16, Amlodipin 0,005|
+|4473600|;|Valsartan 0,16, Amlodipin 0,01|
+|4474605|;|Simvastatin 0,01, Ezetimib 0,01|
+|4475042|;|Amoxicillin 0,08, Clavulansäure 0,0114/ml|
+|4475059|;|Amoxicillin 0,08, Clavulansäure 0,0114/ml|
+|4475875|;|Vilanterol 0,000022, Umeclidinium 0,000055, Fluticasonfuroat 0,000092/Hub|
+|4475964|;|Valsartan 0,08, Amlodipin 0,005|
+|4475970|;|Valsartan 0,16, Amlodipin 0,005|
+|4475987|;|Valsartan 0,16, Amlodipin 0,01|
+|4476248|;|Diclofenac 0,075, Omeprazol 0,02|
+|4476254|;|Diclofenac 0,075, Omeprazol 0,02|
+|4476515|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245, Efavirenz 0,6|
+|4477207|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245, Efavirenz 0,6|
+|4477963|;|Valsartan 0,08, Amlodipin 0,005|
+|4477986|;|Valsartan 0,16, Amlodipin 0,005|
+|4477992|;|Valsartan 0,16, Amlodipin 0,01|
+|4478170|;|Simvastatin 0,01, Ezetimib 0,01|
+|4478187|;|Simvastatin 0,02, Ezetimib 0,01|
+|4478193|;|Simvastatin 0,04, Ezetimib 0,01|
+|4478201|;|Simvastatin 0,08, Ezetimib 0,01|
+|4478589|;|Olodaterol 0,0000025, Tiotropium 0,0000025/Hub|
+|4478603|;|Tiotropium 0,0000025/Hub|
+|4479732|;|Ivacaftor 0,125, Lumacaftor 0,1|
+|4481350|;|Metformin 1,0, Ertugliflozin 0,0075|
+|4481367|;|Metformin 1,0, Ertugliflozin 0,0025|
+|4482183|;|Enoxaparin Na 0,02 entspr. 2.000 IE anti-Faktor Xa|
+|4482220|;|Enoxaparin Na 0,04 entspr. 4.000 IE anti-Faktor Xa|
+|4482237|;|Enoxaparin Na 0,04 entspr. 4.000 IE anti-Faktor Xa|
+|4482289|;|Enoxaparin Na 0,06 entspr. 6.000 IE anti-Faktor Xa|
+|4482295|;|Enoxaparin Na 0,06 entspr. 6.000 IE anti-Faktor Xa|
+|4482355|;|Enoxaparin Na 0,08 entspr. 8.000 IE anti-Faktor Xa|
+|4482361|;|Enoxaparin Na 0,08 entspr. 8.000 IE anti-Faktor Xa|
+|4482415|;|Enoxaparin Na 0,1 entspr. 10.000 IE anti-Faktor Xa|
+|4482467|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245, Efavirenz 0,6|
+|4951212|;|Ramipril 0,005, Amlodipin 0,005|
+|4951815|;|Emtricitabin 0,2, Tenofovir Alafenamid 0,025, Bictegravir 0,05|
+|4952080|;|Tamsulosin 0,0004, Dutasterid 0,0005|
+|4952559|;|Enoxaparin Na 0,1 entspr. 10.000 IE anti-Faktor Xa|
+|4953530|;|Buprenorphin 0,002, Naloxon 0,0005|
+|4953547|;|Buprenorphin 0,002, Naloxon 0,0005|
+|4953553|;|Buprenorphin 0,004, Naloxon 0,001|
+|4953576|;|Buprenorphin 0,004, Naloxon 0,001|
+|4953582|;|Buprenorphin 0,008, Naloxon 0,002|
+|4953599|;|Buprenorphin 0,008, Naloxon 0,002|
+|4953783|;|Rosuvastatin 0,005, Ezetimib 0,01|
+|4953808|;|Rosuvastatin 0,01, Ezetimib 0,01|
+|4953814|;|Rosuvastatin 0,02, Ezetimib 0,01|
+|4955776|;|Simvastatin 0,02, Ezetimib 0,01|
+|4955782|;|Simvastatin 0,04, Ezetimib 0,01|
+|4955842|;|Tamsulosin 0,0004, Dutasterid 0,0005|
+|4956474|;|Ivacaftor 0,15, Tezacaftor 0,1|
+|4956623|;|Lamivudin 0,3, Tenofovir Disoproxil 0,245, Doravirin 0,1|
+|4956712|;|Simvastatin 0,01, Ezetimib 0,01|
+|4956729|;|Simvastatin 0,02, Ezetimib 0,01|
+|4956735|;|Simvastatin 0,04, Ezetimib 0,01|
+|4957321|;|Valsartan 0,16, Amlodipin 0,005|
+|4957338|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4957344|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4957350|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,0125|
+|4957367|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4957373|;|Valsartan 0,32, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4957798|;|Tiotropium 0,000018/Hub|
+|4960470|;|Ivacaftor 0,125, Lumacaftor 0,1|
+|4960487|;|Ivacaftor 0,188, Lumacaftor 0,15|
+|4960837|;|Brigatinib 0,09 (7 Filmtabl.); Brigatinib 0,18 (21 Filmtabl,)|
+|4961050|;|Carbidopa 0,025, Levodopa 0,1|
+|4961067|;|Carbidopa 0,025, Levodopa 0,25|
+|4961305|;|Ramipril 0,005, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4961311|;|Ramipril 0,005, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4961328|;|Ramipril 0,01, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4961334|;|Ramipril 0,01, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4962463|;|Ramipril 0,005, Amlodipin 0,005|
+|4962486|;|Ramipril 0,01, Amlodipin 0,005|
+|4963669|;|Lamivudin 0,3, Dolutegravir 0,05|
+|4963988|;|Tadalafil 0,02|
+|4964019|;|Valsartan 0,08, Amlodipin 0,005|
+|4964025|;|Valsartan 0,16, Amlodipin 0,005|
+|4964031|;|Valsartan 0,16, Amlodipin 0,01|
+|4964574|;|Ragweed 12 SQ|
+|4965059|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4965065|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,0125|
+|4965071|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4965088|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4965332|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4965349|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,0125|
+|4965355|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4965361|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4965591|;|Lamivudin 0,3, Abacavir 0,6|
+|4966082|;|Gerinnungsfaktor VIII|
+|4966099|;|Gerinnungsfaktor VIII|
+|4966107|;|Gerinnungsfaktor VIII|
+|4966113|;|Gerinnungsfaktor VIII|
+|4966136|;|Gerinnungsfaktor VIII|
+|4966685|;|Birkenpollen 12 SQ|
+|4967207|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|4967561|;|Ciprofloxacin 0,003, Fluocinolonacetonid 0,00025/ml|
+|4967609|;|Rosuvastatin 0,005, Ezetimib 0,01|
+|4967615|;|Rosuvastatin 0,01, Ezetimib 0,01|
+|4967621|;|Rosuvastatin 0,02, Ezetimib 0,01|
+|4967638|;|Rosuvastatin 0,04, Ezetimib 0,01|
+|4968112|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4968129|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4968135|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,0125|
+|4968141|;|Valsartan 0,16, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4968661|;|Emtricitabin 0,2, Tenofovir Disoproxil 0,245|
+|4968862|;|Rosuvastatin 0,02, Ezetimib 0,01|
+|4968879|;|Rosuvastatin 0,01, Ezetimib 0,01|
+|4969040|;|Simvastatin 0,01, Ezetimib 0,01|
+|4969057|;|Simvastatin 0,02, Ezetimib 0,01|
+|4969063|;|Simvastatin 0,08, Ezetimib 0,01|
+|4969086|;|Simvastatin 0,04, Ezetimib 0,01|
+|4969181|;|Rosuvastatin 0,005, Ezetimib 0,01|
+|4969198|;|Rosuvastatin 0,01, Ezetimib 0,01|
+|4969206|;|Rosuvastatin 0,02, Ezetimib 0,01|
+|4969212|;|Rosuvastatin 0,04, Ezetimib 0,01|
+|4969689|;|Flavonoidfraktion 0,5|
+|4971203|;|Thiamin 0,1, Pyridoxin 0,2, Cyanocobalamin 0,0002|
+|4971226|;|Thiamin 0,1, Pyridoxin 0,2, Cyanocobalamin 0,0002|
+|4972800|;|Indacaterol 0,000114, Glycopyrronium 0,000046, Mometasonfuroat 0,000136/Hub|
+|4972852|;|Indacaterol 0,000114, Glycopyrronium 0,000046, Mometasonfuroat 0,000136/Hub|
+|4972875|;|Indacaterol 0,000114, Glycopyrronium 0,000046, Mometasonfuroat 0,000136/Hub|
+|4972881|;|Indacaterol 0,000125, Mometasonfuroat 0,0000625/Hub|
+|4972898|;|Indacaterol 0,000125, Mometasonfuroat 0,0001275/Hub|
+|4972906|;|Indacaterol 0,000125, Mometasonfuroat 0,000260/Hub|
+|4972941|;|Indacaterol 0,000125, Mometasonfuroat 0,0000625/Hub|
+|4972958|;|Indacaterol 0,000125, Mometasonfuroat 0,0001275/Hub|
+|4972964|;|Indacaterol 0,000125, Mometasonfuroat 0,000260/Hub|
+|4973863|;|Candesartan 0,008, Amlodipin 0,005|
+|4973886|;|Candesartan 0,016, Amlodipin 0,005|
+|4973892|;|Candesartan 0,016, Amlodipin 0,01|
+|4974130|;|Ivacaftor 0,075, Tezacaftor 0,05, Elexacaftor 0,1|
+|4974638|;|Tamsulosin 0,0004, Dutasterid 0,0005|
+|4975922|;|Lisinopril 0,02, Hydrochlorothiazid 0,025|
+|4976318|;|Ramipril 0,005, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4976324|;|Ramipril 0,005, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4976330|;|Ramipril 0,01, Amlodipin 0,005, Hydrochlorothiazid 0,025|
+|4976347|;|Ramipril 0,01, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4976577|;|Lisinopril 0,02, Hydrochlorothiazid 0,0125|
+|4976583|;|Lisinopril 0,01, Hydrochlorothiazid 0,0125|
+|4977335|;|Ozanimod 0,00023 (4 Hartkaps.); Ozanimod 0,00046 (3 Hartkaps.)|
+|4977743|;|Tadalafil 0,02|
+|4978429|;|Bempedoinsäure 0,18, Ezetimib 0,01|
+|4978435|;|Bempedoinsäure 0,18, Ezetimib 0,01|
+|4979883|;|Ivacaftor 0,075, Tezacaftor 0,05|
+|4981093|;|Rosuvastatin 0,005, Acetylsalicylsäure 0,1|
+|4981101|;|Rosuvastatin 0,01, Acetylsalicylsäure 0,1|
+|4981118|;|Rosuvastatin 0,02, Acetylsalicylsäure 0,1|
+|4981615|;|Candesartan 0,008, Amlodipin 0,005|
+|4981621|;|Candesartan 0,008, Amlodipin 0,01|
+|4981638|;|Candesartan 0,016, Amlodipin 0,005|
+|4981644|;|Candesartan 0,016, Amlodipin 0,01|
+|4981650|;|Telmisartan 0,08, Hydrochlorothiazid 0,0125|
+|4981667|;|Telmisartan 0,08, Hydrochlorothiazid 0,025|
+|4981963|;|Valsartan 0,16, Amlodipin 0,005, Hydrochlorothiazid 0,0125|
+|4981986|;|Valsartan 0,32, Amlodipin 0,01, Hydrochlorothiazid 0,025|
+|4982744|;|Atorvastatin 0,01, Ezetimib 0,01|
+|4982750|;|Atorvastatin 0,02, Ezetimib 0,01|
+|4982767|;|Atorvastatin 0,04, Ezetimib 0,01|
+|4982773|;|Atorvastatin 0,08, Ezetimib 0,01|
+|4983583|;|Timolol 0,005, Latanoprost 0,00005/ml|
+|4984789|;|Salmeterol 0,00005, Fluticasonpropionat 0,0001/Hub|
+|4984795|;|Salmeterol 0,00005, Fluticasonpropionat 0,00025/Hub|
+|4984803|;|Salmeterol 0,00005, Fluticasonpropionat 0,0005/Hub|
+|4987641|;|Gerinnungsfaktor VIII|
+|4987658|;|Gerinnungsfaktor VIII|
+|4990301|;|Ponesimod 0,002 (2 Filmtabl.); Ponesimod 0,003 (2 Filmtabl.); Ponesimod 0,004 (2 Filmtabl.); Ponesimod 0,005 (1 Filmtabl.); Ponesimod 0,006 (1 Filmtabl.); Ponesimod 0,007 (1 Filmtabl.); Ponesimod 0,008 (1 Filmtabl.); Ponesimod 0,009 (1 Filmtabl.); Ponesimod 0,01 (3 Filmtabl.)|
+|5500078|;|Cenobamat 0,0125 (14 Filmtabl.); Cenobamat 0,025 (14 Filmtabl.)|
+|5501497|;|Atorvastatin 0,01, Ezetimib 0,01|
+|5501505|;|Atorvastatin 0,02, Ezetimib 0,01|
+|5501511|;|Atorvastatin 0,04, Ezetimib 0,01|
+|5501528|;|Atorvastatin 0,08, Ezetimib 0,01|
+|5503970|;|Betamethason 0,0005, Salicylsäure 0,02/ml|
+|5504679|;|Hausstaubmilben 100 IR (3 Tabl.); Hausstaubmilben 300 IR (28 Tabl.)|
+|5505727|;|Ivacaftor 0,0375, Tezacaftor 0,025, Elexacaftor 0,05|

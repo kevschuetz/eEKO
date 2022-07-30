@@ -1,0 +1,19 @@
+
+J
+java:S3740N"/Provide the parametrized type for this generic.(Äý‰òþÿÿÿÿ
+|
+java:S1488I"fImmediately return this expression instead of assigning it to the temporary variable "zipInputStream".(«Åö’
+R
+java:S26296"7Use the built-in formatting to construct this argument.(ë„Üèÿÿÿÿÿ
+i
+java:S2095b"NUse try-with-resources or close this "FileOutputStream" in a "finally" clause.(Ÿ½ëàþÿÿÿÿ
+k
+java:S36554"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ÜˆÕÁùÿÿÿÿ
+\
+java:S3457&"AFormat specifiers should be used instead of string concatenation.(î÷ Öþÿÿÿÿ
+\
+java:S34576"AFormat specifiers should be used instead of string concatenation.(ë„Üèÿÿÿÿÿ
+i
+java:S4042A"NUse "java.nio.file.Files#delete" here for better messages on error conditions.(­„õ¹üÿÿÿÿ
+m
+java:S3776M"RRefactor this method to reduce its Cognitive Complexity from 20 to the 15 allowed.(ÍÛŽ¿þÿÿÿÿ

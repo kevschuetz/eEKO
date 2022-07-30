@@ -1,0 +1,62 @@
+@startuml
+abstract class org.example.eko.service.parsing.medikament.MedikamentRule {
+- int position
+- int length
+}
+class org.example.eko.service.ParsingService {
+- {static} Logger logger
+- MedikamentParser medikamentParser
++ List<Medikament> parseMedikamente(String)
+}
+class org.example.eko.service.DatasetFetchingScheduler {
+- Runnable fetchDataset()
+}
+class org.example.eko.model.entities.Medikament {
+- Long id
+- String pharmaNummer
+- String registerNummer
+- String name
++ Long getId()
++ String getPharmaNummer()
++ void setPharmaNummer(String)
++ String getRegisterNummer()
++ void setRegisterNummer(String)
++ String getName()
++ void setName(String)
+}
+interface org.example.eko.model.repositories.MedikamentRepository {
+}
+class org.example.eko.service.DataFetchingService {
+- {static} Logger logger
++ Map<String,String> getFilesFromZipAsString(String,int,int)
+- boolean deleteDirectory(File)
+- ZipInputStream downloadZipInputStream(String)
+- Map<String,File> extractFilesFromZipIn(ZipInputStream)
+- String fileToString(File,String)
+}
+class org.example.eko.service.parsing.medikament.MedikamentParser {
+- Logger logger
+- int pharmaNummerStart
+- int pharmaNummerLength
+- int registerNummerStart
+- int registerNummerLength
+- int nameStart
+- int nameLength
++ MedikamentRepository medikamentRepository
++ List<Medikament> parseMedikamente(String)
+- Medikament parseMedikament(String)
+- String getString(String,int,int)
+}
+class org.example.eko.EKOApplication {
++ {static} void main(String[])
+}
+class org.example.eko.rest.DataResource {
+- {static} Logger logger
+- DataFetchingService dataFetchingService
+- ParsingService parsingService
++ ResponseEntity<Void> initImport()
+}
+
+
+org.springframework.data.jpa.repository.JpaRepository <|-- org.example.eko.model.repositories.MedikamentRepository
+@enduml

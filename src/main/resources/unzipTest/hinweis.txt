@@ -1,0 +1,602 @@
+|0003599|;|nicht lieferbar|
+|0020385|;|nicht lieferbar|
+|0021841|;|Eisensulfat 0,285 (entspr. 0,105 Fe II)|
+|0024940|;|nicht lieferbar|
+|0026519|;|nicht lieferbar|
+|0030389|;|nicht lieferbar|
+|0035955|;|nicht lieferbar|
+|0038037|;|nicht lieferbar|
+|0038824|;|Aufklärung der PatienInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|0038876|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|0038882|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose / nicht lieferbar|
+|0046781|;|nicht lieferbar|
+|0063816|;|nicht lieferbar|
+|0066476|;|bei Corp. luteum-Insuffizienz, anovulatorischem Zyklus; nicht zur Vorbereitung der In-vitro-Fertilisation|
+|0075914|;|Eisensulfat 0,26 (entspr. 0,08 Fe II)|
+|0101296|;|nicht lieferbar|
+|0122281|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|0169644|;|Kaliumchlorid 0,6 entspr. 8 mval K+|
+|0202330|;|nicht lieferbar|
+|0452127|;|nicht lieferbar|
+|0452216|;|nicht lieferbar|
+|0455404|;|nicht lieferbar|
+|0486356|;|nicht lieferbar|
+|0489952|;|nicht lieferbar|
+|0507897|;|nicht lieferbar|
+|0520188|;|nicht lieferbar|
+|0522709|;|nicht lieferbar|
+|0530436|;|Eisengluconat 0,695 (entspr. 0,08 Fe II), Ascorbinsäure 0,1|
+|0533245|;|nicht lieferbar|
+|0533280|;|nicht lieferbar|
+|0547299|;|Eisenfumarat 0,304 (entspr. 0,1 Fe II), Ascorbinsäure 0,02|
+|0593804|;|nicht lieferbar|
+|0614601|;|nicht lieferbar|
+|0658509|;|nicht lieferbar|
+|0678943|;|nicht lieferbar|
+|0679345|;|nicht lieferbar|
+|0742345|;|Calcium folinat 0,019 entspr. Folinsäure 0,015|
+|0752817|;|für die Phlebographie und Urographie|
+|0760917|;|für die Urographie|
+|0810176|;|Morphinsulfat-pentahydrat 0,01 entspr. 0,0075 Morphin|
+|0851270|;|für die Urographie|
+|0981417|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|0981423|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|1040800|;|Morphinsulfat-pentahydrat 0,06 entspr. 0,045 Morphin|
+|1040817|;|Morphinsulfat-pentahydrat 0,06 entspr. 0,045 Morphin|
+|1040823|;|Morphinsulfat-pentahydrat 0,1 entspr. 0,075 Morphin|
+|1040846|;|Morphinsulfat-pentahydrat 0,1 entspr. 0,075 Morphin|
+|1114065|;|nicht lieferbar|
+|1178421|;|nicht lieferbar|
+|1181222|;|Kaliumchlorid 0,6 entspr. 8 mval K+|
+|1230417|;|nicht lieferbar|
+|1232333|;|Morphinsulfat-pentahydrat 0,01 entspr. 0,0075 Morphin|
+|1232379|;|nicht lieferbar|
+|1240829|;|Morphinsulfat-pentahydrat 0,03 entspr. 0,0225 Morphin|
+|1240835|;|Morphinsulfat-pentahydrat 0,03 entspr. 0,0225 Morphin|
+|1242722|;|Dihydrocodein bitartrat 0,06 entspr. 0,04 Dihydrocodein|
+|1242739|;|Dihydrocodein bitartrat 0,06 entspr. 0,04 Dihydrocodein / nicht lieferbar|
+|1242745|;|Dihydrocodein bitartrat 0,09 entspr. 0,06 Dihydrocodein|
+|1242751|;|Dihydrocodein bitartrat 0,09 entspr. 0,06 Dihydrocodein / nicht lieferbar|
+|1242768|;|Dihydrocodein bitartrat 0,12 entspr. 0,08 Dihydrocodein / nicht lieferbar|
+|1242774|;|Dihydrocodein bitartrat 0,12 entspr. 0,08 Dihydrocodein / nicht lieferbar|
+|1252206|;|nicht lieferbar|
+|1252229|;|nicht lieferbar|
+|1253223|;|nicht lieferbar|
+|1253246|;|nicht lieferbar|
+|1253252|;|nicht lieferbar|
+|1253370|;|nicht lieferbar|
+|1254866|;|nicht lieferbar|
+|1255699|;|Morphin HCl 0,01 entspr. 0,0075 Morphin|
+|1256173|;|nicht lieferbar|
+|1256196|;|nicht lieferbar|
+|1256204|;|nicht lieferbar|
+|1256546|;|nicht lieferbar|
+|1260111|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|1269968|;|nicht lieferbar|
+|1273119|;|bei Dermatomykosen|
+|1273510|;|Naproxen Natr. 0,55 entspr. Naproxen 0,5|
+|1273711|;|Morphin HCl 0,01 entspr. 0,0075 Morphin|
+|1273728|;|Morphin HCl 0,01 entspr. 0,0075 Morphin|
+|1273734|;|Morphin HCl 0,03 entspr. 0,0225 Morphin|
+|1273740|;|Morphin HCl 0,03 entspr. 0,0225 Morphin|
+|1273757|;|Morphin HCl 0,06 entspr. 0,045 Morphin|
+|1273763|;|Morphin HCl 0,06 entspr. 0,045 Morphin|
+|1273786|;|Morphin HCl 0,1 entspr. 0,075 Morphin|
+|1273792|;|Morphin HCl 0,1 entspr. 0,075 Morphin|
+|1273800|;|Morphin HCl 0,2 entspr. 0,15 Morphin|
+|1273817|;|Morphin HCl 0,2 entspr. 0,15 Morphin|
+|1274857|;|nicht lieferbar|
+|1276017|;|nicht lieferbar|
+|1279122|;|Dornase alfa (Desoxyribonuclease) 2.500 E entspr. 0,0025|
+|1280272|;|nicht lieferbar|
+|1282489|;|Morphinsulfat-pentahydrat 0,01 entspr. 0,0075 Morphin|
+|1282495|;|Morphinsulfat-pentahydrat 0,01 entspr. 0,0075 Morphin|
+|1282503|;|Morphinsulfat-pentahydrat 0,02 entspr. 0,015 Morphin|
+|1282526|;|Morphinsulfat-pentahydrat 0,02 entspr. 0,015 Morphin|
+|1283017|;|nicht lieferbar|
+|1284100|;|Naproxen Natr. 0,55 entspr. Naproxen 0,5|
+|1285861|;|nicht lieferbar|
+|1286412|;|nicht lieferbar|
+|1288440|;|nicht lieferbar|
+|1288457|;|nicht lieferbar|
+|1296994|;|zur medikamentösen Unterstützung der Entzugsbehandlung bei Alkoholkranken|
+|1300483|;|nicht lieferbar|
+|1301531|;|nicht lieferbar|
+|1303725|;|nicht lieferbar|
+|1303754|;|nicht lieferbar|
+|1304937|;|nicht lieferbar|
+|1305138|;|bei Onychomykosen|
+|1307315|;|bei Dermatomykosen|
+|1307692|;|nicht lieferbar|
+|1309828|;|nicht lieferbar|
+|1310228|;|nicht lieferbar|
+|1310240|;|nicht lieferbar|
+|1310659|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose / nicht lieferbar|
+|1312581|;|zur medikamentösen Unterstützung der Entzugsbehandlung bei Alkoholkranken|
+|1312807|;|Morphin HCl 0,1 entspr. 0,075 Morphin|
+|1312813|;|Morphin HCl 0,2 entspr. 0,15 Morphin|
+|1313712|;|nicht lieferbar|
+|1314025|;|bei Therapieresistenz bzw. Problemkeimen|
+|1315527|;|nicht lieferbar|
+|1318916|;|nicht lieferbar|
+|1318951|;|nicht lieferbar|
+|1320178|;|Epoetin beta 0,000083 entspr. 10.000 IE|
+|1320830|;|nicht lieferbar|
+|1321798|;|Morphinsulfat-pentahydrat 0,03 entspr. 0,0225 Morphin|
+|1321806|;|Morphinsulfat-pentahydrat 0,03 entspr. 0,0225 Morphin, nicht zur Initialtherapie|
+|1321812|;|Morphinsulfat-pentahydrat 0,06 entspr. 0,045 Morphin|
+|1321829|;|Morphinsulfat-pentahydrat 0,06 entspr. 0,045 Morphin, nicht zur Initialtherapie|
+|1321835|;|Morphinsulfat-pentahydrat 0,12 entspr. 0,09 Morphin|
+|1321841|;|Morphinsulfat-pentahydrat 0,12 entspr. 0,09 Morphin, nicht zur Initialtherapie|
+|1321858|;|Morphinsulfat-pentahydrat 0,2 entspr. 0,15 Morphin|
+|1321864|;|Morphinsulfat-pentahydrat 0,2 entspr. 0,15 Morphin, nicht zur Initialtherapie|
+|1324704|;|nicht lieferbar|
+|1324940|;|nicht lieferbar|
+|1324957|;|nicht lieferbar|
+|1325247|;|Morphinsulfat-pentahydrat 0,12 entspr. 0,09 Morphin|
+|1325253|;|Morphinsulfat-pentahydrat 0,2 entspr. 0,15 Morphin|
+|1325804|;|nicht lieferbar|
+|1326850|;|Mycophenolatmofetil 0,2 entspr. Mycophenolsäure 0,144|
+|1329067|;|nicht lieferbar|
+|1329943|;|nicht zur Initialtherapie|
+|1329989|;|nicht zur Initialtherapie|
+|1329995|;|nicht zur Initialtherapie|
+|1330001|;|nicht zur Initialtherapie|
+|1333399|;|nicht lieferbar|
+|1335872|;|nicht lieferbar|
+|1335889|;|nicht lieferbar|
+|1336297|;|Morphin HCl 0,005/ml entspr. 0,0038/ml Morphin|
+|1339166|;|nicht lieferbar|
+|1340519|;|nicht lieferbar|
+|1340525|;|nicht lieferbar|
+|1340531|;|nicht lieferbar|
+|1341967|;|nicht lieferbar|
+|1342659|;|nicht lieferbar|
+|1342688|;|nicht lieferbar|
+|1342694|;|nicht zur Initialtherapie / nicht lieferbar|
+|1343529|;|für die Phlebographie und Urographie|
+|1343558|;|für die Phlebographie und Urographie|
+|1344049|;|Morphin HCl trihydrat 0,2 entspr. 0,15 Morphin|
+|1344055|;|Morphin HCl trihydrat 0,2 entspr. 0,15 Morphin|
+|1344440|;|nicht lieferbar|
+|1344492|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|1347390|;|nicht lieferbar|
+|1347409|;|nicht lieferbar|
+|1347415|;|nicht zur Initialtherapie / nicht lieferbar|
+|1347444|;|nicht zur Initialtherapie / nicht lieferbar|
+|1347473|;|nicht zur Initialtherapie / nicht lieferbar|
+|1457109|;|Morphinsulfat-pentahydrat 0,2 entspr. 0,15 Morphin|
+|1457115|;|Morphinsulfat-pentahydrat 0,2 entspr. 0,15 Morphin|
+|1520434|;|nicht lieferbar|
+|1646827|;|Epoetin alfa 0,0000336 entspr. 4.000 IE|
+|1646833|;|Epoetin alfa 0,000084 entspr. 10.000 IE|
+|1708824|;|bei Onychomykosen|
+|1728301|;|Epoetin alfa 0,0000084 entspr. 1.000 IE|
+|1728318|;|Epoetin alfa 0,0000168 entspr. 2.000 IE|
+|2421964|;|nicht zur Initialtherapie|
+|2423549|;|nicht lieferbar|
+|2423590|;|Epoetin alfa 0,0000504 entspr. 6.000 IE|
+|2424218|;|für die Phlebographie und Urographie|
+|2426571|;|Morphinsulfat-pentahydrat 0,12 entspr. 0,09 Morphin|
+|2426588|;|Morphinsulfat-pentahydrat 0,2 entspr. 0,15 Morphin|
+|2427062|;|nicht lieferbar|
+|2429196|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2429204|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2430213|;|nicht lieferbar|
+|2431371|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2431483|;|nicht lieferbar|
+|2432608|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2432614|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2433571|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2433588|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2434139|;|nicht zur Initialtherapie|
+|2434145|;|nicht zur Initialtherapie|
+|2434808|;|bei Vaginalmykosen|
+|2434814|;|bei Dermatomykosen|
+|2434820|;|bei Onychomykosen|
+|2436434|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2437126|;|nicht lieferbar|
+|2437310|;|nicht lieferbar|
+|2437391|;|nicht lieferbar|
+|2437534|;|nur in Kombination mit Standardtherapie|
+|2437540|;|nur in Kombination mit Standardtherapie|
+|2437830|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2437847|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2438798|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2438806|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2439042|;|nicht lieferbar|
+|2439510|;|nicht lieferbar|
+|2441866|;|Isotretinoin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 4 Wochen nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|2441872|;|Isotretinoin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 4 Wochen nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|2442392|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2442400|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|2442788|;|Abg. gem. mit Calcium Vit. D3 "Ceutics" Kautabl. (Nahrungsergänzungsmittel)|
+|2443121|;|nicht lieferbar|
+|2446585|;|bei Dermatomykosen|
+|2446591|;|bei Onychomykosen|
+|2448006|;|bei Vaginalmykosen / nicht lieferbar|
+|2448012|;|bei Dermatomykosen|
+|2448029|;|bei Onychomykosen / nicht lieferbar|
+|2448673|;|Epoetin beta 0,000249 entspr. 30.000 IE|
+|2449856|;|nicht lieferbar|
+|2450397|;|nicht lieferbar|
+|2450405|;|nicht lieferbar|
+|2450517|;|Morphin HCl trihydrat 0,1 entspr. 0,075 Morphin|
+|2450523|;|Morphin HCl trihydrat 0,1 entspr. 0,075 Morphin|
+|2450546|;|Morphin HCl trihydrat 0,3 entspr. 0,228 Morphin|
+|2450552|;|Morphin HCl trihydrat 0,3 entspr. 0,228 Morphin|
+|2453094|;|Kombi-Kalz Vit. D3 Kautabl. enthalten Calciumcarbonat 1,25 (entspr. Ca++ 0,5), Colecalciferol 400 IE / nicht lieferbar|
+|2454521|;|nicht lieferbar|
+|2455667|;|bei Vaginalmykosen|
+|2455673|;|bei Onychomykosen|
+|2455696|;|bei Dermatomykosen oder oralen Candidosen|
+|2458447|;|bei Dermatomykosen|
+|2458453|;|bei Onychomykosen|
+|2460088|;|Dihydrocodein bitartrat 0,06 entspr. 0,04 Dihydrocodein|
+|2460094|;|Dihydrocodein bitartrat 0,06 entspr. 0,04 Dihydrocodein|
+|2460102|;|Dihydrocodein bitartrat 0,06 entspr. 0,04 Dihydrocodein, nicht zur Initaltherapie|
+|2460119|;|Dihydrocodein bitartrat 0,09 entspr. 0,06 Dihydrocodein|
+|2460125|;|Dihydrocodein bitartrat 0,09 entspr. 0,06 Dihydrocodein|
+|2460131|;|Dihydrocodein bitartrat 0,09 entspr. 0,06 Dihydrocodein, nicht zur Initialtherapie|
+|2460148|;|Dihydrocodein bitartrat 0,12 entspr. 0,08 Dihydrocodein|
+|2460154|;|Dihydrocodein bitartrat 0,12 entspr. 0,08 Dihydrocodein|
+|2460160|;|Dihydrocodein bitartrat 0,12 entspr. 0,08 Dihydrocodein, nicht zur Initialtherapie|
+|2461343|;|nicht lieferbar|
+|2462064|;|nicht lieferbar|
+|2464577|;|nicht lieferbar|
+|2465938|;|Metoprololsuccinat 0,1425 entspr. Metoprololtartrat 0,15|
+|2466429|;|nicht lieferbar|
+|2466441|;|nicht lieferbar|
+|2466470|;|nicht lieferbar|
+|2467653|;|Metoprololsuccinat 0,02375 entspr. Metoprololtartrat 0,025|
+|2467676|;|Metoprololsuccinat 0,02375 entspr. Metoprololtartrat 0,025|
+|2467682|;|Metoprololsuccinat 0,0475 entspr. Metoprololtartrat 0,05|
+|2467699|;|Metoprololsuccinat 0,0475 entspr. Metoprololtartrat 0,05|
+|2467707|;|Metoprololsuccinat 0,095 entspr. Metoprololtartrat 0,1|
+|2467713|;|Metoprololsuccinat 0,095 entspr. Metoprololtartrat 0,1|
+|2467736|;|nicht lieferbar|
+|2467943|;|nicht lieferbar|
+|2468523|;|AST (ehemals GOT), ALT (ehemals GPT)|
+|2468687|;|AST (ehemals GOT), ALT (ehemals GPT)|
+|2470342|;|bei Dermatomykosen bzw. Onychomykosen|
+|2470359|;|bei Onychomykosen|
+|2470945|;|Leuprorelinacetat 0,0075 entspr. 0,00696 Leuprorelin|
+|2470951|;|Leuprorelinacetat 0,0225 entspr. 0,021 Leuprorelin|
+|2472625|;|bei Dermatomykosen bzw. Onychomykosen|
+|2472631|;|bei Onychomykosen|
+|2474245|;|bei Dermatomykosen bzw. Onychomykosen|
+|2474251|;|bei Onychomykosen|
+|2476497|;|bei Vaginalmykosen|
+|2476505|;|bei Dermatomykosen|
+|2476511|;|bei Onychomykosen|
+|2476853|;|bei Dermatomykosen bzw. Onychomykosen|
+|2476876|;|bei Onychomykosen|
+|2478272|;|Calcium Vit. D3 "Meda" Kautabl. enthalten Calciumcarbonat 1,25 (entspr. Ca++ 0,5), Colecalciferol 400 IE|
+|2478622|;|nicht lieferbar|
+|2479389|;|bei Vaginalmykosen|
+|2479395|;|bei Dermatomykosen|
+|2479403|;|bei Onychomykosen|
+|2479633|;|nicht lieferbar|
+|3171133|;|nicht lieferbar|
+|3500677|;|Epoetin alfa 0,000336 entspr. 40.000 IE|
+|3500795|;|nicht lieferbar|
+|3501754|;|Desmopressinacetat 0,000067 entspr. Desmopressin 0,00006|
+|3501760|;|Desmopressinacetat 0,000067 entspr. Desmopressin 0,00006|
+|3501783|;|Desmopressinacetat 0,000135 entspr. Desmopressin 0,00012|
+|3501808|;|Desmopressinacetat 0,000135 entspr. Desmopressin 0,00012|
+|3503167|;|nicht lieferbar|
+|3503368|;|nicht lieferbar|
+|3507573|;|nicht lieferbar|
+|3512278|;|nicht zur Initialtherapie|
+|3512309|;|nicht zur Initialtherapie|
+|3512338|;|nicht zur Initialtherapie|
+|3512491|;|Desmopressinacetat 0,0002 entspr. Desmopressin 0,000178|
+|3513674|;|nicht lieferbar|
+|3514248|;|Desmopressinacetat 0,0002 entspr. Desmopressin 0,000178|
+|3514886|;|nicht lieferbar|
+|3516359|;|nicht lieferbar|
+|3517531|;|nicht lieferbar|
+|3517548|;|nicht lieferbar|
+|3518915|;|nicht lieferbar|
+|3518944|;|Epoetin alfa 0,0000084 entspr. 1.000 IE|
+|3518950|;|Epoetin alfa 0,0000168 entspr. 2.000 IE|
+|3518967|;|Epoetin alfa 0,0000252 entspr. 3.000 IE|
+|3518973|;|Epoetin alfa 0,0000336 entspr. 4.000 IE|
+|3518996|;|Epoetin alfa 0,000042 entspr. 5.000 IE|
+|3519004|;|Epoetin alfa 0,0000504 entspr. 6.000 IE|
+|3519010|;|Epoetin alfa 0,0000672 entspr. 8.000 IE|
+|3519027|;|Epoetin alfa 0,000084 entspr. 10.000 IE|
+|3519381|;|Leuprorelinacetat 0,045 entspr. 0,0417 Leuprorelin|
+|3519582|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3520504|;|nicht lieferbar|
+|3522495|;|nicht lieferbar|
+|3525708|;|zur medikamentösen Unterstützung der Entzugsbehandlung bei Alkoholkranken|
+|3526234|;|nicht lieferbar|
+|3527110|;|nicht lieferbar|
+|3527127|;|nicht lieferbar|
+|3527162|;|nicht lieferbar|
+|3527179|;|nicht lieferbar|
+|3530744|;|nicht lieferbar|
+|3530968|;|Isotretinoin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 4 Wochen nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|3531933|;|nicht lieferbar|
+|3531956|;|nicht lieferbar|
+|3531962|;|nicht lieferbar|
+|3531979|;|nicht lieferbar|
+|3531985|;|nicht lieferbar|
+|3531991|;|nicht lieferbar|
+|3532878|;|nicht lieferbar|
+|3533300|;|Calciumacetat 0,435 entspr. Ca++ 0,11; Magnesiumcarbonat 0,235 entspr. Mg++ 0,06|
+|3533895|;|nicht lieferbar|
+|3536592|;|nicht lieferbar|
+|3538616|;|nicht lieferbar|
+|3538757|;|Oxycodon HCl 0,02 entspr. 0,018 Oxycodon|
+|3538763|;|Oxycodon HCl 0,02 entspr. 0,018 Oxycodon|
+|3538786|;|Oxycodon HCl 0,04 entspr. 0,036 Oxycodon|
+|3538792|;|Oxycodon HCl 0,04 entspr. 0,036 Oxycodon|
+|3538800|;|Oxycodon HCl 0,08 entspr. 0,072 Oxycodon|
+|3538817|;|Oxycodon HCl 0,08 entspr. 0,072 Oxycodon|
+|3540518|;|nicht lieferbar|
+|3540530|;|nicht lieferbar|
+|3541848|;|Brimonidintartrat 0,002 entspr. Brimonidin 0,0013|
+|3545088|;|nicht lieferbar|
+|3545208|;|nicht lieferbar|
+|3548164|;|Epoetin theta 0,0000083 entspr. 1.000 IE|
+|3548170|;|Epoetin theta 0,0000167 entspr. 2.000 IE|
+|3548187|;|Epoetin theta 0,000025 entspr. 3.000 IE|
+|3548193|;|Epoetin theta 0,0000333 entspr. 4.000 IE|
+|3548201|;|Epoetin theta 0,0000417 entspr. 5.000 IE|
+|3548230|;|Epoetin theta 0,000250 entspr. 30.000 IE|
+|3548655|;|nicht lieferbar|
+|3549850|;|Metoprololsuccinat 0,0475 entspr. Metoprololtartrat 0,05|
+|3549873|;|Metoprololsuccinat 0,095 entspr. Metoprololtartrat 0,1|
+|3756810|;|nicht lieferbar|
+|3758393|;|nicht lieferbar|
+|3758447|;|Metoprololsuccinat 0,0475 entspr. Metoprololtartrat 0,05|
+|3758453|;|Metoprololsuccinat 0,095 entspr. Metoprololtartrat 0,1|
+|3759033|;|nicht lieferbar|
+|3759955|;|Epoetin theta 0,000083 entspr. 10.000 IE|
+|3759961|;|Epoetin theta 0,000167 entspr. 20.000 IE|
+|3762182|;|Mycophenolatmofetil 0,5 entspr. Mycophenolsäure 0,36|
+|3763661|;|nicht lieferbar|
+|3764057|;|nicht lieferbar|
+|3764063|;|nicht lieferbar|
+|3766139|;|nicht lieferbar|
+|3766145|;|nicht lieferbar|
+|3766151|;|nicht lieferbar|
+|3766168|;|nicht lieferbar|
+|3766174|;|nicht lieferbar|
+|3766180|;|nicht lieferbar|
+|3766197|;|nicht lieferbar|
+|3766263|;|nicht lieferbar|
+|3766748|;|nicht zur Initialtherapie|
+|3766777|;|nicht zur Initialtherapie|
+|3766990|;|Mycophenolatmofetil 0,5 entspr. Mycophenolsäure 0,36 / nicht lieferbar|
+|3767788|;|nicht lieferbar|
+|3769445|;|nicht lieferbar|
+|3770069|;|nicht lieferbar|
+|3770081|;|nicht lieferbar|
+|3770098|;|nicht lieferbar|
+|3770129|;|nicht lieferbar|
+|3770135|;|nicht lieferbar|
+|3770141|;|nicht lieferbar|
+|3770224|;|nicht lieferbar|
+|3770276|;|nicht lieferbar|
+|3772654|;|Mycophenolatmofetil 0,5 entspr. Mycophenolsäure 0,36|
+|3773607|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3773642|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3774854|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3775397|;|Oxycodon HCl 0,005 entspr. 0,0045 Oxycodon|
+|3775405|;|Oxycodon HCl 0,005 entspr. 0,0045 Oxycodon|
+|3775411|;|Oxycodon HCl 0,005 entspr. 0,0045 Oxycodon, nicht zur Initialtherapie|
+|3775428|;|Oxycodon HCl 0,01 entspr. 0,009 Oxycodon|
+|3775434|;|Oxycodon HCl 0,01 entspr. 0,009 Oxycodon|
+|3775440|;|Oxycodon HCl 0,01 entspr. 0,009 Oxycodon, nicht zur Initialtherapie|
+|3775457|;|Oxycodon HCl 0,02 entspr. 0,018 Oxycodon|
+|3775463|;|Oxycodon HCl 0,02 entspr. 0,018 Oxycodon|
+|3775486|;|Oxycodon HCl 0,02 entspr. 0,018 Oxycodon, nicht zur Initialtherapie|
+|3775492|;|Oxycodon HCl 0,04 entspr. 0,036 Oxycodon|
+|3775500|;|Oxycodon HCl 0,04 entspr. 0,036 Oxycodon|
+|3775517|;|Oxycodon HCl 0,04 entspr. 0,036 Oxycodon, nicht zur Initialtherapie|
+|3775569|;|Oxycodon HCl 0,08 entspr. 0,072 Oxycodon|
+|3775575|;|Oxycodon HCl 0,08 entspr. 0,072 Oxycodon|
+|3775581|;|Oxycodon HCl 0,08 entspr. 0,072 Oxycodon, nicht zur Initialtherapie|
+|3778504|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3778510|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3779840|;|Isotretinoin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 4 Wochen nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|3780197|;|Oxycodon HCl 0,005 entspr. 0,0045 Oxycodon|
+|3780205|;|Oxycodon HCl 0,005 entspr. 0,0045 Oxycodon|
+|3780228|;|Oxycodon HCl 0,01 entspr. 0,009 Oxycodon|
+|3780240|;|Oxycodon HCl 0,01 entspr. 0,009 Oxycodon|
+|3780783|;|nicht lieferbar|
+|3781541|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern / nicht lieferbar|
+|3781558|;|nicht lieferbar|
+|3781564|;|nicht lieferbar|
+|3781587|;|nicht lieferbar|
+|3781593|;|nicht lieferbar|
+|3782144|;|nicht lieferbar|
+|3782196|;|nicht lieferbar|
+|3782368|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3783238|;|nicht lieferbar|
+|3783250|;|nicht lieferbar|
+|3783273|;|nicht lieferbar|
+|3784002|;|nicht lieferbar|
+|3784025|;|nicht lieferbar|
+|3784605|;|nicht lieferbar|
+|3784611|;|nicht lieferbar|
+|3784628|;|nicht lieferbar|
+|3784634|;|nicht lieferbar|
+|3784930|;|kollagene Colitis|
+|3900678|;|nicht lieferbar|
+|3901620|;|nicht lieferbar|
+|3901672|;|nicht lieferbar|
+|3902163|;|Epoetin alfa 0,000168 entspr. 20.000 IE|
+|3902186|;|Epoetin alfa 0,000252 entspr. 30.000 IE|
+|3902192|;|Epoetin alfa 0,000336 entspr. 40.000 IE|
+|3903429|;|Mycophenolatmofetil 0,25 entspr. Mycophenolsäure 0,18|
+|3903487|;|Oxycodon HCl  0,02 entspr. 0,018 Oxycodon,  nicht zur Initialtherapie|
+|3903493|;|Oxycodon HCl  0,04 entspr. 0,036 Oxycodon,  nicht zur Initialtherapie|
+|3903501|;|Oxycodon HCl  0,08 entspr. 0,072 Oxycodon,  nicht zur Initialtherapie|
+|3904601|;|nicht lieferbar|
+|3906250|;|nicht lieferbar|
+|3906267|;|nicht lieferbar|
+|3909515|;|nicht lieferbar|
+|3909685|;|Abg. gem. mit CaDeStad Uno Filmtabl. (Nahrungsergänzungsmittel)|
+|3909691|;|Abg. gem. mit CaDeStad Uno Filmtabl. (Nahrungsergänzungsmittel)|
+|3910010|;|nicht lieferbar|
+|3910033|;|nicht lieferbar|
+|3910079|;|Mycophenolatmofetil 0,5 entspr. Mycophenolsäure 0,36|
+|3912167|;|nicht lieferbar|
+|3912173|;|nicht lieferbar|
+|3914232|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3914249|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3914255|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3914686|;|nicht lieferbar|
+|3922013|;|nicht lieferbar|
+|3922409|;|Acitretin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 2 Jahre nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|3922415|;|Acitretin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 2 Jahre nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|3922421|;|Acitretin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 2 Jahre nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|3922438|;|Acitretin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 2 Jahre nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|3923136|;|Epoetin alfa 0,000084 entspr. 10.000 IE|
+|3925307|;|Brimonidintartrat 0,002 entspr. Brimonidin 0,0013|
+|3925572|;|nicht lieferbar|
+|3926896|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3926904|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3926910|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3926927|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|3930194|;|nicht lieferbar|
+|3931383|;|nicht lieferbar|
+|3931408|;|nicht lieferbar|
+|4201965|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4201971|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4202663|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4202686|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4206106|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4206112|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4206158|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4206299|;|nicht lieferbar|
+|4206508|;|nicht lieferbar|
+|4209381|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4209725|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4212354|;|Isotretinoin ist stark teratogen. Die Anwendung ist bei schwangeren Frauen und bei Frauen, die 4 Wochen vor, während und 4 Wochen nach der Behandlung schwanger werden könnten, kontraindiziert (Schwangerschaft ausschließen).|
+|4212874|;|nicht lieferbar|
+|4214235|;|nicht lieferbar|
+|4214258|;|nicht lieferbar|
+|4214637|;|Abg. gem. mit Calcium Vit. D3 "Ceutics" Kautabl. (Nahrungsergänzungsmittel)|
+|4214643|;|Abg. gem. mit Calcium Vit. D3 "Ceutics" Kautabl. (Nahrungsergänzungsmittel)|
+|4215192|;|nicht lieferbar|
+|4215565|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4215571|;|nur bei schweren Infektionen bzw. bei Infektionen mit atypischen Erregern|
+|4217558|;|nicht lieferbar|
+|4220419|;|bei mittelschwerer und schwerer Akne|
+|4221206|;|nicht zur Initialtherapie|
+|4221212|;|nicht zur Initialtherapie|
+|4221229|;|nicht zur Initialtherapie|
+|4221235|;|nicht zur Initialtherapie|
+|4222312|;|nicht lieferbar|
+|4222329|;|nicht lieferbar|
+|4224742|;|nicht lieferbar|
+|4224759|;|nicht lieferbar|
+|4224765|;|nicht lieferbar|
+|4224771|;|nicht lieferbar|
+|4224937|;|bei Vaginalmykosen oder Candida-Balanitis / nicht lieferbar|
+|4224943|;|bei Dermatomykosen|
+|4224966|;|bei Onychomykosen|
+|4226178|;|nicht lieferbar|
+|4226184|;|nicht lieferbar|
+|4226190|;|nicht lieferbar|
+|4226209|;|nicht lieferbar|
+|4226221|;|nicht lieferbar|
+|4226238|;|nicht lieferbar|
+|4226250|;|nicht lieferbar|
+|4226267|;|nicht lieferbar|
+|4226362|;|nicht lieferbar|
+|4226379|;|nicht lieferbar|
+|4228941|;|Leuprorelinacetat 0,0225 entspr. 0,021 Leuprorelin|
+|4229478|;|nicht lieferbar|
+|4229596|;|nicht lieferbar|
+|4230895|;|nicht lieferbar|
+|4231564|;|Epoetin alfa 0,0000084 entspr. 1.000 IE|
+|4231570|;|Epoetin alfa 0,0000168 entspr. 2.000 IE|
+|4231587|;|Epoetin alfa 0,0000336 entspr. 4.000 IE|
+|4231593|;|Epoetin alfa 0,000042 entspr. 5.000 IE|
+|4232434|;|nicht lieferbar|
+|4450326|;|zur medikamentösen Unterstützung der Entzugsbehandlung bei Alkoholkranken|
+|4452199|;|nicht lieferbar|
+|4455111|;|nicht lieferbar|
+|4455128|;|nicht lieferbar|
+|4456027|;|nicht lieferbar|
+|4456056|;|nicht lieferbar|
+|4456978|;|nicht lieferbar|
+|4456984|;|nicht lieferbar|
+|4457009|;|nicht lieferbar|
+|4461264|;|nicht lieferbar|
+|4461270|;|nicht lieferbar|
+|4465262|;|nicht lieferbar|
+|4465279|;|nicht lieferbar|
+|4465902|;|Epoetin zeta 0,0000084 entspr. 1.000 IE|
+|4465919|;|Epoetin zeta 0,0000168 entspr. 2.000 IE|
+|4465925|;|Epoetin zeta 0,0000252 entspr. 3.000 IE|
+|4465931|;|Epoetin zeta 0,0000336 entspr. 4.000 IE|
+|4465948|;|Epoetin zeta 0,000042 entspr. 5.000 IE|
+|4465954|;|Epoetin zeta 0,0000504 entspr. 6.000 IE|
+|4465960|;|Epoetin zeta 0,0000672 entspr. 8.000 IE|
+|4465977|;|Epoetin zeta 0,000084 entspr. 10.000 IE|
+|4465983|;|Epoetin zeta 0,000168 entspr. 20.000 IE|
+|4466008|;|Epoetin zeta 0,000252 entspr. 30.000 IE|
+|4466014|;|Epoetin zeta 0,000336 entspr. 40.000 IE|
+|4466310|;|nicht lieferbar|
+|4466652|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4466669|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4466675|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4466681|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4467812|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4467829|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4467835|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4467999|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4471529|;|nicht lieferbar|
+|4471535|;|nicht lieferbar|
+|4474456|;|nicht lieferbar|
+|4474479|;|nicht lieferbar|
+|4474485|;|nicht lieferbar|
+|4474605|;|nicht lieferbar|
+|4476544|;|nicht lieferbar|
+|4478201|;|nicht lieferbar|
+|4478388|;|nicht lieferbar|
+|4478394|;|nicht lieferbar|
+|4478402|;|nicht lieferbar|
+|4478419|;|nicht lieferbar|
+|4478715|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4480847|;|nicht lieferbar|
+|4482071|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4482527|;|Naproxen Natr. 0,55 entspr. Naproxen 0,5|
+|4482533|;|Naproxen Natr. 0,55 entspr. Naproxen 0,5|
+|4482556|;|Naproxen Natr. 0,55 entspr. Naproxen 0,5|
+|4482668|;|nicht lieferbar|
+|4950945|;|nicht lieferbar|
+|4950951|;|nicht lieferbar|
+|4951123|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4951212|;|nicht lieferbar|
+|4953398|;|nicht lieferbar|
+|4953406|;|nicht lieferbar|
+|4953518|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4954328|;|nicht lieferbar|
+|4954334|;|nicht lieferbar|
+|4954340|;|nicht lieferbar|
+|4954357|;|nicht lieferbar|
+|4954601|;|Aufklärung der PatientInnen über Risiko und Erscheinungsbild einer Agranulozytose|
+|4956238|;|nicht lieferbar|
+|4956244|;|nicht lieferbar|
+|4956942|;|nicht lieferbar|
+|4957634|;|nicht lieferbar|
+|4957640|;|nicht lieferbar|
+|4958533|;|nicht lieferbar|
+|4962546|;|nicht lieferbar|
+|4963014|;|nicht lieferbar|
+|4964947|;|nicht lieferbar|
+|4968537|;|nicht lieferbar|
+|4974466|;|nicht lieferbar|
+|4974472|;|nicht lieferbar|
+|4975827|;|nicht lieferbar|
+|4987345|;|nicht lieferbar|
+|4991430|;|nicht lieferbar|
+|5501267|;|nicht lieferbar|
