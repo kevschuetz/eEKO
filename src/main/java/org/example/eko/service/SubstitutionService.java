@@ -38,7 +38,7 @@ public class SubstitutionService {
             // Get all entries from same import
             List<Medikament> substitutes = medikamente
                     .stream()
-                    .filter(m -> m.getDateTime().equals(medikament.getDateTime()))
+                    .filter(m -> m.getValidDate().equals(medikament.getValidDate()))
                     .collect(Collectors.toList());
 
             // Reduce possible substitutes to all that have at least one wirkstoff where first 3 characters are equal to a wirkstoff from the medikament
@@ -60,7 +60,7 @@ public class SubstitutionService {
                     .stream().mapToInt(w -> w.getPharWirkstoff().getAtcCode().length())
                     .reduce(0, (s1, s2)->s1+s2);
 
-            resultMap.put(medikament.getDateTime(), substitutes.stream()
+            resultMap.put(medikament.getValidDate(), substitutes.stream()
                     .filter(s -> !s.getPharmaNummer().equals(medikament.getPharmaNummer()))
                     .collect(Collectors.groupingBy(substitute -> {
                         int substituteScore = 0;
@@ -86,10 +86,9 @@ public class SubstitutionService {
     }
 
 
-    public Map<DateEntity, Map<Double, List<Medikament>>> getSubstitutesForMedikament(String pharmaNummer, LocalDate d){
-        LocalDate date = LocalDate.of(2022, 7, 29);
+    public Map<WirkstoffAtcCode, Map<WirkstoffAtcCode, List<Medikament>>> getSubstitutesForMedikament(String pharmaNummer, LocalDate d){
         var medikamente = medikamentRepository.findByPharmaNummer(pharmaNummer);
-        var medikament = medikamente.stream().filter(med -> med.getDateTime().getDate().compareTo(date) <= 0).max(Comparator.comparing(m -> m.getDateTime().getDate()));
+        var medikament = medikamente.stream().filter(med -> med.getValidDate().getDate().compareTo(d) <= 0).max(Comparator.comparing(m -> m.getValidDate().getDate()));
 
         if(medikament.isEmpty()) return null;
 
@@ -107,7 +106,7 @@ public class SubstitutionService {
                 .collect(Collectors.toList()));
 
         Map<WirkstoffAtcCode, Map<WirkstoffAtcCode, List<Medikament>>> substituteMap = new HashMap<>();
-        var possibleSubstitutes = medikamentRepository.getMedikamentsByValidDateID(med.getDateTime().getId())
+        var possibleSubstitutes = medikamentRepository.getMedikamentsByValidDateID(med.getValidDate().getId())
                 .stream()
                 .filter(m -> !m.getPharmaNummer().equals(med.getPharmaNummer()))
                 .collect(Collectors.toList());
@@ -143,7 +142,7 @@ public class SubstitutionService {
 
         }
 
-        return null;
+        return substituteMap;
     }
 
 

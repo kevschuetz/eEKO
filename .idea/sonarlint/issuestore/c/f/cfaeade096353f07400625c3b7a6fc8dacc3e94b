@@ -7,20 +7,16 @@ java:S6204*"RReplace this usage of 'Stream.collect(Collectors.toList())' with '
 h
 java:S62046"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(œçÖß
 m
-java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(¸–ùúÿÿÿÿ
-C
-java:S1172Y"(Remove this unused method parameter "d".(¸–ùúÿÿÿÿ
+java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(İ‡…åùÿÿÿÿ
 ?
-java:S1168^"$Return an empty map instead of null.(èö¸Èùÿÿÿÿ
+java:S1168]"$Return an empty map instead of null.(èö¸Èùÿÿÿÿ
 i
-java:S1612c"SReplace this lambda with method reference 'WirkstoffInformation::getPharWirkstoff'.(‰µÙœ
+java:S1612b"SReplace this lambda with method reference 'WirkstoffInformation::getPharWirkstoff'.(‰µÙœ
 h
-java:S6204k"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’
+java:S6204j"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’
 n
-java:S1612h"SReplace this lambda with method reference 'WirkstoffInformation::getWirkWirkstoff'.(±âîíúÿÿÿÿ
+java:S1612g"SReplace this lambda with method reference 'WirkstoffInformation::getWirkWirkstoff'.(±âîíúÿÿÿÿ
 X
-java:S1612i"=Replace this lambda with method reference 'Objects::nonNull'.(‹Á‚üÿÿÿÿ
+java:S1612h"=Replace this lambda with method reference 'Objects::nonNull'.(‹Á‚üÿÿÿÿ
 h
-java:S6204q"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
-;
-java:S1168’"$Return an empty map instead of null.(¥¹ï
+java:S6204p"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹

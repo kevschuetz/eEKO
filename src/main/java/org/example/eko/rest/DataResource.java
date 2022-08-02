@@ -1,6 +1,7 @@
 package org.example.eko.rest;
 
 import org.example.eko.model.entities.Medikament;
+import org.example.eko.model.entities.WirkstoffAtcCode;
 import org.example.eko.service.DataFetchingService;
 import org.example.eko.service.ImportService;
 import org.example.eko.service.ScanningService;
@@ -14,7 +15,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 @Controller
 @RequestMapping("/api/")
@@ -40,27 +43,14 @@ public class DataResource {
         if(map.isEmpty()){
             return ResponseEntity.status(404).build();
         }
-        var scannedMedikamente = scanningService.scanMedikament(map.get("medikament.txt"));
-        var importedMedikamente = importService.importMedikamente(scannedMedikamente);
-
-        var hinweise = scanningService.scanHinweise(map.get("hinweis.txt"));
-        importedMedikamente = importService.addHinweise(importedMedikamente, hinweise);
-
-        var regelTexte = scanningService.scanRegeltexte(map.get("regeltext.txt"));
-        importedMedikamente = importService.addRegeltexte(importedMedikamente, regelTexte);
-
-        var wirkstoffe = scanningService.scanWirkstoffe(map.get("atccode.txt"));
-        importService.addWirkstoffe(wirkstoffe);
-
-        var wirkstoffInformationen = scanningService.scanWirkstoffInformationen(map.get("wirkstoff.txt"));
-        importedMedikamente = importService.addWirkstoffInformationen(importedMedikamente, wirkstoffInformationen);
+        importService.importDataSet(scanningService.scanFiles(map));
 
         return ResponseEntity.ok().build();
     }
 
     @GetMapping("medikament/{pharmaNummer}/substitute")
-    public ResponseEntity<List<Medikament>> getSubstitutes(@PathVariable String pharmaNummer){
-        var s = substitutionService.getSubstitutesForMedikamentHistorical(pharmaNummer);
-        return ResponseEntity.ok(null);
+    public ResponseEntity<Map<WirkstoffAtcCode, Map<WirkstoffAtcCode, List<Medikament>>>> getSubstitutes(@PathVariable String pharmaNummer){
+        var s = substitutionService.getSubstitutesForMedikament(pharmaNummer, LocalDate.of(2022, 07, 30));
+        return ResponseEntity.ok(s);
     }
 }

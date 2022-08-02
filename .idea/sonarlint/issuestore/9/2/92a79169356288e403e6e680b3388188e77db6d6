@@ -1,9 +1,3 @@
 
-]
-java:S18548"GRemove this useless assignment to local variable "importedMedikamente".(¿‘ºš
-W
-java:S1854?"5Remove this useless assignment to local variable "s".(™Ã¬ûÿÿÿÿ8ùÒÁ¤0
-H
-java:S1481?"&Remove this unused "s" local variable.(™Ã¬ûÿÿÿÿ8úÒÁ¤0
 E
-java:S1068"*Remove this unused "logger" private field.(õÇÊèûÿÿÿÿ
+java:S1068"*Remove this unused "logger" private field.(õÇÊèûÿÿÿÿ

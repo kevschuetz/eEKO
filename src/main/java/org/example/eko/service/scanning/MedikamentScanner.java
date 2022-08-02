@@ -1,10 +1,6 @@
-package org.example.eko.service.scanning.medikament;
+package org.example.eko.service.scanning;
 
-import org.example.eko.model.entities.DateEntity;
-import org.example.eko.model.entities.Medikament;
-import org.example.eko.model.repositories.DateTimeRepository;
-import org.example.eko.service.scanning.Scanner;
-import org.example.eko.service.scanning.ScanningRule;
+import org.example.eko.model.filerepresentations.MedikamentFileEntry;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
@@ -14,7 +10,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class MedikamentScanner extends Scanner {
+public class MedikamentScanner extends Scanner<MedikamentFileEntry> {
     private final Logger logger = LoggerFactory.getLogger(MedikamentScanner.class);
 
     private final static ScanningRule pharmaNummer = new ScanningRule(1, 7);
@@ -35,77 +31,44 @@ public class MedikamentScanner extends Scanner {
     private final static ScanningRule packungsHinweis = new ScanningRule(168, 28);
 
 
-    private final DateTimeRepository dateTimeRepository;
-
-    public MedikamentScanner(DateTimeRepository dateTimeRepository){
-        this.dateTimeRepository = dateTimeRepository;
-    }
-
     @Override
-    public List<Medikament> scan(String data){
-        List<Medikament> medikamente = new ArrayList<>();
+    public List<MedikamentFileEntry> scan(String data){
+        List<MedikamentFileEntry> entries = new ArrayList<>();
+        if(data == null) return  entries;
         LocalDate date = LocalDate.of(2022, 7, 29);
-        DateEntity dateTime = dateTimeRepository.save(new DateEntity(date));
-        var entries = data.split("\n");
-        for(String entry : entries){
-            medikamente.add(scanMedikament(entry, dateTime));
+        var lines = data.split("\n");
+        for(String line : lines){
+            entries.add(scanMedikament(line));
         }
 
-        return  medikamente;
+        return  entries;
     }
 
-    private Medikament scanMedikament(String entry, DateEntity dateTime) {
-        Medikament medikament = new Medikament(dateTime);
+    private MedikamentFileEntry scanMedikament(String entry) {
+        MedikamentFileEntry medikamentFileEntry = null;
 
         String pharmaNummer = getString(entry, this.pharmaNummer);
-        medikament.setPharmaNummer(pharmaNummer);
-
         String registerNummer = getString(entry, this.registerNummer);
-        medikament.setRegisterNummer(registerNummer);
-
         String name = getString(entry, this.name);
-        medikament.setName(name);
-
         String box = getString(entry, this.box);
-        medikament.setBox(box);
-
         String kassenZeichen = getString(entry, this.kassenZeichen);
-        medikament.setKassenzeichen(kassenZeichen);
-
         String menge = getString(entry, this.menge);
-        medikament.setMenge(menge != null ? Double.parseDouble(menge.replace(",", ".")) : null);
-
         String mengenArt = getString(entry, this.mengenArt);
-        medikament.setMengenart(mengenArt);
-
         String kvp = getString(entry, this.kvp);
-        medikament.setKassenVerkaufsPreis(kvp != null ? Double.parseDouble(kvp) : null);
-
         String kvpEinheit = getString(entry, this.kvpEinheit);
-        medikament.setKvpEinheit(kvpEinheit);
-
         String darreichungsForm = getString(entry, this.darreichungsform);
-        medikament.setDarreichungsForm(darreichungsForm);
-
         String teilbarkeit = getString(entry, this.teilbarkeit);
-        medikament.setTeilbarkeit(teilbarkeit);
-
         String preisModell = getString(entry, this.preisModell);
-        medikament.setPreisModell(preisModell);
-
         String abgabeAnzahl = getString(entry, this.abgabeAnzahl);
-        medikament.setAbgabeAnzahl(abgabeAnzahl != null ? Integer.parseInt(abgabeAnzahl): null);
-
         String packungsHinweis = getString(entry, this.packungsHinweis);
-        medikament.setPackungsHinweis(packungsHinweis);
-
         String registerNummerPrefix = getString(entry, this.getRegisterNummerPrefix);
-        medikament.setRegisterNummernPrefix(registerNummerPrefix);
-
         String euRegisterNummerPackungsNummer = getString(entry, MedikamentScanner.euRegisterNummerPackungsNummer);
-        medikament.setEuRegisterNummernPackungsNummer(euRegisterNummerPackungsNummer);
 
-        return medikament;
+        medikamentFileEntry = new MedikamentFileEntry(pharmaNummer, registerNummer, name, box, kassenZeichen, menge != null ? Double.parseDouble(menge.replace(",", ".")) : null,
+                mengenArt, kvp != null ? Double.parseDouble(kvp) : null, kvpEinheit, darreichungsForm, teilbarkeit,
+                preisModell, abgabeAnzahl != null ? Double.parseDouble(abgabeAnzahl) : null, packungsHinweis, registerNummerPrefix, euRegisterNummerPackungsNummer);
+
+        return medikamentFileEntry;
     }
 
 

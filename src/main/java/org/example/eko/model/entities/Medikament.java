@@ -5,7 +5,6 @@ import org.hibernate.annotations.Cascade;
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Set;
 
 @Entity
 @Table(name="ft_medikament")
@@ -145,7 +144,7 @@ public class Medikament extends AuditModel {
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "valid_date_id")
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private DateEntity dateTime;
+    private DateEntity validDate;
 
 
     @OneToMany(fetch = FetchType.EAGER)
@@ -156,8 +155,8 @@ public class Medikament extends AuditModel {
 
     }
 
-    public Medikament(DateEntity dateTime){
-        this.dateTime = dateTime;
+    public Medikament(DateEntity validDate){
+        this.validDate = validDate;
     }
 
     public Long getId() {
@@ -292,12 +291,12 @@ public class Medikament extends AuditModel {
         this.packungsHinweis = packungsHinweis;
     }
 
-    public DateEntity getDateTime() {
-        return dateTime;
+    public DateEntity getValidDate() {
+        return validDate;
     }
 
-    public void setDateTime(DateEntity dateTime) {
-        this.dateTime = dateTime;
+    public void setValidDate(DateEntity dateTime) {
+        this.validDate = dateTime;
     }
 
     public String getHinweis() {

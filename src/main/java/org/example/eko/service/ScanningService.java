@@ -1,21 +1,16 @@
 package org.example.eko.service;
 
-import org.example.eko.model.filerepresentations.Hinweis;
-import org.example.eko.model.filerepresentations.Regeltext;
-import org.example.eko.model.entities.Medikament;
-import org.example.eko.model.entities.WirkstoffAtcCode;
-import org.example.eko.model.entities.WirkstoffInformation;
-import org.example.eko.service.scanning.medikament.HinweisScanner;
-import org.example.eko.service.scanning.medikament.MedikamentScanner;
-import org.example.eko.service.scanning.medikament.RegeltextScanner;
-import org.example.eko.service.scanning.medikament.WirkstoffInformationScanner;
-import org.example.eko.service.scanning.wirkstoff.WirkstoffScanner;
+import org.example.eko.model.filerepresentations.*;
+import org.example.eko.service.scanning.HinweisScanner;
+import org.example.eko.service.scanning.MedikamentScanner;
+import org.example.eko.service.scanning.RegeltextScanner;
+import org.example.eko.service.scanning.WirkstoffScanner;
+import org.example.eko.service.scanning.AtcCodeScanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-import java.util.Objects;
+import java.util.Map;
 
 @Service
 public class ScanningService {
@@ -24,40 +19,26 @@ public class ScanningService {
     private final HinweisScanner hinweisScanner;
     private final RegeltextScanner regeltextScanner;
     private final WirkstoffScanner wirkstoffScanner;
-    private final WirkstoffInformationScanner wirkstoffInformationScanner;
+    private final AtcCodeScanner atcCodeScanner;
 
     public ScanningService(MedikamentScanner medikamentScanner, HinweisScanner hinweisScanner,
-                           RegeltextScanner regeltextScanner, WirkstoffScanner wirkstoffScanner,
-                           WirkstoffInformationScanner wirkstoffInformationScanner){
+                           RegeltextScanner regeltextScanner, AtcCodeScanner atcCodeScanner,
+                           WirkstoffScanner wirkstoffInformationScanner){
         this.medikamentScanner = medikamentScanner;
         this.hinweisScanner = hinweisScanner;
         this.regeltextScanner = regeltextScanner;
-        this.wirkstoffScanner = wirkstoffScanner;
-        this.wirkstoffInformationScanner = wirkstoffInformationScanner;
+        this.atcCodeScanner = atcCodeScanner;
+        this.wirkstoffScanner = wirkstoffInformationScanner;
     }
 
-    public List<Medikament> scanMedikament(String data){
-        Objects.requireNonNull(data);
-        return medikamentScanner.scan(data);
+    public DataSet scanFiles(Map<String, String> fileStringMap){
+        var medikamente = medikamentScanner.scan(fileStringMap.get("medikament.txt"));
+        var hinweise = hinweisScanner.scan(fileStringMap.get("hinweis.txt"));
+        var regeltext = regeltextScanner.scan(fileStringMap.get("regeltext.txt"));
+        var atcCodes = atcCodeScanner.scan(fileStringMap.get("atccode.txt"));
+        var wirkstoffe = wirkstoffScanner.scan(fileStringMap.get("wirkstoff.txt"));
+
+        return new DataSet(atcCodes, hinweise, medikamente, regeltext, wirkstoffe);
     }
 
-    public List<Hinweis> scanHinweise(String data){
-       Objects.requireNonNull(data);
-       return hinweisScanner.scan(data);
-    }
-
-    public List<Regeltext> scanRegeltexte(String data){
-        Objects.requireNonNull(data);
-        return regeltextScanner.scan(data);
-    }
-
-    public List<WirkstoffAtcCode> scanWirkstoffe(String data) {
-        Objects.requireNonNull(data);
-        return wirkstoffScanner.scan(data);
-    }
-
-    public List<WirkstoffInformation> scanWirkstoffInformationen(String data) {
-        Objects.requireNonNull(data);
-        return wirkstoffInformationScanner.scan(data);
-    }
 }

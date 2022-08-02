@@ -1,11 +1,7 @@
 
-f
-java:S3655#"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(ÉşËå
-k
-java:S3655+"PCall "Optional#isPresent()" or "!Optional#isEmpty()" before accessing the value.(Í’‰µşÿÿÿÿ
-m
-java:S16126"RReplace this lambda with method reference 'WirkstoffInformation::getPharmaNummer'.(²˜µ·øÿÿÿÿ
-G
-java:S16026",Remove useless curly braces around statement(²˜µ·øÿÿÿÿ
+T
+java:S1135#"2Complete the task associated to this TODO comment.(ê–‹¼ûÿÿÿÿ8ˆı“ø¥0
+h
+java:S6204M"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(²·å±
 E
-java:S1068"*Remove this unused "logger" private field.(Ñõ§ıÿÿÿÿ
+java:S1068"*Remove this unused "logger" private field.(Ñõ§ıÿÿÿÿ
