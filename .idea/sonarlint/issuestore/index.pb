@@ -1,6 +1,4 @@
 
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
 ;
 270722.puml,1\b\1ba1831cab1dac5ffab4e0f503a464117813f216
 a
@@ -17,8 +15,6 @@ Isrc/main/java/org/example/eko/model/repositories/WirkstoffRepository.java,1\8\
 Tsrc/main/java/org/example/eko/model/repositories/WirkstoffInformationRepository.java,5\3\53c8db600d33f5845ca97612dd47642168647cda
 l
 <src/main/java/org/example/eko/model/entities/DateEntity.java,7\a\7a48a64e568dc9cf6493e21e5d4fde50527586e1
-z
-Jsrc/main/java/org/example/eko/model/repositories/MedikamentRepository.java,5\d\5dcaa439ab7d77f31bee5fd326642c57b15ae8df
 s
 Csrc/main/java/org/example/eko/service/DatasetFetchingScheduler.java,0\e\0edc134daad7dca1b23e92f948e2a5495a764be3
 n
@@ -41,8 +37,6 @@ d
 4src/main/java/org/example/eko/rest/DataResource.java,9\2\92a79169356288e403e6e680b3388188e77db6d6
 n
 >src/main/java/org/example/eko/service/SubstitutionService.java,c\f\cfaeade096353f07400625c3b7a6fc8dacc3e94b
-l
-<src/main/java/org/example/eko/model/entities/Medikament.java,5\a\5afaff980e993ade164bcc85ba0f72318c5bf997
 h
 8src/main/java/org/example/eko/service/ImportService.java,c\3\c385b3f8296454fa255e81a3144de9c7269717ae
 t
@@ -51,13 +45,28 @@ v
 Fsrc/main/java/org/example/eko/model/entities/WirkstoffInformation.java,e\d\ed22565f90e4406feaa80ad40e6fece0275ba293
 r
 Bsrc/main/java/org/example/eko/model/entities/WirkstoffAtcCode.java,0\b\0b0c204681f17564f3e5117e71d38737a21955f7
-u
-Esrc/main/java/org/example/eko/service/scanning/MedikamentScanner.java,f\d\fd7be52a785897cd5deafac939451829d54afbd5
+r
+Bsrc/main/java/org/example/eko/service/scanning/HinweisScanner.java,b\7\b72139eb41553dd5b189ebbed512671a477725e0
 t
 Dsrc/main/java/org/example/eko/service/scanning/WirkstoffScanner.java,c\d\cd8a6bfaf1556071d7d1663a3e41b0cbc222039d
 r
-Bsrc/main/java/org/example/eko/service/scanning/HinweisScanner.java,b\7\b72139eb41553dd5b189ebbed512671a477725e0
-r
 Bsrc/main/java/org/example/eko/service/scanning/AtcCodeScanner.java,1\3\139ed81d3f5df423551b885ba38dce194ccc6abd
+=
+tsconfig.json,6\1\61ebb9fd6e8cf9082658121d5d81e297791dacd0
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+:
+
+types.d.ts,7\c\7c44ade1153285142274faee4c004a4f23f9218f
+u
+Esrc/main/java/org/example/eko/service/scanning/MedikamentScanner.java,f\d\fd7be52a785897cd5deafac939451829d54afbd5
 t
 Dsrc/main/java/org/example/eko/service/scanning/RegeltextScanner.java,0\6\06706754280979b484e209d9d622b21b0f81d72e
+z
+Jsrc/main/java/org/example/eko/model/repositories/MedikamentRepository.java,5\d\5dcaa439ab7d77f31bee5fd326642c57b15ae8df
+l
+<src/main/java/org/example/eko/model/entities/Medikament.java,5\a\5afaff980e993ade164bcc85ba0f72318c5bf997
+b
+2src/main/java/org/example/eko/view/MainLayout.java,7\9\7982a8adfe0877b07f12f68acb02d4afa6728654
+h
+8src/main/java/org/example/eko/view/EkoEntryListView.java,3\6\3653441c013a28e7f70f8931f9941fd09446368c

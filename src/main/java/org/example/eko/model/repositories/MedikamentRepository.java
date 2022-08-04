@@ -22,7 +22,7 @@ public interface MedikamentRepository extends JpaRepository<Medikament, Long> {
                     "AND NOT EXISTS (" +
                     "   SELECT * " +
                     "   FROM FT_MEDIKAMENT m2 JOIN DT_DATE d2 ON m2.VALID_DATE_ID = d2.DATE_ID" +
-                    "   WHERE d2.DATE > d1.DATE " +
+                    "   WHERE d2.DATE > d1.DATE AND m1.PHARMA_NUMMER = m2.PHARMA_NUMMER " +
                     ")")
     public Collection<Medikament> getValidMedikamentsByDate(String date);
 
@@ -31,4 +31,6 @@ public interface MedikamentRepository extends JpaRepository<Medikament, Long> {
                     "FROM FT_MEDIKAMENT m1 JOIN DT_DATE d1 ON m1.VALID_DATE_ID = d1.DATE_ID " +
                     "WHERE d1.DATE_ID = ? ")
     public Collection<Medikament> getMedikamentsByValidDateID(long id);
+
+
 }
