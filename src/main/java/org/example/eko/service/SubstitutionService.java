@@ -3,7 +3,7 @@ package org.example.eko.service;
 import org.example.eko.model.entities.DateEntity;
 import org.example.eko.model.entities.Medikament;
 import org.example.eko.model.entities.WirkstoffAtcCode;
-import org.example.eko.model.entities.WirkstoffInformation;
+import org.example.eko.model.entities.Wirkstoff;
 import org.example.eko.model.repositories.MedikamentRepository;
 import org.example.eko.model.repositories.WirkstoffRepository;
 import org.springframework.stereotype.Service;
@@ -42,10 +42,10 @@ public class SubstitutionService {
                     .collect(Collectors.toList());
 
             // Reduce possible substitutes to all that have at least one wirkstoff where first 3 characters are equal to a wirkstoff from the medikament
-            for(WirkstoffInformation w : medikament.getWirkstoffInformationen()){
+            for(Wirkstoff w : medikament.getWirkstoffInformationen()){
                 substitutes = substitutes.stream().filter(s -> {
                     boolean isValid = false;
-                    for(WirkstoffInformation ws : s.getWirkstoffInformationen()){
+                    for(Wirkstoff ws : s.getWirkstoffInformationen()){
                         if(ws.getPharWirkstoff().getAtcCode().substring(0, 3).equals(w.getPharWirkstoff().getAtcCode().substring(0, 3))){
                             isValid = true;
                         }
@@ -64,7 +64,7 @@ public class SubstitutionService {
                     .filter(s -> !s.getPharmaNummer().equals(medikament.getPharmaNummer()))
                     .collect(Collectors.groupingBy(substitute -> {
                         int substituteScore = 0;
-                        for(WirkstoffInformation w : medikament.getWirkstoffInformationen()){
+                        for(Wirkstoff w : medikament.getWirkstoffInformationen()){
                             var bestWirkstoff = substitute.getWirkstoffInformationen().stream().max(Comparator.comparingInt(wi -> {
                                 int wirkstoffScoreTmp = 0;
                                 for(int i = 0; i < w.getPharWirkstoff().getAtcCode().length(); i++){
@@ -129,7 +129,7 @@ public class SubstitutionService {
             for(Medikament s : possibleSubstitutes){
                 boolean exit = false;
                 for(WirkstoffAtcCode wirkstoff : dimensions){
-                    for(WirkstoffInformation wirkstoffInformation : s.getWirkstoffInformationen()){
+                    for(Wirkstoff wirkstoffInformation : s.getWirkstoffInformationen()){
                         if(wirkstoffInformation.getPharWirkstoff().getAtcCode().contains(wirkstoff.getAtcCode()) || (wirkstoffInformation.getWirkWirkstoff() != null && wirkstoffInformation.getWirkWirkstoff().getAtcCode().contains(wirkstoff.getAtcCode()))){
                             exit = true;
                             substituteMap.get(w).get(wirkstoff).add(s);

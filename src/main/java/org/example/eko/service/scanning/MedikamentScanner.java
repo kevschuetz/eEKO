@@ -35,7 +35,6 @@ public class MedikamentScanner extends Scanner<MedikamentFileEntry> {
     public List<MedikamentFileEntry> scan(String data){
         List<MedikamentFileEntry> entries = new ArrayList<>();
         if(data == null) return  entries;
-        LocalDate date = LocalDate.of(2022, 7, 29);
         var lines = data.split("\n");
         for(String line : lines){
             entries.add(scanMedikament(line));
@@ -47,21 +46,21 @@ public class MedikamentScanner extends Scanner<MedikamentFileEntry> {
     private MedikamentFileEntry scanMedikament(String entry) {
         MedikamentFileEntry medikamentFileEntry = null;
 
-        String pharmaNummer = getString(entry, this.pharmaNummer);
-        String registerNummer = getString(entry, this.registerNummer);
-        String name = getString(entry, this.name);
-        String box = getString(entry, this.box);
-        String kassenZeichen = getString(entry, this.kassenZeichen);
-        String menge = getString(entry, this.menge);
-        String mengenArt = getString(entry, this.mengenArt);
-        String kvp = getString(entry, this.kvp);
-        String kvpEinheit = getString(entry, this.kvpEinheit);
-        String darreichungsForm = getString(entry, this.darreichungsform);
-        String teilbarkeit = getString(entry, this.teilbarkeit);
-        String preisModell = getString(entry, this.preisModell);
-        String abgabeAnzahl = getString(entry, this.abgabeAnzahl);
-        String packungsHinweis = getString(entry, this.packungsHinweis);
-        String registerNummerPrefix = getString(entry, this.getRegisterNummerPrefix);
+        String pharmaNummer = getString(entry, MedikamentScanner.pharmaNummer);
+        String registerNummer = getString(entry, MedikamentScanner.registerNummer);
+        String name = getString(entry, MedikamentScanner.name);
+        String box = getString(entry, MedikamentScanner.box);
+        String kassenZeichen = getString(entry, MedikamentScanner.kassenZeichen);
+        String menge = getString(entry, MedikamentScanner.menge);
+        String mengenArt = getString(entry, MedikamentScanner.mengenArt);
+        String kvp = getString(entry, MedikamentScanner.kvp);
+        String kvpEinheit = getString(entry, MedikamentScanner.kvpEinheit);
+        String darreichungsForm = getString(entry, MedikamentScanner.darreichungsform);
+        String teilbarkeit = getString(entry, MedikamentScanner.teilbarkeit);
+        String preisModell = getString(entry, MedikamentScanner.preisModell);
+        String abgabeAnzahl = getString(entry, MedikamentScanner.abgabeAnzahl);
+        String packungsHinweis = getString(entry, MedikamentScanner.packungsHinweis);
+        String registerNummerPrefix = getString(entry, MedikamentScanner.getRegisterNummerPrefix);
         String euRegisterNummerPackungsNummer = getString(entry, MedikamentScanner.euRegisterNummerPackungsNummer);
 
         medikamentFileEntry = new MedikamentFileEntry(pharmaNummer, registerNummer, name, box, kassenZeichen, menge != null ? Double.parseDouble(menge.replace(",", ".")) : null,

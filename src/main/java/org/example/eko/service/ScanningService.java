@@ -1,11 +1,7 @@
 package org.example.eko.service;
 
 import org.example.eko.model.filerepresentations.*;
-import org.example.eko.service.scanning.HinweisScanner;
-import org.example.eko.service.scanning.MedikamentScanner;
-import org.example.eko.service.scanning.RegeltextScanner;
-import org.example.eko.service.scanning.WirkstoffScanner;
-import org.example.eko.service.scanning.AtcCodeScanner;
+import org.example.eko.service.scanning.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -20,15 +16,22 @@ public class ScanningService {
     private final RegeltextScanner regeltextScanner;
     private final WirkstoffScanner wirkstoffScanner;
     private final AtcCodeScanner atcCodeScanner;
+    private final MedikamentZusatzScanner medikamentZusatzScanner;
+    private final RezeptpflichtScanner rezeptpflichtScanner;
+    private final WirkstoffInformationScanner wirkstoffInformationScanner;
 
     public ScanningService(MedikamentScanner medikamentScanner, HinweisScanner hinweisScanner,
                            RegeltextScanner regeltextScanner, AtcCodeScanner atcCodeScanner,
-                           WirkstoffScanner wirkstoffInformationScanner){
+                           WirkstoffScanner wirkstoffScanner, MedikamentZusatzScanner medikamentZusatzScanner,
+                           RezeptpflichtScanner rezeptpflichtScanner, WirkstoffInformationScanner wirkstoffInformationScanner){
         this.medikamentScanner = medikamentScanner;
         this.hinweisScanner = hinweisScanner;
         this.regeltextScanner = regeltextScanner;
         this.atcCodeScanner = atcCodeScanner;
-        this.wirkstoffScanner = wirkstoffInformationScanner;
+        this.wirkstoffScanner = wirkstoffScanner;
+        this.medikamentZusatzScanner = medikamentZusatzScanner;
+        this.rezeptpflichtScanner = rezeptpflichtScanner;
+        this.wirkstoffInformationScanner = wirkstoffInformationScanner;
     }
 
     public DataSet scanFiles(Map<String, String> fileStringMap){
@@ -37,8 +40,11 @@ public class ScanningService {
         var regeltext = regeltextScanner.scan(fileStringMap.get("regeltext.txt"));
         var atcCodes = atcCodeScanner.scan(fileStringMap.get("atccode.txt"));
         var wirkstoffe = wirkstoffScanner.scan(fileStringMap.get("wirkstoff.txt"));
+        var medikamentZusaetze = medikamentZusatzScanner.scan(fileStringMap.get("medikament_zusatz.txt"));
+        var rezeptpflicht = rezeptpflichtScanner.scan(fileStringMap.get("rezeptpflicht.txt"));
+        var wirkstoffInformationen = wirkstoffInformationScanner.scan(fileStringMap.get("wirkstoff_information.txt"));
 
-        return new DataSet(atcCodes, hinweise, medikamente, regeltext, wirkstoffe);
+        return new DataSet(atcCodes, hinweise, medikamente, regeltext, wirkstoffe, medikamentZusaetze, rezeptpflicht, wirkstoffInformationen);
     }
 
 }

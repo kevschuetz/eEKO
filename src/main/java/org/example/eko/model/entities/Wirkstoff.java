@@ -4,16 +4,16 @@ import javax.persistence.*;
 
 @Entity
 @Table(
-        name = "ft_wirkstoff_information"
+        name = "ft_wirkstoff"
 )
-public class WirkstoffInformation {
+public class Wirkstoff {
     @Id
     @GeneratedValue(
-            generator = "wirkstoff_information_generator"
+            generator = "wirkstoff_generator"
     )
     @SequenceGenerator(
-            name = "wirkstoff_information_generator",
-            sequenceName = "wirkstoff_information_sequence",
+            name = "wirkstoff_generator",
+            sequenceName = "wirkstoff_sequence",
             initialValue = 1
     )
     private Long id;

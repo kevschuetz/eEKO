@@ -149,7 +149,7 @@ public class Medikament extends AuditModel {
 
     @OneToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    List<WirkstoffInformation> wirkstoffInformationen;
+    List<Wirkstoff> wirkstoffInformationen;
 
     public Medikament(){
 
@@ -315,16 +315,16 @@ public class Medikament extends AuditModel {
         this.regeltext = regeltext;
     }
 
-    public void addWirkstoffInformationen(List<WirkstoffInformation> v) {
+    public void addWirkstoffInformationen(List<Wirkstoff> v) {
         if(this.getWirkstoffInformationen() == null) wirkstoffInformationen = new ArrayList<>();
         wirkstoffInformationen.addAll(v);
     }
 
-    public List<WirkstoffInformation> getWirkstoffInformationen() {
+    public List<Wirkstoff> getWirkstoffInformationen() {
         return wirkstoffInformationen;
     }
 
-    public void setWirkstoffInformationen(List<WirkstoffInformation> wirkstoffInformationen) {
+    public void setWirkstoffInformationen(List<Wirkstoff> wirkstoffInformationen) {
         this.wirkstoffInformationen = wirkstoffInformationen;
     }
 }
