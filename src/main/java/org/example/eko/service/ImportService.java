@@ -31,8 +31,7 @@ public class ImportService {
         this.dateRepository = dateRepository;
     }
 
-    public void importDataSet(DataSet dataSet){
-        LocalDate validDate = LocalDate.of(2022, 7, 30); // Todo: make date parameter
+    public void importDataSet(DataSet dataSet, LocalDate validDate){
         DateEntity dateEntity = dateRepository.save(new DateEntity(validDate));
 
         // atc codes

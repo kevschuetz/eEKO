@@ -34,7 +34,7 @@ public class ScanningService {
         this.wirkstoffInformationScanner = wirkstoffInformationScanner;
     }
 
-    public DataSet scanFiles(Map<String, String> fileStringMap){
+    public DataSet scanFileStrings(Map<String, String> fileStringMap){
         var medikamente = medikamentScanner.scan(fileStringMap.get("medikament.txt"));
         var hinweise = hinweisScanner.scan(fileStringMap.get("hinweis.txt"));
         var regeltext = regeltextScanner.scan(fileStringMap.get("regeltext.txt"));

@@ -15,16 +15,26 @@ import java.util.zip.ZipEntry;
 import java.util.zip.ZipInputStream;
 
 @Service
-public class DataFetchingService {
-    private static Logger logger = LoggerFactory.getLogger(DataFetchingService.class);
+public class DataService {
+    private static Logger logger = LoggerFactory.getLogger(DataService.class);
 
+    public Map<String, String> getFileStringsFromDownloadUrl(String zipDownloadUrl) {
+        ZipInputStream zipInputStream = null;
+        try {
+            zipInputStream = downloadZipInputStream(zipDownloadUrl);
+        } catch (IOException e) {
+            e.printStackTrace();
+            return null;
+        }
+        return getFileStringsFromZipIn(zipInputStream);
+    }
 
-    public Map<String, String> getFilesFromZipAsString(String zipDownloadUrl)  {
+    public Map<String, String> getFileStringsFromZipIn(ZipInputStream zipInputStream)  {
         Map<String, String> fileToFileStringMap = new HashMap<>();
         // Get file from website
         Map<String, File> files = null;
         try {
-             files = extractFilesFromZipIn(downloadZipInputStream(zipDownloadUrl));
+             files = extractFilesFromZipIn(zipInputStream);
         } catch (IOException e) {
             logger.info(e.getMessage());
         }

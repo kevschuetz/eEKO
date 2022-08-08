@@ -2,7 +2,7 @@ package org.example.eko.rest;
 
 import org.example.eko.model.entities.Medikament;
 import org.example.eko.model.entities.WirkstoffAtcCode;
-import org.example.eko.service.DataFetchingService;
+import org.example.eko.service.DataService;
 import org.example.eko.service.ImportService;
 import org.example.eko.service.ScanningService;
 import org.example.eko.service.SubstitutionService;
@@ -24,14 +24,14 @@ import java.util.Map;
 public class DataResource {
     private static Logger logger = LoggerFactory.getLogger(DataResource.class);
 
-    private final DataFetchingService dataFetchingService;
+    private final DataService dataService;
     private final ScanningService scanningService;
     private final ImportService importService;
     private final SubstitutionService substitutionService;
 
-    public DataResource(DataFetchingService dataFetchingService, ScanningService scanningService,
+    public DataResource(DataService dataService, ScanningService scanningService,
                         ImportService importService, SubstitutionService substitutionService){
-        this.dataFetchingService = dataFetchingService;
+        this.dataService = dataService;
         this.scanningService = scanningService;
         this.importService = importService;
         this.substitutionService = substitutionService;
@@ -39,11 +39,11 @@ public class DataResource {
 
     @PostMapping("initImport")
     public ResponseEntity<Void> initImport(){
-        var map = dataFetchingService.getFilesFromZipAsString(null);
+        var map = dataService.getFileStringsFromDownloadUrl(null);
         if(map.isEmpty()){
             return ResponseEntity.status(404).build();
         }
-        importService.importDataSet(scanningService.scanFiles(map));
+        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 8));
 
         return ResponseEntity.ok().build();
     }
