@@ -10,16 +10,6 @@ import java.util.List;
 @Table(name="ft_medikament")
 public class Medikament extends AuditModel {
     @Id
-    @GeneratedValue(
-            generator = "medikament_generator"
-    )
-    @SequenceGenerator(
-            name = "medikament_generator",
-            sequenceName = "medikament_sequence",
-            initialValue = 1
-    )
-    private Long id;
-
     @Column(
             name = "pharma_nummer",
             nullable = false,
@@ -54,22 +44,9 @@ public class Medikament extends AuditModel {
 
 
     @Column(
-            name = "box",
-            length = 3
-    )
-    private String box;
-
-
-    @Column(
-            name = "kassenzeichen",
-            length = 3
-    )
-    private String kassenzeichen;
-
-
-    @Column(
             name = "menge",
-            length = 5
+            length = 5,
+            nullable = false
 
     )
     private Double menge;
@@ -80,20 +57,6 @@ public class Medikament extends AuditModel {
             length = 2
     )
     private String mengenart;
-
-    @Column(
-            name = "kassenverkaufspreis",
-            length = 9
-    )
-    private Double kassenVerkaufsPreis;
-
-
-    @Column(
-            name = "kvp_einheit",
-            length = 9
-    )
-    private String kvpEinheit;
-
 
     @Column(
             name = "darreichungsform",
@@ -110,56 +73,25 @@ public class Medikament extends AuditModel {
 
 
     @Column(
-            name = "preismodell",
-            length = 3
-    )
-    private String preisModell;
-
-
-    @Column(
-            name = "abgabeanzahl",
-            length = 3
-    )
-    private Integer abgabeAnzahl;
-
-
-    @Column(
             name = "packungshinweis",
             length = 28
     )
     private String packungsHinweis;
 
-    @Column(
-            name = "hinweis"
-    )
-    private String hinweis;
-
-    @Column(
-            name = "regeltext",
-            length = 8160
-    )
-    private String regeltext;
-
-
-    @OneToOne(fetch = FetchType.EAGER)
-    @JoinColumn(name = "valid_date_id")
-    private DateEntity validDate;
-
-
+    @Column(name = "wirkstoff")
     @OneToMany(fetch = FetchType.EAGER)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    List<Wirkstoff> wirkstoffInformationen;
+    List<Wirkstoff> wirkstoffe;
+
+    @Column(name = "wirkstoff_information")
+    String wirkstoffInformation;
+
+    @Column(name = "eko_eintrag")
+    @OneToMany(cascade = CascadeType.ALL)
+    List<EkoEintrag> ekoEintraege;
 
     public Medikament(){
 
-    }
-
-    public Medikament(DateEntity validDate){
-        this.validDate = validDate;
-    }
-
-    public Long getId() {
-        return id;
     }
 
     public String getPharmaNummer() {
@@ -202,21 +134,6 @@ public class Medikament extends AuditModel {
         this.euRegisterNummernPackungsNummer = euRegisterNummernPackungsNummer;
     }
 
-    public String getBox() {
-        return box;
-    }
-
-    public void setBox(String box) {
-        this.box = box;
-    }
-
-    public String getKassenzeichen() {
-        return kassenzeichen;
-    }
-
-    public void setKassenzeichen(String kassenzeichen) {
-        this.kassenzeichen = kassenzeichen;
-    }
 
     public Double getMenge() {
         return menge;
@@ -232,22 +149,6 @@ public class Medikament extends AuditModel {
 
     public void setMengenart(String mengenart) {
         this.mengenart = mengenart;
-    }
-
-    public Double getKassenVerkaufsPreis() {
-        return kassenVerkaufsPreis;
-    }
-
-    public void setKassenVerkaufsPreis(Double kassenVerkaufsPreis) {
-        this.kassenVerkaufsPreis = kassenVerkaufsPreis;
-    }
-
-    public String getKvpEinheit() {
-        return kvpEinheit;
-    }
-
-    public void setKvpEinheit(String kvpEinheit) {
-        this.kvpEinheit = kvpEinheit;
     }
 
     public String getDarreichungsForm() {
@@ -266,22 +167,6 @@ public class Medikament extends AuditModel {
         this.teilbarkeit = teilbarkeit;
     }
 
-    public String getPreisModell() {
-        return preisModell;
-    }
-
-    public void setPreisModell(String preisModell) {
-        this.preisModell = preisModell;
-    }
-
-    public Integer getAbgabeAnzahl() {
-        return abgabeAnzahl;
-    }
-
-    public void setAbgabeAnzahl(Integer abgabeAnzahl) {
-        this.abgabeAnzahl = abgabeAnzahl;
-    }
-
     public String getPackungsHinweis() {
         return packungsHinweis;
     }
@@ -290,40 +175,27 @@ public class Medikament extends AuditModel {
         this.packungsHinweis = packungsHinweis;
     }
 
-    public DateEntity getValidDate() {
-        return validDate;
+    public List<Wirkstoff> getWirkstoffe() {
+        return wirkstoffe;
     }
 
-    public void setValidDate(DateEntity dateTime) {
-        this.validDate = dateTime;
+    public void setWirkstoffe(List<Wirkstoff> wirkstoffInformationen) {
+        this.wirkstoffe = wirkstoffInformationen;
     }
 
-    public String getHinweis() {
-        return hinweis;
+    public String getWirkstoffInformation() {
+        return wirkstoffInformation;
     }
 
-    public void setHinweis(String hinweis) {
-        this.hinweis = hinweis;
+    public void setWirkstoffInformation(String wirkstoffInformation) {
+        this.wirkstoffInformation = wirkstoffInformation;
     }
 
-    public String getRegeltext() {
-        return regeltext;
+    public List<EkoEintrag> getEkoEintraege() {
+        return ekoEintraege;
     }
 
-    public void setRegeltext(String regeltext) {
-        this.regeltext = regeltext;
-    }
-
-    public void addWirkstoffInformationen(List<Wirkstoff> v) {
-        if(this.getWirkstoffInformationen() == null) wirkstoffInformationen = new ArrayList<>();
-        wirkstoffInformationen.addAll(v);
-    }
-
-    public List<Wirkstoff> getWirkstoffInformationen() {
-        return wirkstoffInformationen;
-    }
-
-    public void setWirkstoffInformationen(List<Wirkstoff> wirkstoffInformationen) {
-        this.wirkstoffInformationen = wirkstoffInformationen;
+    public void setEkoEintraege(List<EkoEintrag> ekoEintraege) {
+        this.ekoEintraege = ekoEintraege;
     }
 }

@@ -1,22 +1,20 @@
 
+]	java:S125"<This block of commented-out lines of code should be removed.(¬‘õĞøÿÿÿÿ8ï¦ıó§0
 h
-java:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(À‰ôº
-Q	java:S125 "<This block of commented-out lines of code should be removed.(Öæœ
-h
-java:S6204*"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
-h
-java:S62046"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(œçÖß
-m
-java:S3776Y"RRefactor this method to reduce its Cognitive Complexity from 27 to the 15 allowed.(İ‡…åùÿÿÿÿ
-?
-java:S1168]"$Return an empty map instead of null.(èö¸Èùÿÿÿÿ
-i
-java:S1612b"SReplace this lambda with method reference 'WirkstoffInformation::getPharWirkstoff'.(‰µÙœ
-h
-java:S6204j"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ã¤£’
+java:S1128"FRemove this unused import 'org.example.eko.model.entities.DateEntity'.(àâ¾İøÿÿÿÿ8ï¦ıó§0
+c
+java:S1128"FRemove this unused import 'org.example.eko.model.entities.Medikament'.(ú‰Éµ8ï¦ıó§0
 n
-java:S1612g"SReplace this lambda with method reference 'WirkstoffInformation::getWirkWirkstoff'.(±âîíúÿÿÿÿ
-X
-java:S1612h"=Replace this lambda with method reference 'Objects::nonNull'.(‹Á‚üÿÿÿÿ
-h
-java:S6204p"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ª™¨¹
+java:S1128"LRemove this unused import 'org.example.eko.model.entities.WirkstoffAtcCode'.(Ü“¤ìüÿÿÿÿ8ï¦ıó§0
+g
+java:S1128"ERemove this unused import 'org.example.eko.model.entities.Wirkstoff'.(²Âú’úÿÿÿÿ8ï¦ıó§0
+R
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8ï¦ıó§0
+C
+java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8ï¦ıó§0
+Z
+java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ï¦ıó§0
+Z
+java:S1068"8Remove this unused "medikamentRepository" private field.(õ¥„±şÿÿÿÿ8ï¦ıó§0
+T
+java:S1068"7Remove this unused "wirkstoffRepository" private field.(ó‡àÊ8ï¦ıó§0

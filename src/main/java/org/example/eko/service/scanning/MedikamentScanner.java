@@ -64,8 +64,8 @@ public class MedikamentScanner extends Scanner<MedikamentFileEntry> {
         String euRegisterNummerPackungsNummer = getString(entry, MedikamentScanner.euRegisterNummerPackungsNummer);
 
         medikamentFileEntry = new MedikamentFileEntry(pharmaNummer, registerNummer, name, box, kassenZeichen, menge != null ? Double.parseDouble(menge.replace(",", ".")) : null,
-                mengenArt, kvp != null ? Double.parseDouble(kvp) : null, kvpEinheit, darreichungsForm, teilbarkeit,
-                preisModell, abgabeAnzahl != null ? Double.parseDouble(abgabeAnzahl) : null, packungsHinweis, registerNummerPrefix, euRegisterNummerPackungsNummer);
+                mengenArt, kvp != null ? Double.parseDouble(kvp) : null, kvpEinheit != null ? Double.parseDouble(kvpEinheit) : null, darreichungsForm, teilbarkeit,
+                preisModell, abgabeAnzahl != null ? Integer.parseInt(abgabeAnzahl) : null, packungsHinweis, registerNummerPrefix, euRegisterNummerPackungsNummer);
 
         return medikamentFileEntry;
     }

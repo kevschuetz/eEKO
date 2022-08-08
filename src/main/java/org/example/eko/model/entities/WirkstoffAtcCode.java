@@ -3,7 +3,7 @@ package org.example.eko.model.entities;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "dt_wirkstoff_atc_codes")
+@Table(name = "dt_wirkstoff_atc_code")
 public class WirkstoffAtcCode {
 
     @Id

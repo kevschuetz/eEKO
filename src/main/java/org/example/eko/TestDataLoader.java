@@ -27,8 +27,12 @@ public class TestDataLoader {
         loadData();
     }
 
+
     private void loadData() throws FileNotFoundException {
         ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
+        importService.importDataSet(scanningService.scanFileStrings(dataService.getFileStringsFromZipIn(zipInputStream)), LocalDate.of(2022, 7 , 1));
+
+        zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
         importService.importDataSet(scanningService.scanFileStrings(dataService.getFileStringsFromZipIn(zipInputStream)), LocalDate.of(2022, 8, 1));
     }
 

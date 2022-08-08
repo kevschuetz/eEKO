@@ -50,7 +50,7 @@ public class DataResource {
 
     @GetMapping("medikament/{pharmaNummer}/substitute")
     public ResponseEntity<Map<WirkstoffAtcCode, Map<WirkstoffAtcCode, List<Medikament>>>> getSubstitutes(@PathVariable String pharmaNummer){
-        var s = substitutionService.getSubstitutesForMedikament(pharmaNummer, LocalDate.of(2022, 07, 30));
-        return ResponseEntity.ok(s);
+//        var s = substitutionService.getSubstitutesForMedikament(pharmaNummer, LocalDate.of(2022, 07, 30));
+        return ResponseEntity.ok(null);
     }
 }
