@@ -143,7 +143,6 @@ public class Medikament extends AuditModel {
 
     @OneToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "valid_date_id")
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private DateEntity validDate;
 
 
