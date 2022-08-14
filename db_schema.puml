@@ -42,6 +42,7 @@ table( ft_eko_eintrag ) {
   column( rezeptflicht ) : INTEGER
   column( rezeptpflicht_bezeichnung) : CHARACTER VARYING(60)
   column( abgabeanzahl ) : INTEGER
+  column( position_preisvergleich) : INTEGER
   foreign_key( medikament ) : CHARACTER VARYING(7) <<FK>>
   foreign_key( valid_date ): INTEGER <<FK>>
 }
@@ -74,9 +75,19 @@ table(dt_date){
 	column( day_of_month): INTEGER
 }
 
+table(ft_medikament_vergleich){
+	primary_key( id ) : INTEGER
+	column( position_vergleichsmedikament ) : INTEGER
+	column( vergleichs_kennzeichen ) : INTEGER
+	foreign_key( eko_eintrag ) : INTEGER <<FK>>
+	foreign_key( vergleichs_medikament ) : CHARACTER VARYING(7) <<FK>>
+}
+
 ft_medikament "1" -- "1..*" ft_wirkstoff
 ft_wirkstoff "*" -- "1..2" dt_atc_code
 ft_medikament "1" -- "1..*" ft_eko_eintrag
-ft_eko_eintrag "*" -- "1" dt_date
+ft_eko_eintrag "1..*" -- "1" dt_date
+ft_eko_eintrag "1" -- "*" ft_medikament_vergleich
+ft_medikament_vergleich "*" -- "1" ft_medikament 
 
 @enduml

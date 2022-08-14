@@ -30,10 +30,16 @@ public class TestDataLoader {
 
     private void loadData() throws FileNotFoundException {
         ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
-        importService.importDataSet(scanningService.scanFileStrings(dataService.getFileStringsFromZipIn(zipInputStream)), LocalDate.of(2022, 7 , 1));
+        var map = dataService.getFileStringsFromZipIn(zipInputStream);
+        zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil2.zip")));
+        map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
+        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 7 , 1));
 
         zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
-        importService.importDataSet(scanningService.scanFileStrings(dataService.getFileStringsFromZipIn(zipInputStream)), LocalDate.of(2022, 8, 1));
+        map = dataService.getFileStringsFromZipIn(zipInputStream);
+        zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil2.zip")));
+        map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
+        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 1));
     }
 
 

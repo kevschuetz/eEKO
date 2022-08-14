@@ -1,10 +1,11 @@
 package org.example.eko.model.entities;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 @Table(name = "ft_eko_eintrag")
-public class EkoEintrag {
+public class EkoEintrag extends AuditModel {
     @GeneratedValue(
             generator = "eko_eintrag_generator"
     )
@@ -73,6 +74,12 @@ public class EkoEintrag {
 
     @Column(name = "rezeptpflicht_bezeichnung", length = 60)
     private String rezeptpflichtBezeichnung;
+
+    @Column(name = "position_preisvergleich")
+    private Integer positionPreisvergleich;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<MedikamentVergleichsEntity> medikamentVergleichsEntityList;
 
     public void setId(Long id) {
         this.id = id;
@@ -184,5 +191,21 @@ public class EkoEintrag {
 
     public void setBox(String box) {
         this.box = box;
+    }
+
+    public Integer getPositionPreisvergleich() {
+        return positionPreisvergleich;
+    }
+
+    public void setPositionPreisvergleich(Integer positionPreisvergleich) {
+        this.positionPreisvergleich = positionPreisvergleich;
+    }
+
+    public List<MedikamentVergleichsEntity> getMedikamentVergleichsEntityList() {
+        return medikamentVergleichsEntityList;
+    }
+
+    public void setMedikamentVergleichsEntityList(List<MedikamentVergleichsEntity> medikamentVergleichsEntityList) {
+        this.medikamentVergleichsEntityList = medikamentVergleichsEntityList;
     }
 }

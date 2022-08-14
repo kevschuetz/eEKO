@@ -151,5 +151,27 @@ public class ImportService {
             medikaments.add(medikament);
         }
         medikamentRepository.saveAll(medikaments);
+
+        for(var vergleichsEntry : dataSet.vergleichsdateiFileEntries()){
+            medikamentRepository.findById(vergleichsEntry.pharmanummer()).ifPresent(m -> m.getEkoEintraege()
+                    .stream()
+                    .filter(e -> e.getValidFrom().getDate().equals(validDate))
+                    .findFirst()
+                    .ifPresent(entry -> {
+                        entry.setPositionPreisvergleich(vergleichsEntry.positionPreisvergleich());
+                        List<MedikamentVergleichsEntity> vergleiche = new ArrayList<>();
+                        for(var x : vergleichsEntry.substitutionsMedikamente()){
+                            MedikamentVergleichsEntity vergleich = new MedikamentVergleichsEntity();
+                            vergleich.setPositionVergleichsMedikament(x.positionPreisvergleich());
+                            vergleich.setVergleichsKennzeichen(x.vergleichsKennzeichen());
+                            medikamentRepository.findById(x.pharmaNummer()).ifPresent(vergleich::setVergleichsMedikament);
+
+                            vergleiche.add(vergleich);
+                        }
+
+                        entry.setMedikamentVergleichsEntityList(vergleiche);
+                        medikamentRepository.save(m);
+                    }));
+        }
     }
 }
