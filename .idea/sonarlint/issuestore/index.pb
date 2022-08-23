@@ -1,8 +1,6 @@
 
 ;
 270722.puml,1\b\1ba1831cab1dac5ffab4e0f503a464117813f216
-a
-1src/main/java/org/example/eko/EKOApplication.java,e\e\ee89ebc262ea3f92576d1884d668c3b32e0f8eb6
 l
 <src/main/java/org/example/eko/model/entities/AuditModel.java,f\3\f383bad5ec1786dc705343b9cb52f94c8b70523c
 p
@@ -41,14 +39,8 @@ Osrc/main/java/org/example/eko/service/scanning/WirkstoffInformationScanner.java
 Msrc/main/java/org/example/eko/model/filerepresentations/AtcCodeFileEntry.java,5\f\5f058b87ace37614967adc2585110802dbc08ded
 s
 Csrc/main/java/org/example/eko/service/DatasetFetchingScheduler.java,0\e\0edc134daad7dca1b23e92f948e2a5495a764be3
-7
-pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
-n
->src/main/java/org/example/eko/service/SubstitutionService.java,c\f\cfaeade096353f07400625c3b7a6fc8dacc3e94b
 r
 Bsrc/main/java/org/example/eko/model/entities/WirkstoffAtcCode.java,0\b\0b0c204681f17564f3e5117e71d38737a21955f7
-z
-Jsrc/main/java/org/example/eko/model/repositories/MedikamentRepository.java,5\d\5dcaa439ab7d77f31bee5fd326642c57b15ae8df
 €
 Psrc/main/java/org/example/eko/model/filerepresentations/MedikamentFileEntry.java,9\5\95d9e19e504b93b074fe5e8bb7f8e6f73d2aab78
 }
@@ -69,19 +61,13 @@ z
 Jsrc/main/java/org/example/eko/service/scanning/VergleichsdateiScanner.java,9\e\9ea4f4821ece91a8ccfabcca8bafc0e483964f6d
 j
 :src/main/java/org/example/eko/service/ScanningService.java,1\5\15a1f80011b6fe84937cdf158db3a3572e58101c
-a
-1src/main/java/org/example/eko/TestDataLoader.java,b\5\b5888c69147886325720bc1f4c17c3d9a8340315
-l
-<src/main/java/org/example/eko/model/entities/Medikament.java,5\a\5afaff980e993ade164bcc85ba0f72318c5bf997
 k
 ;src/main/java/org/example/eko/model/entities/Wirkstoff.java,a\a\aaabc5885edbd27887552ff7a190bf312eeabe2c
-l
-<src/main/java/org/example/eko/model/entities/EkoEintrag.java,5\5\55e36cfb9c89d17fbf71113a7c047153d00c2717
 |
 Lsrc/main/java/org/example/eko/model/entities/MedikamentVergleichsEntity.java,d\b\db37a915bf0eb1f7925427509e936b28f2ee2862
 f
 6src/main/java/org/example/eko/service/DataService.java,9\d\9dd658b7549fbd828c43952441990de342813344
-d
-4src/main/java/org/example/eko/rest/DataResource.java,9\2\92a79169356288e403e6e680b3388188e77db6d6
 h
 8src/main/java/org/example/eko/service/ImportService.java,c\3\c385b3f8296454fa255e81a3144de9c7269717ae
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec

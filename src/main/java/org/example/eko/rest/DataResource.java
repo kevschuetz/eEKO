@@ -1,5 +1,6 @@
 package org.example.eko.rest;
 
+import org.example.eko.model.dtos.MedikamentEkoDTO;
 import org.example.eko.model.entities.Medikament;
 import org.example.eko.model.entities.WirkstoffAtcCode;
 import org.example.eko.model.repositories.MedikamentRepository;
@@ -9,17 +10,19 @@ import org.example.eko.service.ScanningService;
 import org.example.eko.service.SubstitutionService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.zip.ZipInputStream;
 
 @Controller
 @RequestMapping("/api/")
@@ -42,27 +45,38 @@ public class DataResource {
         this.medikamentRepository = medikamentRepository;
     }
 
-    @PostMapping("initImport")
-    public ResponseEntity<Void> initImport(){
-        var map = dataService.getFileStringsFromDownloadUrl("https://www.sozialversicherung.at/cdscontent/load?contentid=10008.738247&version=1658833511");
-        map.putAll(dataService.getFileStringsFromDownloadUrl("https://www.sozialversicherung.at/cdscontent/load?contentid=10008.738248&version=1658833549"));
-        if(map.isEmpty()){
-            return ResponseEntity.status(404).build();
+    @PostMapping(value = "/import/zip", headers = "content-type=multipart/*", consumes = MediaType.MULTIPART_FORM_DATA_VALUE)
+    public ResponseEntity<Void> importDataZip(@RequestPart("part1") MultipartFile file1,
+                                           @RequestPart("part2") MultipartFile file2,
+                                           @RequestParam("date")
+                                               @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate localDate){
+        try {
+            var map = dataService.getFileStringsFromZipIn(new ZipInputStream(file1.getInputStream()));
+            map.putAll(dataService.getFileStringsFromZipIn(new ZipInputStream(file2.getInputStream())));
+            importService.importDataSet(scanningService.scanFileStrings(map), localDate);
+            return ResponseEntity.ok().build();
+        } catch (IOException e) {
+            return ResponseEntity.status(400).build();
         }
-        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 8));
+    }
 
+
+    @PostMapping(value = "/import/url")
+    public ResponseEntity<Void> importDataUrl(@RequestParam("urlPart1") String url1,
+                                           @RequestParam("urlPart2") String url2,
+                                           @RequestParam("date")
+                                           @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate localDate){
+        var map = dataService.getFileStringsFromDownloadUrl(url1);
+        map.putAll(dataService.getFileStringsFromDownloadUrl(url2));
+        importService.importDataSet(scanningService.scanFileStrings(map), localDate);
         return ResponseEntity.ok().build();
+
     }
 
-    @GetMapping("medikament/{pharmaNummer}/substitute")
-    public ResponseEntity<Map<WirkstoffAtcCode, Map<WirkstoffAtcCode, List<Medikament>>>> getSubstitutes(@PathVariable String pharmaNummer){
-//        var s = substitutionService.getSubstitutesForMedikament(pharmaNummer, LocalDate.of(2022, 07, 30));
-        return ResponseEntity.ok(null);
-    }
-
-    @GetMapping("medikament/{pharmaNummer}")
-    public ResponseEntity<Optional<Medikament>> getMed(@PathVariable String pharmaNummer){
-        var med = medikamentRepository.findById(pharmaNummer);
-        return ResponseEntity.ok(medikamentRepository.findById(pharmaNummer));
+    @GetMapping(value="/substitutes/{pharmaNummer}")
+    public ResponseEntity<List<MedikamentEkoDTO>> getSubstitutesByDate(@PathVariable String pharmaNummer,
+                                                                 @RequestParam("date")
+                                                                 @DateTimeFormat(iso= DateTimeFormat.ISO.DATE) LocalDate date){
+        return ResponseEntity.ok(substitutionService.getSubstitutesOrdered(pharmaNummer, date));
     }
 }

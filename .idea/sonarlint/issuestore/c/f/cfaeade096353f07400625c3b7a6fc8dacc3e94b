@@ -1,20 +1,0 @@
-
-]	java:S125"<This block of commented-out lines of code should be removed.(¬‘õĞøÿÿÿÿ8ï¦ıó§0
-h
-java:S1128"FRemove this unused import 'org.example.eko.model.entities.DateEntity'.(àâ¾İøÿÿÿÿ8ï¦ıó§0
-c
-java:S1128"FRemove this unused import 'org.example.eko.model.entities.Medikament'.(ú‰Éµ8ï¦ıó§0
-n
-java:S1128"LRemove this unused import 'org.example.eko.model.entities.WirkstoffAtcCode'.(Ü“¤ìüÿÿÿÿ8ï¦ıó§0
-g
-java:S1128"ERemove this unused import 'org.example.eko.model.entities.Wirkstoff'.(²Âú’úÿÿÿÿ8ï¦ıó§0
-R
-java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ8ï¦ıó§0
-C
-java:S1128"&Remove this unused import 'java.util'.(Î€ŒÙ8ï¦ıó§0
-Z
-java:S1128"8Remove this unused import 'java.util.stream.Collectors'.(Óóº´úÿÿÿÿ8ï¦ıó§0
-Z
-java:S1068"8Remove this unused "medikamentRepository" private field.(õ¥„±şÿÿÿÿ8ï¦ıó§0
-T
-java:S1068"7Remove this unused "wirkstoffRepository" private field.(ó‡àÊ8ï¦ıó§0
