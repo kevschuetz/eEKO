@@ -8,11 +8,11 @@ import org.springframework.stereotype.Repository;
 import java.util.Collection;
 
 @Repository
-public interface MedikamentRepository extends JpaRepository<Medikament, Long> {
+public interface MedikamentRepository extends JpaRepository<Medikament, String> {
 
     @Query(nativeQuery = true,
     value = "SELECT * FROM FT_MEDIKAMENT WHERE PHARMA_NUMMER = ?")
-    public Collection<Medikament> findByPharmaNummer(String pharmaNummer);
+    Collection<Medikament> findByPharmaNummer(String pharmaNummer);
 
 
     @Query(nativeQuery = true,
