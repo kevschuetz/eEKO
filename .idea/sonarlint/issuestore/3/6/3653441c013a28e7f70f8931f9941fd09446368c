@@ -1,9 +1,0 @@
-
-Q
-java:S1948"6Make "medikamentRepository" transient or serializable.(õ¥„±þÿÿÿÿ
-V	java:S125/"<This block of commented-out lines of code should be removed.(–Ãç­ÿÿÿÿÿ
-Q	java:S125="<This block of commented-out lines of code should be removed.(¬´™à
-h
-java:S6204J"RReplace this usage of 'Stream.collect(Collectors.toList())' with 'Stream.toList()'(ƒ‡õù
-F
-java:S1128"0Remove this unused import 'java.util.ArrayList'.(÷‰îƒ

@@ -12,3 +12,5 @@ buildNumber.properties
 
 data/
 .idea/
+frontend/
+node-modules/
