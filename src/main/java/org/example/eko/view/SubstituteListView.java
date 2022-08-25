@@ -25,6 +25,8 @@ public class SubstituteListView extends VerticalLayout {
     Grid<MedikamentEkoDTO> grid = new Grid<>(MedikamentEkoDTO.class);
     TextField filterText = new TextField();
     DatePicker datePicker = new DatePicker();
+    String pharmaNummer = "";
+    Long validDateId = -1L;
 
     private final SubstitutionService substitutionService;
 
@@ -41,7 +43,7 @@ public class SubstituteListView extends VerticalLayout {
     private void configureGrid() {
         grid.addClassNames("substitute-grid");
         grid.setSizeFull();
-        grid.setColumns("positionPreisvergleich", "pharmaNummer", "name", "box", "kassenVerkaufspreis", "regeltext", "hinweis");
+        grid.setColumns("positionPreisvergleich", "pharmaNummer", "name", "box", "kassenVerkaufspreis", "kvpProEinheit", "regeltext", "hinweis");
         //grid.addColumn(contact -> contact.getValidDate().getDate()).setHeader("Gültig ab");
         // grid.addColumn(contact -> contact.getCompany().getName()).setHeader("Company");
         grid.getColumns().forEach(col -> col.setAutoWidth(true));
@@ -64,6 +66,8 @@ public class SubstituteListView extends VerticalLayout {
     }
 
     private void updateList(String searchValue, LocalDate date){
+        this.pharmaNummer = searchValue;
+        //TODO: vergleichskennzeichen für substitute
         grid.setItems(substitutionService.getSubstitutesOrdered(searchValue, date != null ? date : LocalDate.now()));
     }
 
