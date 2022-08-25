@@ -33,6 +33,7 @@ public class MedikamentEkoDTO {
     String rezeptpflichtBezeichnung;
     Integer positionPreisvergleich;
     Integer vergleichsKennzeichen;
+    String indikationsText;
 
     public MedikamentEkoDTO(Medikament medikament, EkoEintrag ekoEintrag, Integer vergleichsKennzeichen){
         this.vergleichsKennzeichen = vergleichsKennzeichen;
@@ -74,11 +75,26 @@ public class MedikamentEkoDTO {
             setSuchtgiftVignette(ekoEintrag.getSuchtGiftVignette());
             setRezeptpflichtBezeichnung(ekoEintrag.getRezeptpflichtBezeichnung());
             setPositionPreisvergleich(ekoEintrag.getPositionPreisvergleich());
-
+            setIndikationsText(ekoEintrag.getIndText());
         }
 
     }
 
+    public Integer getVergleichsKennzeichen() {
+        return vergleichsKennzeichen;
+    }
+
+    public void setVergleichsKennzeichen(Integer vergleichsKennzeichen) {
+        this.vergleichsKennzeichen = vergleichsKennzeichen;
+    }
+
+    public String getIndikationsText() {
+        return indikationsText;
+    }
+
+    public void setIndikationsText(String indikationsText) {
+        this.indikationsText = indikationsText;
+    }
 
     public String getPharmaNummer() {
         return pharmaNummer;
