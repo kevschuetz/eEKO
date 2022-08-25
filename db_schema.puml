@@ -43,6 +43,7 @@ table( ft_eko_eintrag ) {
   column( rezeptpflicht_bezeichnung) : CHARACTER VARYING(60)
   column( abgabeanzahl ) : INTEGER
   column( position_preisvergleich) : INTEGER
+  column( indikations_text) : CHARACTER VARYING(2000)
   foreign_key( medikament ) : CHARACTER VARYING(7) <<FK>>
   foreign_key( valid_date ): INTEGER <<FK>>
 }
