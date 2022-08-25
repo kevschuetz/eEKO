@@ -81,6 +81,9 @@ public class EkoEintrag extends AuditModel {
     @OneToMany(cascade = CascadeType.ALL)
     private List<MedikamentVergleichsEntity> medikamentVergleichsEntityList;
 
+    @Column(name="indikations_text", length = 2000)
+    private String indText;
+
     public void setId(Long id) {
         this.id = id;
     }
@@ -207,5 +210,13 @@ public class EkoEintrag extends AuditModel {
 
     public void setMedikamentVergleichsEntityList(List<MedikamentVergleichsEntity> medikamentVergleichsEntityList) {
         this.medikamentVergleichsEntityList = medikamentVergleichsEntityList;
+    }
+
+    public String getIndText() {
+        return indText;
+    }
+
+    public void setIndText(String indText) {
+        this.indText = indText;
     }
 }

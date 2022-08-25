@@ -20,12 +20,13 @@ public class ScanningService {
     private final RezeptpflichtScanner rezeptpflichtScanner;
     private final WirkstoffInformationScanner wirkstoffInformationScanner;
     private final VergleichsdateiScanner vergleichsdateiScanner;
+    private final IndTextScanner indTextScanner;
 
     public ScanningService(MedikamentScanner medikamentScanner, HinweisScanner hinweisScanner,
                            RegeltextScanner regeltextScanner, AtcCodeScanner atcCodeScanner,
                            WirkstoffScanner wirkstoffScanner, MedikamentZusatzScanner medikamentZusatzScanner,
                            RezeptpflichtScanner rezeptpflichtScanner, WirkstoffInformationScanner wirkstoffInformationScanner,
-                           VergleichsdateiScanner vergleichsdateiScanner){
+                           VergleichsdateiScanner vergleichsdateiScanner, IndTextScanner indTextScanner){
         this.medikamentScanner = medikamentScanner;
         this.hinweisScanner = hinweisScanner;
         this.regeltextScanner = regeltextScanner;
@@ -35,6 +36,7 @@ public class ScanningService {
         this.rezeptpflichtScanner = rezeptpflichtScanner;
         this.wirkstoffInformationScanner = wirkstoffInformationScanner;
         this.vergleichsdateiScanner = vergleichsdateiScanner;
+        this.indTextScanner = indTextScanner;
     }
 
     public DataSet scanFileStrings(Map<String, String> fileStringMap){
@@ -47,8 +49,9 @@ public class ScanningService {
         var rezeptpflicht = rezeptpflichtScanner.scan(fileStringMap.get("rezeptpflicht.txt"));
         var wirkstoffInformationen = wirkstoffInformationScanner.scan(fileStringMap.get("wirkstoff_information.txt"));
         var vergleichsEntries = vergleichsdateiScanner.scan(fileStringMap.get("phar.txt"));
+        var indTextEntries = indTextScanner.scan(fileStringMap.get("indtext.txt"));
 
-        return new DataSet(atcCodes, hinweise, medikamente, regeltext, wirkstoffe, medikamentZusaetze, rezeptpflicht, wirkstoffInformationen, vergleichsEntries);
+        return new DataSet(atcCodes, hinweise, medikamente, regeltext, wirkstoffe, medikamentZusaetze, rezeptpflicht, wirkstoffInformationen, vergleichsEntries, indTextEntries);
     }
 
 }
