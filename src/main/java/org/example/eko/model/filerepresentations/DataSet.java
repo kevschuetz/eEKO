@@ -6,5 +6,5 @@ public record DataSet(List<AtcCodeFileEntry> atcCodeFileEntries, List<HinweisFil
                       List<MedikamentFileEntry> medikamentFileEntries, List<RegeltextFileEntry> regeltextFileEntries,
                       List<WirkstoffFileEntry> wirkstoffFileEntries, List<MedikamentZusatzFileEntry> medikamentZusatzFileEntries,
                       List<RezeptpflichtFileEntry> rezeptpflichtFileEntries, List<WirkstoffInformationFileEntry> wirkstoffInformationFileEntries,
-                      List<VergleichsdateiFileEntry> vergleichsdateiFileEntries) {
+                      List<VergleichsdateiFileEntry> vergleichsdateiFileEntries, List<IndTextFileEntry> indTextFileEntries) {
 }

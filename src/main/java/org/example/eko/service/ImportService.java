@@ -145,6 +145,12 @@ public class ImportService {
                         ekoEintrag.setRezeptpflichtBezeichnung(rz.rezeptpflichtHinweis());
                     });
 
+            dataSet.indTextFileEntries()
+                    .stream()
+                    .filter(indText -> indText.pharmaNummer().equals(medikament.getPharmaNummer())).findFirst().ifPresent(indText -> {
+                        ekoEintrag.setIndText(indText.indikationsText());
+                    });
+
             if(medikament.getEkoEintraege() == null) medikament.setEkoEintraege(new ArrayList<>());
             medikament.getEkoEintraege().add(ekoEintrag);
 
