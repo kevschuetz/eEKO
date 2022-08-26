@@ -11,10 +11,14 @@ import com.vaadin.flow.router.PageTitle;
 import com.vaadin.flow.router.Route;
 import org.apache.tomcat.jni.Local;
 import org.example.eko.model.dtos.MedikamentEkoDTO;
+import org.example.eko.model.entities.EkoEintrag;
 import org.example.eko.model.entities.Medikament;
+import org.example.eko.model.entities.MedikamentVergleichsEntity;
+import org.example.eko.model.repositories.EkoEintragRepository;
 import org.example.eko.model.repositories.MedikamentRepository;
 import org.example.eko.service.SubstitutionService;
 
+import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.stream.Collectors;
@@ -25,13 +29,15 @@ public class SubstituteListView extends VerticalLayout {
     Grid<MedikamentEkoDTO> grid = new Grid<>(MedikamentEkoDTO.class);
     TextField filterText = new TextField();
     DatePicker datePicker = new DatePicker();
-    String pharmaNummer = "";
-    Long validDateId = -1L;
+    Long medEkoId;
+    EkoEintrag currentEntry;
 
     private final SubstitutionService substitutionService;
+    private final EkoEintragRepository ekoEintragRepository;
 
-    public SubstituteListView(SubstitutionService substitutionService) {
+    public SubstituteListView(SubstitutionService substitutionService, EkoEintragRepository ekoEintragRepository) {
         this.substitutionService = substitutionService;
+        this.ekoEintragRepository = ekoEintragRepository;
 
         addClassName("list-view");
         setSizeFull();
@@ -46,6 +52,16 @@ public class SubstituteListView extends VerticalLayout {
         grid.setColumns("positionPreisvergleich", "pharmaNummer", "name", "box", "kassenVerkaufspreis", "kvpProEinheit", "regeltext", "hinweis");
         //grid.addColumn(contact -> contact.getValidDate().getDate()).setHeader("Gültig ab");
         // grid.addColumn(contact -> contact.getCompany().getName()).setHeader("Company");
+        grid.addColumn(medDto ->
+            currentEntry != null ?
+                    currentEntry.getMedikamentVergleichsEntityList()
+                            .stream()
+                            .filter(v -> v.getVergleichsMedikament().getPharmaNummer().equals(medDto.getPharmaNummer()))
+                            .map(MedikamentVergleichsEntity::getVergleichsKennzeichen)
+                            .findFirst()
+                            .orElse(null)
+                    : null
+        ).setHeader("Vergleichskennzeichen");
         grid.getColumns().forEach(col -> col.setAutoWidth(true));
     }
 
@@ -65,10 +81,13 @@ public class SubstituteListView extends VerticalLayout {
         return toolbar;
     }
 
-    private void updateList(String searchValue, LocalDate date){
-        this.pharmaNummer = searchValue;
-        //TODO: vergleichskennzeichen für substitute
-        grid.setItems(substitutionService.getSubstitutesOrdered(searchValue, date != null ? date : LocalDate.now()));
-    }
 
+    private void updateList(String searchValue, LocalDate date) {
+        var items = substitutionService.getSubstitutesOrdered(searchValue, date != null ? date : LocalDate.now());
+        items.stream().filter(m -> m.getPharmaNummer().equals(searchValue)).findFirst().ifPresent(m -> {
+            if(m.getId() != null)
+                currentEntry = ekoEintragRepository.findById(m.getId()).orElse(null);
+        });
+        grid.setItems(items);
+    }
 }

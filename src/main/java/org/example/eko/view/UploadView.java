@@ -2,6 +2,7 @@ package org.example.eko.view;
 
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.datepicker.DatePicker;
+import com.vaadin.flow.component.notification.Notification;
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.component.upload.Upload;
 import com.vaadin.flow.component.upload.receivers.MultiFileMemoryBuffer;
@@ -51,15 +52,20 @@ public class UploadView extends VerticalLayout {
         });
 
         uploadButton.addClickListener(e -> {
-           uploadFiles();
+            try {
+                uploadFiles();
+            } catch (Exception ex) {
+                Notification.show(ex.getMessage());
+            }
         });
+
 
         add(upload);
         add(datePicker);
         add(uploadButton);
     }
 
-    public void uploadFiles(){
+    public void uploadFiles() throws Exception {
         if(i1 == null || i2 == null) return;
 
         var map = dataService.getFileStringsFromZipIn(new ZipInputStream(i1));
@@ -70,5 +76,6 @@ public class UploadView extends VerticalLayout {
         i1 = null;
         i2 = null;
         upload.clearFileList();
+        datePicker.clear();
     }
 }
