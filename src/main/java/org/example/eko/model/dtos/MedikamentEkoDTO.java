@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MedikamentEkoDTO {
+    Long id;
     String pharmaNummer;
     String registerNummer;
     String name;
@@ -32,11 +33,9 @@ public class MedikamentEkoDTO {
     String suchtgiftVignette;
     String rezeptpflichtBezeichnung;
     Integer positionPreisvergleich;
-    Integer vergleichsKennzeichen;
     String indikationsText;
 
-    public MedikamentEkoDTO(Medikament medikament, EkoEintrag ekoEintrag, Integer vergleichsKennzeichen){
-        this.vergleichsKennzeichen = vergleichsKennzeichen;
+    public MedikamentEkoDTO(Medikament medikament, EkoEintrag ekoEintrag){
         setPharmaNummer(medikament.getPharmaNummer());
         setRegisterNummer(medikament.getRegisterNummer());
         setName(medikament.getName());
@@ -76,16 +75,17 @@ public class MedikamentEkoDTO {
             setRezeptpflichtBezeichnung(ekoEintrag.getRezeptpflichtBezeichnung());
             setPositionPreisvergleich(ekoEintrag.getPositionPreisvergleich());
             setIndikationsText(ekoEintrag.getIndText());
+            setId(ekoEintrag.getId());
         }
 
     }
 
-    public Integer getVergleichsKennzeichen() {
-        return vergleichsKennzeichen;
+    public Long getId() {
+        return id;
     }
 
-    public void setVergleichsKennzeichen(Integer vergleichsKennzeichen) {
-        this.vergleichsKennzeichen = vergleichsKennzeichen;
+    public void setId(Long id) {
+        this.id = id;
     }
 
     public String getIndikationsText() {

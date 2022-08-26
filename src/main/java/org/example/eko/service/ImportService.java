@@ -27,14 +27,15 @@ public class ImportService {
     private final WirkstoffRepository wirkstoffRepository;
     private final DateRepository dateRepository;
 
-    public ImportService(MedikamentRepository medikamentRepository, WirkstoffRepository wirkstoffRepository, DateRepository dateRepository){
+    public ImportService(MedikamentRepository medikamentRepository, WirkstoffRepository wirkstoffRepository, DateRepository dateRepository) throws Exception{
         this.medikamentRepository = medikamentRepository;
         this.wirkstoffRepository = wirkstoffRepository;
         this.dateRepository = dateRepository;
     }
 
     @Transactional
-    public void importDataSet(DataSet dataSet, LocalDate validDate){
+    public void importDataSet(DataSet dataSet, LocalDate validDate) throws Exception {
+        //TODO: do not allow upload of dataset for a date that is already in the database
         DateEntity dateEntity = dateRepository.save(new DateEntity(validDate));
 
         // atc codes
@@ -105,6 +106,10 @@ public class ImportService {
                 medikament.setWirkstoffe(wirkstoffs);
             }else{
                 medikament = optionalMedikament.get();
+                var filter = medikament.getEkoEintraege().stream().map(e -> e.getValidFrom().getDate()).filter(d -> d.equals(validDate)).findFirst();
+                if(filter.isPresent()){
+                    throw new Exception("Eintrag für "+ validDate + "bereits vorhanden");
+                }
             }
 
             EkoEintrag ekoEintrag = new EkoEintrag();

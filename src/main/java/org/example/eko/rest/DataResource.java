@@ -55,7 +55,7 @@ public class DataResource {
             map.putAll(dataService.getFileStringsFromZipIn(new ZipInputStream(file2.getInputStream())));
             importService.importDataSet(scanningService.scanFileStrings(map), localDate);
             return ResponseEntity.ok().build();
-        } catch (IOException e) {
+        } catch (Exception e) {
             return ResponseEntity.status(400).build();
         }
     }
@@ -68,8 +68,12 @@ public class DataResource {
                                            @DateTimeFormat(iso = DateTimeFormat.ISO.DATE) LocalDate localDate){
         var map = dataService.getFileStringsFromDownloadUrl(url1);
         map.putAll(dataService.getFileStringsFromDownloadUrl(url2));
-        importService.importDataSet(scanningService.scanFileStrings(map), localDate);
-        return ResponseEntity.ok().build();
+        try {
+            importService.importDataSet(scanningService.scanFileStrings(map), localDate);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            return ResponseEntity.status(400).build();
+        }
 
     }
 
