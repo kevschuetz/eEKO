@@ -78,7 +78,7 @@ public class EkoEintrag extends AuditModel {
     @Column(name = "position_preisvergleich")
     private Integer positionPreisvergleich;
 
-    @OneToMany(cascade = CascadeType.ALL)
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
     private List<MedikamentVergleichsEntity> medikamentVergleichsEntityList;
 
     @Column(name="indikations_text", length = 2000)

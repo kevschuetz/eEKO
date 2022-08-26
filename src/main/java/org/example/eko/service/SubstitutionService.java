@@ -34,7 +34,7 @@ public class SubstitutionService {
                     .filter(ekoEintrag -> ekoEintrag.getValidFrom().getDate().compareTo(date) <= 0)
                     .max(Comparator.comparing(e -> e.getValidFrom().getDate())).orElse(null);
 
-            result.add(new MedikamentEkoDTO(medikament, eko, null));
+            result.add(new MedikamentEkoDTO(medikament, eko));
 
 
             if(eko != null){
@@ -47,7 +47,7 @@ public class SubstitutionService {
                             .findFirst()
                             .orElse(null);
 
-                    result.add(new MedikamentEkoDTO(v.getVergleichsMedikament(), eko, v.getVergleichsKennzeichen()));
+                    result.add(new MedikamentEkoDTO(v.getVergleichsMedikament(), eko));
                 }
             }
         });

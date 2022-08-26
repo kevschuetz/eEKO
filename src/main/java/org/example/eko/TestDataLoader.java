@@ -19,7 +19,7 @@ public class TestDataLoader {
     private final ScanningService scanningService;
     private final ImportService importService;
 
-    public TestDataLoader(DataService dataService, ScanningService scanningService, ImportService importService) throws FileNotFoundException {
+    public TestDataLoader(DataService dataService, ScanningService scanningService, ImportService importService) throws Exception {
         this.dataService = dataService;
         this.scanningService = scanningService;
         this.importService = importService;
@@ -28,7 +28,7 @@ public class TestDataLoader {
     }
 
 
-    private void loadData() throws FileNotFoundException {
+    private void loadData() throws Exception {
         ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
         var map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil2.zip")));
