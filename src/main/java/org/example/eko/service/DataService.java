@@ -31,49 +31,57 @@ public class DataService {
 
     public Map<String, String> getFileStringsFromZipIn(ZipInputStream zipInputStream)  {
         Map<String, String> fileToFileStringMap = new HashMap<>();
-        // Get file from website
-        Map<String, File> files = null;
         try {
-             files = extractFilesFromZipIn(zipInputStream);
+            var entry = zipInputStream.getNextEntry();
+            while(entry != null) {
+                if (!entry.getName().contains(".txt")) {
+                    entry = getNextValidEntry(zipInputStream);
+                    continue;
+                }
+                // copy content of zipentry to baos
+                ByteArrayOutputStream baos = new ByteArrayOutputStream();
+                byte[] buffer = new byte[2048];
+                int len;
+                while ((len = zipInputStream.read(buffer)) > -1) {
+                    baos.write(buffer, 0, len);
+                }
+                baos.flush();
+                // close entry
+                zipInputStream.closeEntry();
+                // create reader to read from baos
+                var r = new BufferedReader(new InputStreamReader(new ByteArrayInputStream(baos.toByteArray()), "Cp1252"));
+                StringBuilder sb = new StringBuilder();
+                r.lines().forEach(line -> sb.append(line).append("\n"));
+                fileToFileStringMap.put(entry.getName(), sb.toString());
+                zipInputStream.closeEntry();
+                // close baos and r
+                r.close();
+                baos.close();
+                logger.info("Read entry {}.", entry.getName());
+
+                entry = getNextValidEntry(zipInputStream);
+            }
         } catch (IOException e) {
-            logger.info(e.getMessage());
+            e.printStackTrace();
         }
-        if(files == null) return fileToFileStringMap;
+        return fileToFileStringMap;
+    }
 
-
-        for(Map.Entry<String, File> entry : files.entrySet()){
-            if(!entry.getKey().contains(".txt")) continue;
-
-            logger.info("----------------------------------------------------");
-            logger.info("Current File: " + entry.getKey());
+    private ZipEntry getNextValidEntry(ZipInputStream zipInputStream) {
+        boolean foundNextValidFile = false;
+        ZipEntry entry = null;
+        while(!foundNextValidFile){
             try {
-                String fileString = fileToString(entry.getValue(), "Cp1252");
-                fileToFileStringMap.put(entry.getKey(), fileString);
-            } catch (IOException e) {
-                logger.info("Could not read file.");
-                logger.info(e.getMessage());
-            }
-            logger.info("---------------------------------------------------");
-        }
-
-        // Delete temp directory
-        boolean deletedDirectory = false;
-        if(!files.isEmpty()) {
-            deletedDirectory = deleteDirectory(files.entrySet().stream().findFirst().get().getValue().getParentFile());
-        }
-        logger.debug("Deleted directory : " + deletedDirectory + ".");
-        return  fileToFileStringMap;
-    }
-
-    private boolean deleteDirectory(File directoryToBeDeleted) {
-        File[] allContents = directoryToBeDeleted.listFiles();
-        if (allContents != null) {
-            for (File file : allContents) {
-                deleteDirectory(file);
+                entry = zipInputStream.getNextEntry();
+                foundNextValidFile = true;
+            }catch (Exception exception){
+                logger.info("Could not get zip entry.");
+                logger.info(exception.getMessage());
             }
         }
-        return directoryToBeDeleted.delete();
+        return entry;
     }
+
 
     private ZipInputStream downloadZipInputStream(String downloadUrl) throws IOException {
         URL url = new URL(downloadUrl != null ? downloadUrl : "https://www.sozialversicherung.at/cdscontent/load?contentid=10008.738247&version=1658833511");
@@ -84,6 +92,8 @@ public class DataService {
         return zipInputStream;
     }
 
+    // archived methods
+
     private Map<String, File> extractFilesFromZipIn(ZipInputStream zipIn) throws IOException {
         Map<String, File> fileMap = new HashMap();
 
@@ -92,6 +102,11 @@ public class DataService {
 
         ZipEntry entry = zipIn.getNextEntry();
         while (entry != null) {
+            if(entry.getName().contains(".txt")){
+                var r = new BufferedReader(new InputStreamReader(zipIn, "CP1252"));
+                r.lines().forEach(logger::info);
+                r.close();
+            }
             File newFile = new File(outDir.toFile(), entry.getName());
             if (entry.isDirectory()) {
                 if (!newFile.isDirectory() && !newFile.mkdirs()) {
@@ -129,6 +144,15 @@ public class DataService {
         return fileMap;
     }
 
+    private boolean deleteDirectory(File directoryToBeDeleted) {
+        File[] allContents = directoryToBeDeleted.listFiles();
+        if (allContents != null) {
+            for (File file : allContents) {
+                deleteDirectory(file);
+            }
+        }
+        return directoryToBeDeleted.delete();
+    }
 
     private String fileToString(File file, String charSetName) throws IOException {
         StringBuilder sb = new StringBuilder();
