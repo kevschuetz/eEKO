@@ -1,0 +1,89 @@
+@startuml
+left to right direction
+skinparam roundcorner 5
+skinparam linetype ortho
+skinparam shadowing false
+skinparam handwritten false
+skinparam class {
+    BackgroundColor white
+    ArrowColor #2688d4
+    BorderColor #2688d4
+}
+
+
+!define primary_key(x) <b><color:#b8861b><&key></color> x</b>
+!define foreign_key(x) <color:#aaaaaa><&key></color> x
+!define column(x) <color:#efefef><&media-record></color> x
+!define table(x) entity x << (T, white) >>
+
+
+table( eko_eintrag_medikament ) {
+  primary_key( id ): INTEGER
+  column( pharma_nummer ) : CHARACTER VARYING(7)
+  column( register_nummer_prefix ) : CHARACTER VARYING(2)
+  column( register_nummer ) : CHARACTER VARYING(6)
+  column( name ) : CHARACTER VARYING(100)
+  column( darreichungsform ) : CHARACTER VARYING(9)
+  column( teilbarkeit ) : CHARACTER VARYING(3)
+  column( packungshinweis ) : CHARACTER VARYING(28)
+  column( wirkstoff_information ) : CHARACTER VARYING(2048)
+  column( box ) : CHARACTER(1)
+  column( kassenzeichen ) : CHARACTER VARYING(3)
+  column( kassenverkaufspreis ) : NUMBER
+  column( kvp_pro_einheit ) : NUMBER
+  column( preismodell ) : CHARACTER VARYING(3)
+  column( regeltext ) : CHARACTER VARYING(2048)
+  column( hinweis ) : CHARACTER VARYING(2048)
+  column( langzeitbewilligung ) : CHARACTER VARYING(3)
+  column( suchtgiftvignete ) : CHARACTER VARYING(3)
+  column( rezeptflicht ) : INTEGER
+  column( rezeptpflicht_bezeichnung) : CHARACTER VARYING(60)
+  column( abgabeanzahl ) : INTEGER
+  column( position_preisvergleich) : INTEGER
+  column( indikations_text) : CHARACTER VARYING(2000)
+  foreign_key( valid_date_id ): INTEGER <<FK>>
+}
+
+table( atc_code ){
+ primary_key(id): INTEGER
+ column(code): CHARACTER VARYING(6)
+ column(text): CHARACTER VARYING(128)
+ foreign_key(anatomische_hauptgruppe): INTEGER <<FK>>
+ foreign_key(therapeutische_untergruppe): INTEGER <<FK>>
+ foreign_key(pharmakologische_untergruppe): INTEGER <<FK>>
+ foreign_key(chemische_untergruppe): INTEGER<<FK>>
+}
+
+table( wirkstoff ){
+	primary_key( id ): INTEGER
+	column( laufnummer ): INTEGER
+	column( wirkstoff_staerke ): CHARACTER VARYING(10)
+	column( dimension_wirkstoff_staerke ): CHARACTER VARYING(9)
+	column( wirkstoff_eigenschaft ) : CHARACTER VARYING(20)
+	foreign_key( chemische_substanz_id ): INTEGER <<FK>>
+	foreign_key( eko_eintrag_medikament_id ) : INTEGER <<FK>>
+}
+
+table(date){
+	primary_key( id ): INTEGER
+	column( date ) : date
+	column( year ) : INTEGER
+	column( month ) : INTEGER
+	column( day_of_month): INTEGER
+}
+
+table(medikament_vergleich){
+	primary_key( id ) : INTEGER
+	column( vergleichs_kennzeichen ) : INTEGER
+    foreign_key(medikament): INTEGER <<FK>>
+	foreign_key( vergleichs_medikament ) : INTEGER <<FK>>
+}
+
+eko_eintrag_medikament "1" -- "1..*" wirkstoff
+wirkstoff "*" -- "1" atc_code
+eko_eintrag_medikament "1..*" -- "1" date
+eko_eintrag_medikament "1" -- "*" medikament_vergleich
+medikament_vergleich "*" -- "1" eko_eintrag_medikament
+atc_code "0..3" -- "0..4" atc_code
+
+@enduml
