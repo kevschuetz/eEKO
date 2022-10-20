@@ -1,5 +1,6 @@
 package org.example.eko.rest;
 
+import io.swagger.models.Response;
 import org.example.eko.model.dtos.MedikamentEkoDTO;
 import org.example.eko.model.entities.Medikament;
 import org.example.eko.model.entities.WirkstoffAtcCode;

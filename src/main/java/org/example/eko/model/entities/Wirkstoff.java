@@ -7,15 +7,15 @@ import javax.persistence.*;
         name = "ft_wirkstoff"
 )
 public class Wirkstoff {
-    @Id
     @GeneratedValue(
-            generator = "wirkstoff_generator"
+            generator = "staging_area_generator"
     )
     @SequenceGenerator(
-            name = "wirkstoff_generator",
-            sequenceName = "wirkstoff_sequence",
+            name = "staging_area_generator",
+            sequenceName = "staging_area_sequence",
             initialValue = 1
     )
+    @Id
     private Long id;
 
     @ManyToOne
@@ -111,5 +111,9 @@ public class Wirkstoff {
 
     public void setWirkstoffEigenschaft(String wirkstoffEigenschaft) {
         this.wirkstoffEigenschaft = wirkstoffEigenschaft;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

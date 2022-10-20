@@ -41,148 +41,124 @@ public class ImportService {
         // atc codes
         List<WirkstoffAtcCode> wirkstoffAtcCodes = new ArrayList<>();
         for(var atcCodeFileEntry : dataSet.atcCodeFileEntries()){
-            if(wirkstoffRepository.findById(atcCodeFileEntry.code()).isPresent()) continue;
-
             WirkstoffAtcCode wirkstoffAtcCode = new WirkstoffAtcCode();
             wirkstoffAtcCode.setAtcCode(atcCodeFileEntry.code());
             wirkstoffAtcCode.setText(atcCodeFileEntry.text());
+            wirkstoffAtcCode.setValidFrom(dateEntity);
             wirkstoffAtcCodes.add(wirkstoffAtcCode);
         }
         wirkstoffRepository.saveAll(wirkstoffAtcCodes);
 
         for(var wirkstoffAtcCode : wirkstoffAtcCodes){
-            wirkstoffRepository.findById(wirkstoffAtcCode.getAtcCode().substring(0, 1)).ifPresent(wirkstoffAtcCode::setAnatomischeHauptgruppe);
+            wirkstoffAtcCodes.stream().filter(ws -> ws.getAtcCode().trim().equals(wirkstoffAtcCode.getAtcCode().substring(0, 1))).findFirst().ifPresent(wirkstoffAtcCode::setAnatomischeHauptgruppe);
 
             if(wirkstoffAtcCode.getAtcCode().length() >= 3 )
-                wirkstoffRepository.findById(wirkstoffAtcCode.getAtcCode().substring(0, 3)).ifPresent(wirkstoffAtcCode::setTherapeutischeUntergruppe);
+                wirkstoffAtcCodes.stream().filter(ws -> ws.getAtcCode().trim().equals(wirkstoffAtcCode.getAtcCode().substring(0, 3))).findFirst().ifPresent(wirkstoffAtcCode::setTherapeutischeUntergruppe);
 
             if(wirkstoffAtcCode.getAtcCode().length() >= 4)
-                wirkstoffRepository.findById(wirkstoffAtcCode.getAtcCode().substring(0, 4)).ifPresent(wirkstoffAtcCode::setPharmakologischeUntegruppe);
+                wirkstoffAtcCodes.stream().filter(ws -> ws.getAtcCode().trim().equals(wirkstoffAtcCode.getAtcCode().substring(0, 4))).findFirst().ifPresent(wirkstoffAtcCode::setPharmakologischeUntegruppe);
 
             if(wirkstoffAtcCode.getAtcCode().length() >= 5)
-                wirkstoffRepository.findById(wirkstoffAtcCode.getAtcCode().substring(0, 5)).ifPresent(wirkstoffAtcCode::setChemischeUntergruppe);
+                wirkstoffAtcCodes.stream().filter(ws -> ws.getAtcCode().trim().equals(wirkstoffAtcCode.getAtcCode().substring(0, 5))).findFirst().ifPresent(wirkstoffAtcCode::setChemischeUntergruppe);
         }
         wirkstoffRepository.saveAll(wirkstoffAtcCodes);
 
         // medikamente
         List<Medikament> medikaments = new ArrayList<>();
         for(var medikamentFileEntry : dataSet.medikamentFileEntries()){
-            Optional<Medikament> optionalMedikament = medikamentRepository.findById(medikamentFileEntry.pharmaNummer());
-            Medikament medikament;
-            if(optionalMedikament.isEmpty()){
-                medikament = new Medikament();
-                medikament.setPharmaNummer(medikamentFileEntry.pharmaNummer());
-                medikament.setRegisterNummernPrefix(medikamentFileEntry.euRegisterNummerPrefix());
-                medikament.setRegisterNummer(medikamentFileEntry.registerNummer());
-                medikament.setEuRegisterNummernPackungsNummer(medikamentFileEntry.euRegisterNummerPackungsNummer());
-                medikament.setPharmaNummer(medikamentFileEntry.pharmaNummer());
-                medikament.setTeilbarkeit(medikamentFileEntry.teilbarkeit());
-                medikament.setDarreichungsForm(medikamentFileEntry.darreichungsform());
-                medikament.setMenge(medikamentFileEntry.menge());
-                medikament.setMengenart(medikamentFileEntry.mengenArt());
-                medikament.setName(medikamentFileEntry.name());
-                medikament.setPackungsHinweis(medikamentFileEntry.packungsHinweis());
-                medikament.setEkoEintraege(new ArrayList<>());
+            Medikament medikament = new Medikament();
+            medikament.setValidFrom(dateEntity);
+            medikament.setPharmaNummer(medikamentFileEntry.pharmaNummer());
+            medikament.setRegisterNummernPrefix(medikamentFileEntry.euRegisterNummerPrefix());
+            medikament.setRegisterNummer(medikamentFileEntry.registerNummer());
+            medikament.setEuRegisterNummernPackungsNummer(medikamentFileEntry.euRegisterNummerPackungsNummer());
+            medikament.setPharmaNummer(medikamentFileEntry.pharmaNummer());
+            medikament.setTeilbarkeit(medikamentFileEntry.teilbarkeit());
+            medikament.setDarreichungsForm(medikamentFileEntry.darreichungsform());
+            medikament.setMenge(medikamentFileEntry.menge());
+            medikament.setMengenart(medikamentFileEntry.mengenArt());
+            medikament.setName(medikamentFileEntry.name());
+            medikament.setPackungsHinweis(medikamentFileEntry.packungsHinweis());
+            medikament.setBox(medikamentFileEntry.box());
+            medikament.setAbgabeanzahl(medikamentFileEntry.abgabeAnzahl());
+            medikament.setKassenzeichen(medikamentFileEntry.kassenZeichen());
+            medikament.setPreisModell(medikamentFileEntry.preisModell());
+            medikament.setKassenverkaufspreis(medikamentFileEntry.kvp());
+            medikament.setKvpProEinheit(medikamentFileEntry.kvpEinheit());
 
-                dataSet.wirkstoffInformationFileEntries()
-                        .stream()
-                        .filter(wi -> wi.pharmaNummer().equals(medikament.getPharmaNummer()))
-                        .map(WirkstoffInformationFileEntry::wirkstoffInformation)
-                        .findFirst()
-                        .ifPresent(medikament::setWirkstoffInformation);
+            dataSet.wirkstoffInformationFileEntries()
+                    .stream()
+                    .filter(wi -> wi.pharmaNummer().equals(medikament.getPharmaNummer()))
+                    .map(WirkstoffInformationFileEntry::wirkstoffInformation)
+                    .findFirst()
+                    .ifPresent(medikament::setWirkstoffInformation);
 
-                List<Wirkstoff> wirkstoffs = new ArrayList<>();
-                for(var wirkstoff : dataSet.wirkstoffFileEntries().stream().filter(w -> w.pharmaNummer().equals(medikament.getPharmaNummer())).collect(Collectors.toList())){
-                    var wirkstoffInformation = new Wirkstoff();
-                    wirkstoffRepository.findById(wirkstoff.pharAtcCode()).ifPresent(wirkstoffInformation::setPharWirkstoff);
-                    wirkstoffRepository.findById(wirkstoff.wirkAtcCode()).ifPresent(wirkstoffInformation::setWirkWirkstoff);
-                    wirkstoffInformation.setWirkstoffEigenschaft(wirkstoff.wirkstoffEigenschaft());
-                    wirkstoffInformation.setWirkstoffEigenschaft(wirkstoff.wirkstoffEigenschaft());
-                    wirkstoffInformation.setWirkstoffStärkenDimension(wirkstoff.wirkstoffStärkenDimension());
-                    wirkstoffInformation.setLaufNummer(wirkstoff.laufnummer());
-                    wirkstoffInformation.setWirkstoffStärke(wirkstoff.wirkstoffStärke());
-                    wirkstoffs.add(wirkstoffInformation);
-                }
-                medikament.setWirkstoffe(wirkstoffs);
-            }else{
-                medikament = optionalMedikament.get();
-                var filter = medikament.getEkoEintraege().stream().map(e -> e.getValidFrom().getDate()).filter(d -> d.equals(validDate)).findFirst();
-                if(filter.isPresent()){
-                    throw new Exception("Eintrag für "+ validDate + "bereits vorhanden");
-                }
+            List<Wirkstoff> wirkstoffs = new ArrayList<>();
+            for(var wirkstoff : dataSet.wirkstoffFileEntries().stream().filter(w -> w.pharmaNummer().equals(medikament.getPharmaNummer())).collect(Collectors.toList())){
+                var wirkstoffInformation = new Wirkstoff();
+                wirkstoffAtcCodes.stream().filter(atc -> wirkstoff.pharAtcCode().equals(atc.getAtcCode())).findFirst().ifPresent(wirkstoffInformation::setPharWirkstoff);
+                wirkstoffAtcCodes.stream().filter(atc -> atc.getAtcCode().equals(wirkstoff.wirkAtcCode())).findFirst().ifPresent(wirkstoffInformation::setWirkWirkstoff);
+                wirkstoffInformation.setWirkstoffEigenschaft(wirkstoff.wirkstoffEigenschaft());
+                wirkstoffInformation.setWirkstoffStärkenDimension(wirkstoff.wirkstoffStärkenDimension());
+                wirkstoffInformation.setLaufNummer(wirkstoff.laufnummer());
+                wirkstoffInformation.setWirkstoffStärke(wirkstoff.wirkstoffStärke());
+                wirkstoffs.add(wirkstoffInformation);
             }
-
-            EkoEintrag ekoEintrag = new EkoEintrag();
-            ekoEintrag.setValidFrom(dateEntity);
-            ekoEintrag.setBox(medikamentFileEntry.box());
-            ekoEintrag.setAbgabeanzahl(medikamentFileEntry.abgabeAnzahl());
-            ekoEintrag.setKassenzeichen(medikamentFileEntry.kassenZeichen());
-            ekoEintrag.setPreisModell(medikamentFileEntry.preisModell());
-            ekoEintrag.setKassenverkaufspreis(medikamentFileEntry.kvp());
-            ekoEintrag.setKvpProEinheit(medikamentFileEntry.kvpEinheit());
+            medikament.setWirkstoffe(wirkstoffs);
 
             dataSet.hinweisFileEntries()
                     .stream()
                     .filter(h -> h.pharmaNummer().equals(medikament.getPharmaNummer()))
                     .map(HinweisFileEntry::hinweis)
                     .findFirst()
-                    .ifPresent(ekoEintrag::setHinweis);
+                    .ifPresent(medikament::setHinweis);
 
             dataSet.regeltextFileEntries()
                     .stream()
                     .filter(r -> r.pharmaNummer().equals(medikament.getPharmaNummer()))
                     .map(RegeltextFileEntry::regeltext)
-                    .findFirst().ifPresent(ekoEintrag::setRegelText);
+                    .findFirst().ifPresent(medikament::setRegelText);
 
             dataSet.medikamentZusatzFileEntries()
                     .stream()
                     .filter(mz -> mz.pharmaNummer().equals(medikament.getPharmaNummer()))
                     .findFirst()
                     .ifPresent(mz -> {
-                        ekoEintrag.setLangzeitBewilligung(mz.langzeitBewilligung());
-                        ekoEintrag.setSuchtGiftVignette(mz.suchtGiftVignette());
+                        medikament.setLangzeitBewilligung(mz.langzeitBewilligung());
+                        medikament.setSuchtGiftVignette(mz.suchtGiftVignette());
                         });
 
             dataSet.rezeptpflichtFileEntries()
                     .stream()
                     .filter(rz -> rz.pharmaNummer().equals(medikament.getPharmaNummer())).findFirst().ifPresent(rz -> {
-                        ekoEintrag.setRezeptPflichtId(rz.isRezeptpflichtig());
-                        ekoEintrag.setRezeptpflichtBezeichnung(rz.rezeptpflichtHinweis());
+                        medikament.setRezeptPflichtId(rz.isRezeptpflichtig());
+                        medikament.setRezeptpflichtBezeichnung(rz.rezeptpflichtHinweis());
                     });
 
             dataSet.indTextFileEntries()
                     .stream()
                     .filter(indText -> indText.pharmaNummer().equals(medikament.getPharmaNummer())).findFirst().ifPresent(indText -> {
-                        ekoEintrag.setIndText(indText.indikationsText());
+                        medikament.setIndText(indText.indikationsText());
                     });
-
-            if(medikament.getEkoEintraege() == null) medikament.setEkoEintraege(new ArrayList<>());
-            medikament.getEkoEintraege().add(ekoEintrag);
-
             medikaments.add(medikament);
         }
         medikamentRepository.saveAll(medikaments);
 
         for(var vergleichsEntry : dataSet.vergleichsdateiFileEntries()){
-            medikamentRepository.findById(vergleichsEntry.pharmanummer()).ifPresent(m -> m.getEkoEintraege()
-                    .stream()
-                    .filter(e -> e.getValidFrom().getDate().equals(validDate))
-                    .findFirst()
-                    .ifPresent(entry -> {
-                        entry.setPositionPreisvergleich(vergleichsEntry.positionPreisvergleich());
+            medikaments.stream().filter(m -> m.getPharmaNummer().equals(vergleichsEntry.pharmanummer())).findFirst().ifPresent(m -> {
+                        m.setPositionPreisvergleich(vergleichsEntry.positionPreisvergleich());
                         List<MedikamentVergleichsEntity> vergleiche = new ArrayList<>();
                         for(var x : vergleichsEntry.substitutionsMedikamente()){
                             MedikamentVergleichsEntity vergleich = new MedikamentVergleichsEntity();
                             vergleich.setPositionVergleichsMedikament(x.positionPreisvergleich());
                             vergleich.setVergleichsKennzeichen(x.vergleichsKennzeichen());
-                            medikamentRepository.findById(x.pharmaNummer()).ifPresent(vergleich::setVergleichsMedikament);
+                            medikaments.stream().filter(vm -> vm.getPharmaNummer().equals(x.pharmaNummer())).findFirst().ifPresent(vergleich::setVergleichsMedikament);
 
                             vergleiche.add(vergleich);
                         }
-
-                        entry.setMedikamentVergleichsEntityList(vergleiche);
+                        m.setMedikamentVergleichsEntityList(vergleiche);
                         medikamentRepository.save(m);
-                    }));
+                    });
         }
     }
 }
