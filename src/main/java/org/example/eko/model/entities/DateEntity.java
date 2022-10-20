@@ -14,19 +14,17 @@ import java.util.Objects;
         name = "dt_date"
 )
 public class DateEntity implements Comparable {
-    @Id
     @GeneratedValue(
-            generator = "date_time_generator"
+            generator = "staging_area_generator"
     )
     @SequenceGenerator(
-            name = "date_time_generator",
-            sequenceName = "date_time_sequence",
+            name = "staging_area_generator",
+            sequenceName = "staging_area_sequence",
             initialValue = 1
     )
-    @Column(
-            name = "date_id"
-    )
+    @Id
     private Long id;
+
     @Column(
             name = "date",
             nullable = false

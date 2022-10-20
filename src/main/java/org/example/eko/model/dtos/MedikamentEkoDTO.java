@@ -1,6 +1,5 @@
 package org.example.eko.model.dtos;
 
-import org.example.eko.model.entities.EkoEintrag;
 import org.example.eko.model.entities.Medikament;
 
 import java.util.ArrayList;
@@ -35,7 +34,7 @@ public class MedikamentEkoDTO {
     Integer positionPreisvergleich;
     String indikationsText;
 
-    public MedikamentEkoDTO(Medikament medikament, EkoEintrag ekoEintrag){
+    public MedikamentEkoDTO(Medikament medikament){
         setPharmaNummer(medikament.getPharmaNummer());
         setRegisterNummer(medikament.getRegisterNummer());
         setName(medikament.getName());
@@ -60,23 +59,21 @@ public class MedikamentEkoDTO {
             dto.wirkWirkstoffText = w.getWirkWirkstoff().getText();
             wirkstoffDTOS.add(dto);
         }
-        if(ekoEintrag != null){
-            setKassenVerkaufspreis(ekoEintrag.getKassenverkaufspreis());
-            setKvpProEinheit(ekoEintrag.getKvpProEinheit());
-            setRezeptFlichtId(ekoEintrag.getRezeptPflichtId());
-            setAbgabeAnzahl(ekoEintrag.getAbgabeanzahl());
-            setBox(ekoEintrag.getBox());
-            setKassenzeichen(ekoEintrag.getKassenzeichen());
-            setPreisModell(ekoEintrag.getPreisModell());
-            setRegeltext(ekoEintrag.getRegelText());
-            setHinweis(ekoEintrag.getHinweis());
-            setLangzeitBewilligung(ekoEintrag.getLangzeitBewilligung());
-            setSuchtgiftVignette(ekoEintrag.getSuchtGiftVignette());
-            setRezeptpflichtBezeichnung(ekoEintrag.getRezeptpflichtBezeichnung());
-            setPositionPreisvergleich(ekoEintrag.getPositionPreisvergleich());
-            setIndikationsText(ekoEintrag.getIndText());
-            setId(ekoEintrag.getId());
-        }
+        setKassenVerkaufspreis(medikament.getKassenverkaufspreis());
+        setKvpProEinheit(medikament.getKvpProEinheit());
+        setRezeptFlichtId(medikament.getRezeptPflichtId());
+        setAbgabeAnzahl(medikament.getAbgabeanzahl());
+        setBox(medikament.getBox());
+        setKassenzeichen(medikament.getKassenzeichen());
+        setPreisModell(medikament.getPreisModell());
+        setRegeltext(medikament.getRegelText());
+        setHinweis(medikament.getHinweis());
+        setLangzeitBewilligung(medikament.getLangzeitBewilligung());
+        setSuchtgiftVignette(medikament.getSuchtGiftVignette());
+        setRezeptpflichtBezeichnung(medikament.getRezeptpflichtBezeichnung());
+        setPositionPreisvergleich(medikament.getPositionPreisvergleich());
+        setIndikationsText(medikament.getIndText());
+        setId(medikament.getId());
 
     }
 

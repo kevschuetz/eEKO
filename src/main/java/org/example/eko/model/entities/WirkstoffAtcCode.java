@@ -6,7 +6,17 @@ import javax.persistence.*;
 @Table(name = "dt_wirkstoff_atc_code")
 public class WirkstoffAtcCode {
 
+    @GeneratedValue(
+            generator = "staging_area_generator"
+    )
+    @SequenceGenerator(
+            name = "staging_area_generator",
+            sequenceName = "staging_area_sequence",
+            initialValue = 1
+    )
     @Id
+    private Long id;
+
     @Column(
             name="atc_code",
             length = 7
@@ -18,6 +28,9 @@ public class WirkstoffAtcCode {
             length = 200
     )
     private String text;
+
+    @ManyToOne
+    private DateEntity validFrom;
 
     @ManyToOne
     private WirkstoffAtcCode anatomischeHauptgruppe;
@@ -77,5 +90,21 @@ public class WirkstoffAtcCode {
 
     public void setChemischeUntergruppe(WirkstoffAtcCode chemischeUntergruppe) {
         this.chemischeUntergruppe = chemischeUntergruppe;
+    }
+
+    public DateEntity getValidFrom() {
+        return validFrom;
+    }
+
+    public void setValidFrom(DateEntity validFrom) {
+        this.validFrom = validFrom;
+    }
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
     }
 }

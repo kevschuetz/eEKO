@@ -6,14 +6,13 @@ import javax.persistence.*;
 @Entity
 public class MedikamentVergleichsEntity {
     @GeneratedValue(
-            generator = "medikament_vergleich_generator"
+            generator = "staging_area_generator"
     )
     @SequenceGenerator(
-            name = "medikament_vergleich_generator",
-            sequenceName = "medikament_vergleich_sequence",
+            name = "staging_area_generator",
+            sequenceName = "staging_area_sequence",
             initialValue = 1
     )
-
     @Id
     private Long id;
 

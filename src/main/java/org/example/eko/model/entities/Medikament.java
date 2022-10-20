@@ -3,13 +3,22 @@ package org.example.eko.model.entities;
 import org.hibernate.annotations.Cascade;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @Entity
-@Table(name="ft_medikament")
+@Table(name="ft_eko_eintrag")
 public class Medikament extends AuditModel {
+    @GeneratedValue(
+            generator = "staging_area_generator"
+    )
+    @SequenceGenerator(
+            name = "staging_area_generator",
+            sequenceName = "staging_area_sequence",
+            initialValue = 1
+    )
     @Id
+    private Long id;
+
     @Column(
             name = "pharma_nummer",
             nullable = false,
@@ -78,17 +87,81 @@ public class Medikament extends AuditModel {
     )
     private String packungsHinweis;
 
-    @Column(name = "wirkstoff")
-    @OneToMany(fetch = FetchType.EAGER)
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    List<Wirkstoff> wirkstoffe;
 
     @Column(name = "wirkstoff_information")
     String wirkstoffInformation;
 
-    @Column(name = "eko_eintrag")
-    @OneToMany(cascade = CascadeType.ALL)
-    List<EkoEintrag> ekoEintraege;
+    @Column(
+            name = "kassenverkaufspreis",
+            nullable = false)
+    private Double kassenverkaufspreis;
+
+    @Column(
+            name = "kvp_pro_einheit",
+            nullable = false)
+    private Double kvpProEinheit;
+
+    @Column(
+            name = "rezeptpflicht",
+            nullable = false)
+    private Integer rezeptPflichtId;
+
+    @Column(
+            name = "abgabeanzahl")
+    private Integer abgabeanzahl;
+
+    @ManyToOne
+    private DateEntity validFrom;
+
+    @Column(
+            name = "box",
+            nullable = false, length = 1)
+    private String  box;
+
+    @Column(
+            name = "kassenzeichen",
+            length = 3)
+    private String kassenzeichen;
+
+    @Column(
+            name = "preisModell",
+            length = 3)
+    private String preisModell;
+
+    @Column(
+            name = "regeltext",
+            length = 8192)
+    private String regelText;
+
+    @Column(
+            name = "hinweis",
+            length = 2048)
+    private String hinweis;
+
+    @Column(
+            name = "langzeit_bewilligung",
+            length = 3)
+    private String langzeitBewilligung;
+
+    @Column(name = "suchtgift_vignette", length = 3)
+    private String suchtGiftVignette;
+
+    @Column(name = "rezeptpflicht_bezeichnung", length = 60)
+    private String rezeptpflichtBezeichnung;
+
+    @Column(name = "position_preisvergleich")
+    private Integer positionPreisvergleich;
+
+    @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    private List<MedikamentVergleichsEntity> medikamentVergleichsEntityList;
+
+    @Column(name="indikations_text", length = 2000)
+    private String indText;
+
+    @Column(name = "wirkstoff")
+    @OneToMany(fetch = FetchType.LAZY)
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    List<Wirkstoff> wirkstoffe;
 
     public Medikament(){
 
@@ -191,11 +264,139 @@ public class Medikament extends AuditModel {
         this.wirkstoffInformation = wirkstoffInformation;
     }
 
-    public List<EkoEintrag> getEkoEintraege() {
-        return ekoEintraege;
+    public Long getId() {
+        return id;
     }
 
-    public void setEkoEintraege(List<EkoEintrag> ekoEintraege) {
-        this.ekoEintraege = ekoEintraege;
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Double getKassenverkaufspreis() {
+        return kassenverkaufspreis;
+    }
+
+    public void setKassenverkaufspreis(Double kassenverkaufspreis) {
+        this.kassenverkaufspreis = kassenverkaufspreis;
+    }
+
+    public Double getKvpProEinheit() {
+        return kvpProEinheit;
+    }
+
+    public void setKvpProEinheit(Double kvpProEinheit) {
+        this.kvpProEinheit = kvpProEinheit;
+    }
+
+    public Integer getRezeptPflichtId() {
+        return rezeptPflichtId;
+    }
+
+    public void setRezeptPflichtId(Integer rezeptPflichtId) {
+        this.rezeptPflichtId = rezeptPflichtId;
+    }
+
+    public Integer getAbgabeanzahl() {
+        return abgabeanzahl;
+    }
+
+    public void setAbgabeanzahl(Integer abgabeanzahl) {
+        this.abgabeanzahl = abgabeanzahl;
+    }
+
+    public DateEntity getValidFrom() {
+        return validFrom;
+    }
+
+    public void setValidFrom(DateEntity validFrom) {
+        this.validFrom = validFrom;
+    }
+
+    public String getBox() {
+        return box;
+    }
+
+    public void setBox(String box) {
+        this.box = box;
+    }
+
+    public String getKassenzeichen() {
+        return kassenzeichen;
+    }
+
+    public void setKassenzeichen(String kassenzeichen) {
+        this.kassenzeichen = kassenzeichen;
+    }
+
+    public String getPreisModell() {
+        return preisModell;
+    }
+
+    public void setPreisModell(String preisModell) {
+        this.preisModell = preisModell;
+    }
+
+    public String getRegelText() {
+        return regelText;
+    }
+
+    public void setRegelText(String regelText) {
+        this.regelText = regelText;
+    }
+
+    public String getHinweis() {
+        return hinweis;
+    }
+
+    public void setHinweis(String hinweis) {
+        this.hinweis = hinweis;
+    }
+
+    public String getLangzeitBewilligung() {
+        return langzeitBewilligung;
+    }
+
+    public void setLangzeitBewilligung(String langzeitBewilligung) {
+        this.langzeitBewilligung = langzeitBewilligung;
+    }
+
+    public String getSuchtGiftVignette() {
+        return suchtGiftVignette;
+    }
+
+    public void setSuchtGiftVignette(String suchtGiftVignette) {
+        this.suchtGiftVignette = suchtGiftVignette;
+    }
+
+    public String getRezeptpflichtBezeichnung() {
+        return rezeptpflichtBezeichnung;
+    }
+
+    public void setRezeptpflichtBezeichnung(String rezeptpflichtBezeichnung) {
+        this.rezeptpflichtBezeichnung = rezeptpflichtBezeichnung;
+    }
+
+    public Integer getPositionPreisvergleich() {
+        return positionPreisvergleich;
+    }
+
+    public void setPositionPreisvergleich(Integer positionPreisvergleich) {
+        this.positionPreisvergleich = positionPreisvergleich;
+    }
+
+    public List<MedikamentVergleichsEntity> getMedikamentVergleichsEntityList() {
+        return medikamentVergleichsEntityList;
+    }
+
+    public void setMedikamentVergleichsEntityList(List<MedikamentVergleichsEntity> medikamentVergleichsEntityList) {
+        this.medikamentVergleichsEntityList = medikamentVergleichsEntityList;
+    }
+
+    public String getIndText() {
+        return indText;
+    }
+
+    public void setIndText(String indText) {
+        this.indText = indText;
     }
 }

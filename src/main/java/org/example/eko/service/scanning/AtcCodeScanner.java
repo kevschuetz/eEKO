@@ -8,8 +8,8 @@ import java.util.List;
 
 @Component
 public class AtcCodeScanner extends Scanner<AtcCodeFileEntry> {
-    private static final ScanningRule code = new ScanningRule(1, 7);
-    private static final ScanningRule text = new ScanningRule(8, 200);
+    private static final ScanningRule codeRule = new ScanningRule(1, 7);
+    private static final ScanningRule textRule = new ScanningRule(8, 200);
 
 
     @Override
@@ -25,9 +25,8 @@ public class AtcCodeScanner extends Scanner<AtcCodeFileEntry> {
     }
 
     private AtcCodeFileEntry scanWirkstoff(String entry) {
-        String code = getString(entry, AtcCodeScanner.code);
-        String text = getString(entry, AtcCodeScanner.text);
-        AtcCodeFileEntry atcCodeFileEntry = new AtcCodeFileEntry(code, text);
-        return atcCodeFileEntry;
+        String code = getString(entry, AtcCodeScanner.codeRule);
+        String text = getString(entry, AtcCodeScanner.textRule);
+        return new AtcCodeFileEntry(code, text);
     }
 }
