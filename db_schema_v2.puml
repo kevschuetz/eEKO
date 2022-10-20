@@ -10,12 +10,10 @@ skinparam class {
     BorderColor #2688d4
 }
 
-
 !define primary_key(x) <b><color:#b8861b><&key></color> x</b>
 !define foreign_key(x) <color:#aaaaaa><&key></color> x
 !define column(x) <color:#efefef><&media-record></color> x
 !define table(x) entity x << (T, white) >>
-
 
 table( eko_eintrag_medikament ) {
   primary_key( id ): INTEGER
@@ -41,17 +39,38 @@ table( eko_eintrag_medikament ) {
   column( abgabeanzahl ) : INTEGER
   column( position_preisvergleich) : INTEGER
   column( indikations_text) : CHARACTER VARYING(2000)
-  foreign_key( valid_date_id ): INTEGER <<FK>>
+  column( valid_date ): DATE
 }
 
-table( atc_code ){
+table( chemische_substanz ){
  primary_key(id): INTEGER
- column(code): CHARACTER VARYING(6)
+ column(code): CHARACTER VARYING(7)
  column(text): CHARACTER VARYING(128)
- foreign_key(anatomische_hauptgruppe): INTEGER <<FK>>
- foreign_key(therapeutische_untergruppe): INTEGER <<FK>>
- foreign_key(pharmakologische_untergruppe): INTEGER <<FK>>
- foreign_key(chemische_untergruppe): INTEGER<<FK>>
+ column( valid_date ): DATE
+}
+table( chemische_untergruppe ){
+ primary_key(id): INTEGER
+ column(code): CHARACTER VARYING(5)
+ column(text): CHARACTER VARYING(128)
+ column( valid_date ): DATE
+}
+table( pharmakologische_untergruppe ){
+ primary_key(id): INTEGER
+ column(code): CHARACTER VARYING(4)
+ column(text): CHARACTER VARYING(128)
+ column( valid_date ): DATE
+}
+table(therapeutische_untergruppe){
+ primary_key(id): INTEGER
+ column(code): CHARACTER VARYING(3)
+ column(text): CHARACTER VARYING(128)
+ column( valid_date ): DATE
+}
+table(anatomische_hauptgruppe){
+ primary_key(id): INTEGER
+ column(code): CHARACTER VARYING(1)
+ column(text): CHARACTER VARYING(128)
+ column( valid_date ): DATE
 }
 
 table( wirkstoff ){
@@ -60,16 +79,9 @@ table( wirkstoff ){
 	column( wirkstoff_staerke ): CHARACTER VARYING(10)
 	column( dimension_wirkstoff_staerke ): CHARACTER VARYING(9)
 	column( wirkstoff_eigenschaft ) : CHARACTER VARYING(20)
-	foreign_key( chemische_substanz_id ): INTEGER <<FK>>
+	foreign_key( wirk_atc_code) : INTEGER <<FK>>
+	foreign_key( phar_atc_code ): INTEGER <<FK>>
 	foreign_key( eko_eintrag_medikament_id ) : INTEGER <<FK>>
-}
-
-table(date){
-	primary_key( id ): INTEGER
-	column( date ) : date
-	column( year ) : INTEGER
-	column( month ) : INTEGER
-	column( day_of_month): INTEGER
 }
 
 table(medikament_vergleich){
@@ -80,10 +92,13 @@ table(medikament_vergleich){
 }
 
 eko_eintrag_medikament "1" -- "1..*" wirkstoff
-wirkstoff "*" -- "1" atc_code
-eko_eintrag_medikament "1..*" -- "1" date
-eko_eintrag_medikament "1" -- "*" medikament_vergleich
-medikament_vergleich "*" -- "1" eko_eintrag_medikament
-atc_code "0..3" -- "0..4" atc_code
+eko_eintrag_medikament "*" -- "*" eko_eintrag_medikament
+( eko_eintrag_medikament, eko_eintrag_medikament) .. medikament_vergleich
+chemische_substanz "*" -- "1" chemische_untergruppe
+chemische_untergruppe "*" -- "1" pharmakologische_untergruppe
+pharmakologische_untergruppe "*" -- "1" therapeutische_untergruppe
+therapeutische_untergruppe "*" -- "1" anatomische_hauptgruppe
+wirkstoff "*" -- "0..1" chemische_untergruppe
+wirkstoff "*" -- "0..1" chemische_substanz
 
 @enduml
