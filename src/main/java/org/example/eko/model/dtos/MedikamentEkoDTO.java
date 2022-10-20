@@ -33,8 +33,9 @@ public class MedikamentEkoDTO {
     String rezeptpflichtBezeichnung;
     Integer positionPreisvergleich;
     String indikationsText;
+    Integer vergleichsKennzeichen;
 
-    public MedikamentEkoDTO(Medikament medikament){
+    public MedikamentEkoDTO(Medikament medikament, Integer vergleichsKennzeichen){
         setPharmaNummer(medikament.getPharmaNummer());
         setRegisterNummer(medikament.getRegisterNummer());
         setName(medikament.getName());
@@ -46,6 +47,7 @@ public class MedikamentEkoDTO {
         setTeilbarkeit(medikament.getTeilbarkeit());
         setPackungsHinweis(medikament.getPackungsHinweis());
         setWirkstoffInformation(medikament.getWirkstoffInformation());
+        vergleichsKennzeichen = vergleichsKennzeichen;
 
         List<WirkstoffDTO> wirkstoffDTOS = new ArrayList<>();
         for(var w : medikament.getWirkstoffe()){

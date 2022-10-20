@@ -27,7 +27,20 @@ public class SubstitutionService {
 
     @Transactional
     public List<MedikamentEkoDTO> getSubstitutesOrdered(String pharmaNummer, LocalDate date){
-        return null;
-    }
+        Medikament medikament;
+        var optMed = medikamentRepository.findByPharmaNummer(pharmaNummer)
+                .stream()
+                .filter(m -> m.getValidFrom().getDate().compareTo(date) <= 0)
+                .max((m1, m2) -> m1.getValidFrom().getDate().compareTo(m2.getValidFrom().getDate()));
+        medikament = optMed.isPresent() ? optMed.get() : null;
+        if(medikament == null) return null;
 
+        var list = medikament.getMedikamentVergleichsEntityList()
+                .stream()
+                .map(v -> new MedikamentEkoDTO(v.getVergleichsMedikament(), v.getVergleichsKennzeichen()))
+                .collect(Collectors.toList());
+
+        list.add(new MedikamentEkoDTO(medikament, 1));
+        return list;
+    }
 }

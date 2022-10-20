@@ -11,7 +11,7 @@ import java.util.Collection;
 public interface MedikamentRepository extends JpaRepository<Medikament, String> {
 
     @Query(nativeQuery = true,
-    value = "SELECT * FROM FT_MEDIKAMENT WHERE PHARMA_NUMMER = ?")
+    value = "SELECT * FROM FT_EKO_EINTRAG WHERE PHARMA_NUMMER = ?")
     Collection<Medikament> findByPharmaNummer(String pharmaNummer);
 
 
