@@ -46,30 +46,34 @@ table( chemische_substanz ){
  primary_key(id): INTEGER
  column(code): CHARACTER VARYING(7)
  column(text): CHARACTER VARYING(128)
+ foreign_key(chemische_untergruppe_id): INTEGER <<FK>>
  column( valid_date ): DATE
 }
 table( chemische_untergruppe ){
  primary_key(id): INTEGER
  column(code): CHARACTER VARYING(5)
  column(text): CHARACTER VARYING(128)
+ foreign_key( pharmakologische_untergruppe_id): INTEGER <<FK>>
  column( valid_date ): DATE
 }
 table( pharmakologische_untergruppe ){
  primary_key(id): INTEGER
  column(code): CHARACTER VARYING(4)
  column(text): CHARACTER VARYING(128)
+ foreign_key( therapeutische_untergruppe_id): INTEGER <<FK>>
  column( valid_date ): DATE
 }
 table(therapeutische_untergruppe){
  primary_key(id): INTEGER
  column(code): CHARACTER VARYING(3)
  column(text): CHARACTER VARYING(128)
+ foreign_key( anatomische_hauptgruppe_id): INTEGER <<FK>
  column( valid_date ): DATE
 }
 table(anatomische_hauptgruppe){
  primary_key(id): INTEGER
  column(code): CHARACTER VARYING(1)
- column(text): CHARACTER VARYING(128)
+ foreign_key(text): CHARACTER VARYING(128) <<FK>>
  column( valid_date ): DATE
 }
 
@@ -94,10 +98,10 @@ table(medikament_vergleich){
 eko_eintrag_medikament "1" -- "1..*" wirkstoff
 eko_eintrag_medikament "*" -- "*" eko_eintrag_medikament
 ( eko_eintrag_medikament, eko_eintrag_medikament) .. medikament_vergleich
-chemische_substanz "*" -- "1" chemische_untergruppe
-chemische_untergruppe "*" -- "1" pharmakologische_untergruppe
-pharmakologische_untergruppe "*" -- "1" therapeutische_untergruppe
-therapeutische_untergruppe "*" -- "1" anatomische_hauptgruppe
+chemische_substanz "*" --o "1" chemische_untergruppe
+chemische_untergruppe "*" --o "1" pharmakologische_untergruppe
+pharmakologische_untergruppe "*" --o "1" therapeutische_untergruppe
+therapeutische_untergruppe "*" --o "1" anatomische_hauptgruppe
 wirkstoff "*" -- "0..1" chemische_untergruppe
 wirkstoff "*" -- "0..1" chemische_substanz
 
