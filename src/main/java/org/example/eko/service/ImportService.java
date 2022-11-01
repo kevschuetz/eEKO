@@ -16,7 +16,7 @@ import javax.transaction.Transactional;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
+import java.util.concurrent.atomic.AtomicBoolean;
 import java.util.stream.Collectors;
 
 @Service
@@ -35,7 +35,19 @@ public class ImportService {
 
     @Transactional
     public void importDataSet(DataSet dataSet, LocalDate validDate) throws Exception {
-        if(dateRepository.findAll().stream().anyMatch(d -> d.getDate().equals(validDate))) return;
+        logger.info("Trying to import dataset for {}.", validDate.toString());
+        AtomicBoolean rejectDataset = new AtomicBoolean(false);
+        dateRepository.findAll().forEach(d-> {
+            logger.info("Found date {}", d.getDate().toString());
+            logger.info("Is date equal? - {}", d.getDate().equals(validDate));
+            if(d.getDate().equals(validDate)) rejectDataset.set(true);
+        });
+        if(rejectDataset.get()){
+            logger.warn("Rejecting dataset for {}, as there is already date for this date.", validDate.toString());
+            return;
+        }else{
+            logger.info("Importing dataset for {}.", validDate.toString());
+        }
 
         DateEntity dateEntity = dateRepository.save(new DateEntity(validDate));
         // atc codes

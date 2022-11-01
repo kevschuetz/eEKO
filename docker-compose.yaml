@@ -8,6 +8,7 @@ services:
       DB_USER: "eko"
       DB_PWD: "eko"
       DB_DRIVER: "org.postgresql.Driver"
+      LOAD_TEST_DATA: "true"
     networks:
       - local-net
     ports:
@@ -20,20 +21,27 @@ services:
     environment:
       POSTGRES_USER: eko
       POSTGRES_PASSWORD: eko
+    volumes:
+      - local-pgdata:/var/lib/postgresql/data
     networks:
       - local-net
     ports:
       - "8091:5432"
   pgAdmin:
     image: dpage/pgadmin4
-    container_name: pgadmin4_container
+    container_name: pgadmin
     restart: always
     ports:
       - "8092:80"
     environment:
       PGADMIN_DEFAULT_EMAIL: eko@sv.at
       PGADMIN_DEFAULT_PASSWORD: admin
+    networks:
+      - local-net
     volumes:
       - pgadmin-data:/var/lib/pgadmin
 networks:
   local-net:
+volumes:
+  pgadmin-data:
+  local-pgdata:
