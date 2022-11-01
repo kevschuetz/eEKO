@@ -35,9 +35,9 @@ public class ImportService {
 
     @Transactional
     public void importDataSet(DataSet dataSet, LocalDate validDate) throws Exception {
-        //TODO: do not allow upload of dataset for a date that is already in the database
-        DateEntity dateEntity = dateRepository.save(new DateEntity(validDate));
+        if(dateRepository.findAll().stream().anyMatch(d -> d.getDate().equals(validDate))) return;
 
+        DateEntity dateEntity = dateRepository.save(new DateEntity(validDate));
         // atc codes
         List<WirkstoffAtcCode> wirkstoffAtcCodes = new ArrayList<>();
         for(var atcCodeFileEntry : dataSet.atcCodeFileEntries()){

@@ -1,0 +1,1 @@
+mvn clean install -DskipTests && docker build . --tag eko && cd ./db_init && docker build . --tag eko_db && cd .. && docker-compose up -d

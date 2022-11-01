@@ -9,6 +9,7 @@ import org.springframework.stereotype.Component;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
+import java.io.InputStream;
 import java.time.LocalDate;
 import java.util.zip.ZipInputStream;
 
@@ -30,16 +31,33 @@ public class TestDataLoader {
     private void loadData() throws Exception {
         if(!Boolean.parseBoolean(System.getenv("LOAD_TEST_DATA"))) return;
 
-        ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
+        ZipInputStream zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv08_22_teil1.zip"));
         var map = dataService.getFileStringsFromZipIn(zipInputStream);
-        zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil2.zip")));
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv08_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 7 , 1));
 
-        zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv09_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
-        zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil2.zip")));
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv09_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 1));
+
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv10_22_teil1.zip"));
+        map = dataService.getFileStringsFromZipIn(zipInputStream);
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv10_22_teil2.zip"));
+        map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
+        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 1));
+
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv11_22_teil1.zip"));
+        map = dataService.getFileStringsFromZipIn(zipInputStream);
+        zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv11_22_teil2.zip"));
+        map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
+        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 1));
+    }
+
+    public static InputStream getResourceFileAsInputStream(String fileName) {
+        ClassLoader classLoader = TestDataLoader.class.getClassLoader();
+        return classLoader.getResourceAsStream(fileName);
     }
 }
