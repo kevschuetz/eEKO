@@ -1,0 +1,1 @@
+create schema staging_area authorization eko;

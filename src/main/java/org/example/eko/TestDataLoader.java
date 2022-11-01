@@ -13,7 +13,6 @@ import java.time.LocalDate;
 import java.util.zip.ZipInputStream;
 
 @Component
-@Profile("test")
 public class TestDataLoader {
     private final DataService dataService;
     private final ScanningService scanningService;
@@ -29,6 +28,8 @@ public class TestDataLoader {
 
 
     private void loadData() throws Exception {
+        if(!Boolean.parseBoolean(System.getenv("LOAD_TEST_DATA"))) return;
+
         ZipInputStream zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil1.zip")));
         var map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(new FileInputStream(new File("src/main/resources/ehmv08_22_teil2.zip")));
@@ -41,6 +42,4 @@ public class TestDataLoader {
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8, 1));
     }
-
-
 }

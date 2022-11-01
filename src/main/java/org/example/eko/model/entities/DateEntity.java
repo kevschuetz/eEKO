@@ -11,7 +11,7 @@ import java.util.Objects;
 
 @Entity
 @Table(
-        name = "dt_date"
+        name = "date", schema = "staging_area"
 )
 public class DateEntity implements Comparable {
     @GeneratedValue(

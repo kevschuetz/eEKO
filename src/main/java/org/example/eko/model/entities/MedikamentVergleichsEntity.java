@@ -4,6 +4,7 @@ package org.example.eko.model.entities;
 import javax.persistence.*;
 
 @Entity
+@Table(name="vergleich", schema = "staging_area")
 public class MedikamentVergleichsEntity {
     @GeneratedValue(
             generator = "staging_area_generator"

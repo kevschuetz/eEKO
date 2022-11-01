@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Entity
 @Table(
-        name = "ft_wirkstoff"
+        name = "wirkstoff", schema = "staging_area"
 )
 public class Wirkstoff {
     @GeneratedValue(

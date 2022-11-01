@@ -1,0 +1,39 @@
+version: "3"
+services:
+  eko:
+    image: eko:latest
+    container_name: eko
+    environment:
+      DB_URL: "jdbc:postgresql://db:5432/eko"
+      DB_USER: "eko"
+      DB_PWD: "eko"
+      DB_DRIVER: "org.postgresql.Driver"
+    networks:
+      - local-net
+    ports:
+      - "8090:8080"
+    depends_on:
+      - "db"
+  db:
+    image: eko_db:latest
+    container_name: db
+    environment:
+      POSTGRES_USER: eko
+      POSTGRES_PASSWORD: eko
+    networks:
+      - local-net
+    ports:
+      - "8091:5432"
+  pgAdmin:
+    image: dpage/pgadmin4
+    container_name: pgadmin4_container
+    restart: always
+    ports:
+      - "8092:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: eko@sv.at
+      PGADMIN_DEFAULT_PASSWORD: admin
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+networks:
+  local-net:

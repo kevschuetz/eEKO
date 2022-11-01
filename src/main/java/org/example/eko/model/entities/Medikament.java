@@ -6,7 +6,7 @@ import javax.persistence.*;
 import java.util.List;
 
 @Entity
-@Table(name="ft_eko_eintrag")
+@Table(name="eko_eintrag", schema = "staging_area")
 public class Medikament extends AuditModel {
     @GeneratedValue(
             generator = "staging_area_generator"
@@ -153,14 +153,25 @@ public class Medikament extends AuditModel {
     private Integer positionPreisvergleich;
 
     @OneToMany(cascade = CascadeType.ALL, fetch = FetchType.EAGER)
+    @JoinTable(
+            name="medikament_vergleiche",
+            schema = "staging_area",
+            joinColumns = @JoinColumn( name="medikament_id"),
+            inverseJoinColumns = @JoinColumn( name="vergleich_id")
+    )
     private List<MedikamentVergleichsEntity> medikamentVergleichsEntityList;
 
     @Column(name="indikations_text", length = 2000)
     private String indText;
 
-    @Column(name = "wirkstoff")
     @OneToMany(fetch = FetchType.LAZY)
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    @JoinTable(
+            name="medikament_wirkstoffe",
+            schema = "staging_area",
+            joinColumns = @JoinColumn( name="medikament_id"),
+            inverseJoinColumns = @JoinColumn( name="wirkstoff_id")
+    )
     List<Wirkstoff> wirkstoffe;
 
     public Medikament(){
