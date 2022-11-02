@@ -1,6 +1,6 @@
 package org.example.eko.model.dtos;
 
-import org.example.eko.model.entities.Medikament;
+import org.example.eko.model.entities.staging.Medikament;
 
 import java.util.ArrayList;
 import java.util.List;

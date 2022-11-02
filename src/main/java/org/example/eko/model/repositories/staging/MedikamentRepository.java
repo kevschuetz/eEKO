@@ -1,6 +1,6 @@
-package org.example.eko.model.repositories;
+package org.example.eko.model.repositories.staging;
 
-import org.example.eko.model.entities.Medikament;
+import org.example.eko.model.entities.staging.Medikament;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
@@ -11,26 +11,26 @@ import java.util.Collection;
 public interface MedikamentRepository extends JpaRepository<Medikament, String> {
 
     @Query(nativeQuery = true,
-    value = "SELECT * FROM FT_EKO_EINTRAG WHERE PHARMA_NUMMER = ?")
+    value = "SELECT * FROM staging_area.eko_eintrag WHERE PHARMA_NUMMER = ?")
     Collection<Medikament> findByPharmaNummer(String pharmaNummer);
 
 
     @Query(nativeQuery = true,
             value = "SELECT * " +
-                    "FROM FT_MEDIKAMENT m1 JOIN DT_DATE d1 ON m1.VALID_DATE_ID = d1.DATE_ID " +
+                    "FROM staging_area.eko_eintrag m1 JOIN staging_area.date d1 ON m1.VALID_DATE_ID = d1.DATE_ID " +
                     "WHERE d1.DATE <= ? " +
                     "AND NOT EXISTS (" +
                     "   SELECT * " +
-                    "   FROM FT_MEDIKAMENT m2 JOIN DT_DATE d2 ON m2.VALID_DATE_ID = d2.DATE_ID" +
+                    "   FROM staging_area.eko_eintrag m2 JOIN staging_area.eko_eintrag d2 ON m2.VALID_DATE_ID = d2.DATE_ID" +
                     "   WHERE d2.DATE > d1.DATE AND m1.PHARMA_NUMMER = m2.PHARMA_NUMMER " +
                     ")")
-    public Collection<Medikament> getValidMedikamentsByDate(String date);
+    public Collection<Medikament> findByValidDate(String date);
 
     @Query(nativeQuery = true,
             value = "SELECT * " +
-                    "FROM FT_MEDIKAMENT m1 JOIN DT_DATE d1 ON m1.VALID_DATE_ID = d1.DATE_ID " +
+                    "FROM eko_eintrag m1 JOIN date d1 ON m1.VALID_DATE_ID = d1.DATE_ID " +
                     "WHERE d1.DATE_ID = ? ")
-    public Collection<Medikament> getMedikamentsByValidDateID(long id);
+    public Collection<Medikament> findByValidDateID(long id);
 
 
 }

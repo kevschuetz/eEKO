@@ -1,4 +1,4 @@
-package org.example.eko.model.entities;
+package org.example.eko.model.entities.staging;
 
 import org.hibernate.annotations.Cascade;
 
@@ -14,6 +14,7 @@ public class Medikament extends AuditModel {
     @SequenceGenerator(
             name = "staging_area_generator",
             sequenceName = "staging_area_sequence",
+            schema = "staging_area",
             initialValue = 1
     )
     @Id

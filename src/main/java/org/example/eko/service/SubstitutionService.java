@@ -1,12 +1,9 @@
 package org.example.eko.service;
 
 import org.example.eko.model.dtos.MedikamentEkoDTO;
-import org.example.eko.model.entities.DateEntity;
-import org.example.eko.model.entities.Medikament;
-import org.example.eko.model.entities.WirkstoffAtcCode;
-import org.example.eko.model.entities.Wirkstoff;
-import org.example.eko.model.repositories.MedikamentRepository;
-import org.example.eko.model.repositories.WirkstoffRepository;
+import org.example.eko.model.entities.staging.Medikament;
+import org.example.eko.model.repositories.staging.MedikamentRepository;
+import org.example.eko.model.repositories.staging.WirkstoffRepository;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;

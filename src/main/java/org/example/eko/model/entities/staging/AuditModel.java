@@ -1,4 +1,4 @@
-package org.example.eko.model.entities;
+package org.example.eko.model.entities.staging;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.springframework.data.annotation.CreatedDate;

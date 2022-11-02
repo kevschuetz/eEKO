@@ -1,5 +1,7 @@
 package org.example.eko;
 
+import org.apache.tomcat.jni.Local;
+import org.example.eko.service.DataMartService;
 import org.example.eko.service.DataService;
 import org.example.eko.service.ImportService;
 import org.example.eko.service.ScanningService;
@@ -18,11 +20,13 @@ public class TestDataLoader {
     private final DataService dataService;
     private final ScanningService scanningService;
     private final ImportService importService;
+    private final DataMartService dataMartService;
 
-    public TestDataLoader(DataService dataService, ScanningService scanningService, ImportService importService) throws Exception {
+    public TestDataLoader(DataService dataService, ScanningService scanningService, ImportService importService, DataMartService dataMartService) throws Exception {
         this.dataService = dataService;
         this.scanningService = scanningService;
         this.importService = importService;
+        this.dataMartService = dataMartService;
 
         loadData();
     }
@@ -37,11 +41,15 @@ public class TestDataLoader {
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8 , 1));
 
+        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 8, 1));
+
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv09_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv09_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 9, 1));
+
+        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 9, 1));
 
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv10_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
@@ -49,11 +57,16 @@ public class TestDataLoader {
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 10, 1));
 
+
+        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 10, 1));
+
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv11_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv11_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
         importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 11, 1));
+
+        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 11, 1));
     }
 
     public static InputStream getResourceFileAsInputStream(String fileName) {

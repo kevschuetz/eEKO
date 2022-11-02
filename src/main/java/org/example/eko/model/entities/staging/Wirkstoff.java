@@ -1,4 +1,4 @@
-package org.example.eko.model.entities;
+package org.example.eko.model.entities.staging;
 
 import javax.persistence.*;
 

@@ -1,13 +1,13 @@
 package org.example.eko.service;
 
-import org.example.eko.model.entities.*;
+import org.example.eko.model.entities.staging.*;
 import org.example.eko.model.filerepresentations.DataSet;
 import org.example.eko.model.filerepresentations.HinweisFileEntry;
 import org.example.eko.model.filerepresentations.RegeltextFileEntry;
 import org.example.eko.model.filerepresentations.WirkstoffInformationFileEntry;
-import org.example.eko.model.repositories.DateRepository;
-import org.example.eko.model.repositories.MedikamentRepository;
-import org.example.eko.model.repositories.WirkstoffRepository;
+import org.example.eko.model.repositories.staging.DateRepository;
+import org.example.eko.model.repositories.staging.MedikamentRepository;
+import org.example.eko.model.repositories.staging.WirkstoffRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;

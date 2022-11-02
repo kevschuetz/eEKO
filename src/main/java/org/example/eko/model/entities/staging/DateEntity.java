@@ -1,12 +1,8 @@
-package org.example.eko.model.entities;
+package org.example.eko.model.entities.staging;
 
 
 import javax.persistence.*;
-import java.sql.Timestamp;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
-import java.util.Calendar;
-import java.util.Locale;
 import java.util.Objects;
 
 @Entity
