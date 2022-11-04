@@ -34,39 +34,40 @@ public class TestDataLoader {
 
     private void loadData() throws Exception {
         if(!Boolean.parseBoolean(System.getenv("LOAD_TEST_DATA"))) return;
+        boolean imported = false;
 
         ZipInputStream zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv08_22_teil1.zip"));
         var map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv08_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
-        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8 , 1));
+        imported = importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 8 , 1));
 
-        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 8, 1));
+        if(imported) dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 8, 1));
 
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv09_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv09_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
-        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 9, 1));
+        imported = importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 9, 1));
 
-        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 9, 1));
+        if(imported)dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 9, 1));
 
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv10_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv10_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
-        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 10, 1));
+        imported=importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 10, 1));
 
 
-        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 10, 1));
+        if(imported)dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 10, 1));
 
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv11_22_teil1.zip"));
         map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv11_22_teil2.zip"));
         map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
-        importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 11, 1));
+        imported=importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 11, 1));
 
-        dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 11, 1));
+        if(imported)dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 11, 1));
     }
 
     public static InputStream getResourceFileAsInputStream(String fileName) {

@@ -34,7 +34,7 @@ public class ImportService {
     }
 
     @Transactional
-    public void importDataSet(DataSet dataSet, LocalDate validDate) throws Exception {
+    public boolean importDataSet(DataSet dataSet, LocalDate validDate) throws Exception {
         logger.info("Trying to import dataset for {}.", validDate.toString());
         AtomicBoolean rejectDataset = new AtomicBoolean(false);
         dateRepository.findAll().forEach(d-> {
@@ -44,7 +44,7 @@ public class ImportService {
         });
         if(rejectDataset.get()){
             logger.warn("Rejecting dataset for {}, as there is already date for this date.", validDate.toString());
-            return;
+            return false;
         }else{
             logger.info("Importing dataset for {}.", validDate.toString());
         }
@@ -172,5 +172,6 @@ public class ImportService {
                         medikamentRepository.save(m);
                     });
         }
+        return true;
     }
 }

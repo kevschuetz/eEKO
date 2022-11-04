@@ -11,11 +11,20 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.time.LocalDate;
+import java.util.HashMap;
+import java.util.Map;
 
 @Service
 public class DataMartService {
+    private static final Map<Integer, String> vgkBezeichnung = new HashMap<>();
     private MedikamentRepository medikamentRepository;
     private FaktRepository faktRepository;
+
+    static{
+        vgkBezeichnung.put(1, "Gleicher Wirkstoff, Gleiche Stärke.");
+        vgkBezeichnung.put(2, "Gleicher ATC Code, vergleichbare Stärke, Geringfügige Unterschiede.");
+        vgkBezeichnung.put(3, "Ähnlicher Wirkstoff, vergelichbare Stärke.");
+    }
 
     public DataMartService(MedikamentRepository medikamentRepository, FaktRepository faktRepository){
         this.medikamentRepository = medikamentRepository;
@@ -44,14 +53,14 @@ public class DataMartService {
                    medikament.setBox(basis.getBox().charAt(0));
                    medikament.setMedikamentName(basis.getName());
                    medikament.setPharmaNummer(basis.getPharmaNummer());
-                   medikament.setDarreichungsForm(basis.getDarreichungsForm());
-                   medikament.setKassenZeichen(basis.getKassenzeichen());
+                   medikament.setDarreichungsForm(basis.getDarreichungsForm()!=null?basis.getDarreichungsForm():"Keine Darreichungsform");
+                   medikament.setKassenZeichen(basis.getKassenzeichen()!=null?basis.getKassenzeichen():"Kein Kassenzeichen");
                    medikament.setPositionPreisvergleich(basis.getPositionPreisvergleich());
-                   medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette());
-                   medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung());
+                   medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette()!=null?basis.getSuchtGiftVignette():"Keine Suchtgiftvignette");
+                   medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung()!=null?basis.getLangzeitBewilligung():"Keine Langzeitbewilligung");
                    medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
                    medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
-                   medikament.setPreisModell(basis.getPreisModell());
+                   medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
 
                    var wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
                    medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
@@ -76,14 +85,14 @@ public class DataMartService {
                    medikament.setBox(basis.getBox().charAt(0));
                    medikament.setMedikamentName(basis.getName());
                    medikament.setPharmaNummer(basis.getPharmaNummer());
-                   medikament.setDarreichungsForm(basis.getDarreichungsForm());
-                   medikament.setKassenZeichen(basis.getKassenzeichen());
+                   medikament.setDarreichungsForm(basis.getDarreichungsForm()!=null?basis.getDarreichungsForm():"Keine Darreichungsform");
+                   medikament.setKassenZeichen(basis.getKassenzeichen()!=null?basis.getKassenzeichen():"Kein Kassenzeichen");
                    medikament.setPositionPreisvergleich(basis.getPositionPreisvergleich());
-                   medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette());
-                   medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung());
+                   medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette()!=null?basis.getSuchtGiftVignette():"Keine Suchtgiftvignette");
+                   medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung()!=null?basis.getLangzeitBewilligung():"Keine Langzeitbewilligung");
                    medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
                    medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
-                   medikament.setPreisModell(basis.getPreisModell());
+                   medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
 
                    wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
                    medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
@@ -98,6 +107,7 @@ public class DataMartService {
                    medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
 
                    vergleichsKennzeichen.setKennzeichen(vergleich.getVergleichsKennzeichen());
+                   vergleichsKennzeichen.setBezeichnung(vgkBezeichnung.get(vergleich.getVergleichsKennzeichen()));
 
                    dateDimension.setDate(med.getValidFrom().getDate());
                    dateDimension.setMonth(med.getValidFrom().getMonthOfYear());
