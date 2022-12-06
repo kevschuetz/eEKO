@@ -4,7 +4,7 @@ import javax.persistence.*;
 
 @Table(name = "dt_vergleichskennzeichen", schema = "data_mart")
 @Entity
-public class VergleichsKennzeichen {
+public class VergleichsKennzeichenDimension {
     @GeneratedValue(
             generator = "data_mart_generator"
     )
@@ -14,7 +14,7 @@ public class VergleichsKennzeichen {
     private Integer kennzeichen;
     private String bezeichnung;
 
-    public VergleichsKennzeichen(){
+    public VergleichsKennzeichenDimension(){
 
     }
 

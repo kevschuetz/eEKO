@@ -15,23 +15,25 @@ public class VergleichsFakt {
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private MedikamentDimension medikament;
+    private HeilmittelDimension D_heilmittel;
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private MedikamentDimension vergleichsMedikament;
+    private HeilmittelDimension D_vergleichsHeilmittel;
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private VergleichsKennzeichen vergleichsKennzeichen;
+    private VergleichsKennzeichenDimension D_vergleichsKennzeichen;
 
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private DateDimension date;
+    private DatumDimension D_datum;
+    @ManyToOne
+    @Cascade(org.hibernate.annotations.CascadeType.ALL)
+    private RangDimension D_rang;
 
-    private Double kvpEinheit;
-    private Double kvp;
-    private Double einsparungsPotenzial;
+    private Double F_kvp;
+    private Double F_einsparungsPotenzial;
 
     public VergleichsFakt(){
 
@@ -45,59 +47,59 @@ public class VergleichsFakt {
         this.id = id;
     }
 
-    public MedikamentDimension getMedikament() {
-        return medikament;
+    public HeilmittelDimension getD_heilmittel() {
+        return D_heilmittel;
     }
 
-    public void setMedikament(MedikamentDimension medikament) {
-        this.medikament = medikament;
+    public void setD_heilmittel(HeilmittelDimension medikament) {
+        this.D_heilmittel = medikament;
     }
 
-    public MedikamentDimension getVergleichsMedikament() {
-        return vergleichsMedikament;
+    public HeilmittelDimension getD_vergleichsHeilmittel() {
+        return D_vergleichsHeilmittel;
     }
 
-    public void setVergleichsMedikament(MedikamentDimension vergleichsMedikament) {
-        this.vergleichsMedikament = vergleichsMedikament;
+    public void setD_vergleichsHeilmittel(HeilmittelDimension vergleichsMedikament) {
+        this.D_vergleichsHeilmittel = vergleichsMedikament;
     }
 
-    public VergleichsKennzeichen getVergleichsKennzeichen() {
-        return vergleichsKennzeichen;
+    public VergleichsKennzeichenDimension getVergleichsKennzeichen() {
+        return D_vergleichsKennzeichen;
     }
 
-    public void setVergleichsKennzeichen(VergleichsKennzeichen vergleichsKennzeichen) {
-        this.vergleichsKennzeichen = vergleichsKennzeichen;
+    public void setVergleichsKennzeichen(VergleichsKennzeichenDimension vergleichsKennzeichenDimension) {
+        this.D_vergleichsKennzeichen = vergleichsKennzeichenDimension;
     }
 
-    public DateDimension getDate() {
-        return date;
+    public DatumDimension getD_datum() {
+        return D_datum;
     }
 
-    public void setDate(DateDimension date) {
-        this.date = date;
+    public void setD_date(DatumDimension datum) {
+        this.D_datum = datum;
     }
 
-    public Double getKvpEinheit() {
-        return kvpEinheit;
+    public Double getF_kvp() {
+        return F_kvp;
     }
 
-    public void setKvpEinheit(Double kvpEinheit) {
-        this.kvpEinheit = kvpEinheit;
+    public void setF_kvp(Double kvp) {
+        this.F_kvp = kvp;
     }
 
-    public Double getKvp() {
-        return kvp;
+    public Double getF_einsparungsPotenzial() {
+        return F_einsparungsPotenzial;
     }
 
-    public void setKvp(Double kvp) {
-        this.kvp = kvp;
+    public void setF_einsparungsPotenzial(Double einsparungsPotenzial) {
+        this.F_einsparungsPotenzial = einsparungsPotenzial;
     }
 
-    public Double getEinsparungsPotenzial() {
-        return einsparungsPotenzial;
+    public RangDimension getD_rang() {
+        return D_rang;
     }
 
-    public void setEinsparungsPotenzial(Double einsparungsPotenzial) {
-        this.einsparungsPotenzial = einsparungsPotenzial;
+    public void setD_rang(RangDimension d_rang) {
+        D_rang = d_rang;
     }
 }

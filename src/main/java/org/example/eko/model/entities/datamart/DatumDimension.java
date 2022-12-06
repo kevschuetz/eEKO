@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 @Entity
 @Table(name = "dt_date", schema= "data_mart")
-public class DateDimension {
+public class DatumDimension {
     @GeneratedValue(
             generator = "data_mart_generator"
     )
@@ -17,7 +17,7 @@ public class DateDimension {
     private String theMonth;
     private Integer year;
 
-    public DateDimension(){
+    public DatumDimension(){
 
     }
 

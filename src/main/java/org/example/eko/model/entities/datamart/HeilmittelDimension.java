@@ -1,12 +1,10 @@
 package org.example.eko.model.entities.datamart;
 
-import org.example.eko.model.entities.staging.Medikament;
-
 import javax.persistence.*;
 
 @Entity
-@Table(name = "dt_medikament", schema = "data_mart")
-public class MedikamentDimension {
+@Table(name = "dt_heilmittel", schema = "data_mart")
+public class HeilmittelDimension {
     @GeneratedValue(
             generator = "data_mart_generator"
     )
@@ -35,8 +33,9 @@ public class MedikamentDimension {
     private String suchtgiftVignette;
     private String darreichungsForm;
     private Integer positionPreisvergleich;
+    private Double kvpEinheit;
 
-    public MedikamentDimension(){
+    public HeilmittelDimension(){
 
     }
 
@@ -214,5 +213,12 @@ public class MedikamentDimension {
 
     public void setChemischeSubstanzBezeichnung(String chemischeSubstanzBezeichnung) {
         this.chemischeSubstanzBezeichnung = chemischeSubstanzBezeichnung;
+    }
+    public Double getKvpEinheit() {
+        return kvpEinheit;
+    }
+
+    public void setKvpEinheit(Double kvpEinheit) {
+        this.kvpEinheit = kvpEinheit;
     }
 }

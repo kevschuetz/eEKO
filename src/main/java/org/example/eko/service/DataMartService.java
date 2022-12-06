@@ -1,9 +1,9 @@
 package org.example.eko.service;
 
-import org.example.eko.model.entities.datamart.DateDimension;
-import org.example.eko.model.entities.datamart.MedikamentDimension;
+import org.example.eko.model.entities.datamart.DatumDimension;
+import org.example.eko.model.entities.datamart.HeilmittelDimension;
 import org.example.eko.model.entities.datamart.VergleichsFakt;
-import org.example.eko.model.entities.datamart.VergleichsKennzeichen;
+import org.example.eko.model.entities.datamart.VergleichsKennzeichenDimension;
 import org.example.eko.model.entities.staging.Medikament;
 import org.example.eko.model.repositories.staging.FaktRepository;
 import org.example.eko.model.repositories.staging.MedikamentRepository;
@@ -36,20 +36,19 @@ public class DataMartService {
            medikamentRepository.findAll().stream().filter(med -> med.getValidFrom().getDate().equals(date)).forEach(med -> {
                med.getMedikamentVergleichsEntityList().stream().forEach(vergleich -> {
                    VergleichsFakt vergleichsFakt = new VergleichsFakt();
-                   MedikamentDimension medikament = new MedikamentDimension();
-                   DateDimension dateDimension = new DateDimension();
-                   VergleichsKennzeichen vergleichsKennzeichen = new VergleichsKennzeichen();
+                   HeilmittelDimension medikament = new HeilmittelDimension();
+                   DatumDimension datumDimension = new DatumDimension();
+                   VergleichsKennzeichenDimension vergleichsKennzeichenDimension = new VergleichsKennzeichenDimension();
 
 
-                   vergleichsFakt.setDate(dateDimension);
-                   vergleichsFakt.setMedikament(medikament);
-                   vergleichsFakt.setVergleichsKennzeichen(vergleichsKennzeichen);
+                   vergleichsFakt.setD_date(datumDimension);
+                   vergleichsFakt.setD_heilmittel(medikament);
+                   vergleichsFakt.setVergleichsKennzeichen(vergleichsKennzeichenDimension);
 
                    Medikament basis = med;
-                   vergleichsFakt.setEinsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - basis.getKvpProEinheit());
-                   vergleichsFakt.setKvpEinheit(basis.getKvpProEinheit());
-                   vergleichsFakt.setKvp(basis.getKassenverkaufspreis());
-
+                   vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - basis.getKvpProEinheit());
+                   medikament.setKvpEinheit(basis.getKvpProEinheit());
+                   vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
                    medikament.setBox(basis.getBox().charAt(0));
                    medikament.setMedikamentName(basis.getName());
                    medikament.setPharmaNummer(basis.getPharmaNummer());
@@ -74,13 +73,13 @@ public class DataMartService {
                    medikament.setChemischeSubstanz(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getAtcCode():"-1");
                    medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
 
-                   medikament = new MedikamentDimension();
+                   medikament = new HeilmittelDimension();
                    basis = vergleich.getVergleichsMedikament();
-                   vergleichsFakt.setVergleichsMedikament(medikament);
+                   vergleichsFakt.setD_vergleichsHeilmittel(medikament);
 
-                   vergleichsFakt.setEinsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit());
-                   vergleichsFakt.setKvpEinheit(basis.getKvpProEinheit());
-                   vergleichsFakt.setKvp(basis.getKassenverkaufspreis());
+                   vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit());
+                   medikament.setKvpEinheit(basis.getKvpProEinheit());
+                   vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
 
                    medikament.setBox(basis.getBox().charAt(0));
                    medikament.setMedikamentName(basis.getName());
@@ -106,13 +105,13 @@ public class DataMartService {
                    medikament.setChemischeSubstanz(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getAtcCode():"-1");
                    medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
 
-                   vergleichsKennzeichen.setKennzeichen(vergleich.getVergleichsKennzeichen());
-                   vergleichsKennzeichen.setBezeichnung(vgkBezeichnung.get(vergleich.getVergleichsKennzeichen()));
+                   vergleichsKennzeichenDimension.setKennzeichen(vergleich.getVergleichsKennzeichen());
+                   vergleichsKennzeichenDimension.setBezeichnung(vgkBezeichnung.get(vergleich.getVergleichsKennzeichen()));
 
-                   dateDimension.setDate(med.getValidFrom().getDate());
-                   dateDimension.setMonth(med.getValidFrom().getMonthOfYear());
-                   dateDimension.setTheMonth(med.getValidFrom().getMonth());
-                   dateDimension.setYear(med.getValidFrom().getYear());
+                   datumDimension.setDate(med.getValidFrom().getDate());
+                   datumDimension.setMonth(med.getValidFrom().getMonthOfYear());
+                   datumDimension.setTheMonth(med.getValidFrom().getMonth());
+                   datumDimension.setYear(med.getValidFrom().getYear());
 
                    faktRepository.save(vergleichsFakt);
                });
