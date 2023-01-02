@@ -35,85 +35,89 @@ public class DataMartService {
     public void migrateDataForGivenDate(LocalDate date){
            medikamentRepository.findAll().stream().filter(med -> med.getValidFrom().getDate().equals(date)).forEach(med -> {
                med.getMedikamentVergleichsEntityList().stream().forEach(vergleich -> {
-                   VergleichsFakt vergleichsFakt = new VergleichsFakt();
-                   HeilmittelDimension medikament = new HeilmittelDimension();
-                   DatumDimension datumDimension = new DatumDimension();
-                   VergleichsKennzeichenDimension vergleichsKennzeichenDimension = new VergleichsKennzeichenDimension();
+
+                   if(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit() > 0) {
+
+                       VergleichsFakt vergleichsFakt = new VergleichsFakt();
+                       HeilmittelDimension medikament = new HeilmittelDimension();
+                       DatumDimension datumDimension = new DatumDimension();
+                       VergleichsKennzeichenDimension vergleichsKennzeichenDimension = new VergleichsKennzeichenDimension();
 
 
-                   vergleichsFakt.setD_date(datumDimension);
-                   vergleichsFakt.setD_heilmittel(medikament);
-                   vergleichsFakt.setVergleichsKennzeichen(vergleichsKennzeichenDimension);
+                       vergleichsFakt.setD_date(datumDimension);
+                       vergleichsFakt.setD_heilmittel(medikament);
+                       vergleichsFakt.setVergleichsKennzeichen(vergleichsKennzeichenDimension);
 
-                   Medikament basis = med;
-                   vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - basis.getKvpProEinheit());
-                   medikament.setKvpEinheit(basis.getKvpProEinheit());
-                   vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
-                   medikament.setBox(basis.getBox().charAt(0));
-                   medikament.setMedikamentName(basis.getName());
-                   medikament.setPharmaNummer(basis.getPharmaNummer());
-                   medikament.setDarreichungsForm(basis.getDarreichungsForm()!=null?basis.getDarreichungsForm():"Keine Darreichungsform");
-                   medikament.setKassenZeichen(basis.getKassenzeichen()!=null?basis.getKassenzeichen():"Kein Kassenzeichen");
-                   medikament.setPositionPreisvergleich(basis.getPositionPreisvergleich());
-                   medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette()!=null?basis.getSuchtGiftVignette():"Keine Suchtgiftvignette");
-                   medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung()!=null?basis.getLangzeitBewilligung():"Keine Langzeitbewilligung");
-                   medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
-                   medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
-                   medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
+                       Medikament basis = med;
+                       vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - basis.getKvpProEinheit());
+                       medikament.setKvpEinheit(basis.getKvpProEinheit());
+                       vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
+                       medikament.setBox(basis.getBox().charAt(0));
+                       medikament.setMedikamentName(basis.getName());
+                       medikament.setPharmaNummer(basis.getPharmaNummer());
+                       medikament.setDarreichungsForm(basis.getDarreichungsForm()!=null?basis.getDarreichungsForm():"Keine Darreichungsform");
+                       medikament.setKassenZeichen(basis.getKassenzeichen()!=null?basis.getKassenzeichen():"Kein Kassenzeichen");
+                       medikament.setPositionPreisvergleich(basis.getPositionPreisvergleich());
+                       medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette()!=null?basis.getSuchtGiftVignette():"Keine Suchtgiftvignette");
+                       medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung()!=null?basis.getLangzeitBewilligung():"Keine Langzeitbewilligung");
+                       medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
+                       medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
+                       medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
 
-                   var wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
-                   medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
-                   medikament.setAnatomischeHauptgruppeBezeichnung(wirkstoff.getAnatomischeHauptgruppe().getText());
-                   medikament.setTherapeutischeUntergruppe(wirkstoff.getTherapeutischeUntergruppe().getAtcCode());
-                   medikament.setTherapeutischeUntergruppeBezeichnung(wirkstoff.getTherapeutischeUntergruppe().getText());
-                   medikament.setPharmakologischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
-                   medikament.setPharmakolgischeUntergruppeBezeichnung(wirkstoff.getPharmakologischeUntegruppe().getText());
-                   medikament.setChemischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
-                   medikament.setChemischeUntergruppeBezeichnung(wirkstoff.getChemischeUntergruppe().getText());
-                   medikament.setChemischeSubstanz(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getAtcCode():"-1");
-                   medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
+                       var wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
+                       medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
+                       medikament.setAnatomischeHauptgruppeBezeichnung(wirkstoff.getAnatomischeHauptgruppe().getText());
+                       medikament.setTherapeutischeUntergruppe(wirkstoff.getTherapeutischeUntergruppe().getAtcCode());
+                       medikament.setTherapeutischeUntergruppeBezeichnung(wirkstoff.getTherapeutischeUntergruppe().getText());
+                       medikament.setPharmakologischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
+                       medikament.setPharmakolgischeUntergruppeBezeichnung(wirkstoff.getPharmakologischeUntegruppe().getText());
+                       medikament.setChemischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
+                       medikament.setChemischeUntergruppeBezeichnung(wirkstoff.getChemischeUntergruppe().getText());
+                       medikament.setChemischeSubstanz(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getAtcCode():"-1");
+                       medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
 
-                   medikament = new HeilmittelDimension();
-                   basis = vergleich.getVergleichsMedikament();
-                   vergleichsFakt.setD_vergleichsHeilmittel(medikament);
+                       medikament = new HeilmittelDimension();
+                       basis = vergleich.getVergleichsMedikament();
+                       vergleichsFakt.setD_vergleichsHeilmittel(medikament);
 
-                   vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit());
-                   medikament.setKvpEinheit(basis.getKvpProEinheit());
-                   vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
+                       vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit());
+                       medikament.setKvpEinheit(basis.getKvpProEinheit());
+                       vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
 
-                   medikament.setBox(basis.getBox().charAt(0));
-                   medikament.setMedikamentName(basis.getName());
-                   medikament.setPharmaNummer(basis.getPharmaNummer());
-                   medikament.setDarreichungsForm(basis.getDarreichungsForm()!=null?basis.getDarreichungsForm():"Keine Darreichungsform");
-                   medikament.setKassenZeichen(basis.getKassenzeichen()!=null?basis.getKassenzeichen():"Kein Kassenzeichen");
-                   medikament.setPositionPreisvergleich(basis.getPositionPreisvergleich());
-                   medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette()!=null?basis.getSuchtGiftVignette():"Keine Suchtgiftvignette");
-                   medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung()!=null?basis.getLangzeitBewilligung():"Keine Langzeitbewilligung");
-                   medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
-                   medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
-                   medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
+                       medikament.setBox(basis.getBox().charAt(0));
+                       medikament.setMedikamentName(basis.getName());
+                       medikament.setPharmaNummer(basis.getPharmaNummer());
+                       medikament.setDarreichungsForm(basis.getDarreichungsForm()!=null?basis.getDarreichungsForm():"Keine Darreichungsform");
+                       medikament.setKassenZeichen(basis.getKassenzeichen()!=null?basis.getKassenzeichen():"Kein Kassenzeichen");
+                       medikament.setPositionPreisvergleich(basis.getPositionPreisvergleich());
+                       medikament.setSuchtgiftVignette(basis.getSuchtGiftVignette()!=null?basis.getSuchtGiftVignette():"Keine Suchtgiftvignette");
+                       medikament.setLangzeitBewilligung(basis.getLangzeitBewilligung()!=null?basis.getLangzeitBewilligung():"Keine Langzeitbewilligung");
+                       medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
+                       medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
+                       medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
 
-                   wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
-                   medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
-                   medikament.setAnatomischeHauptgruppeBezeichnung(wirkstoff.getAnatomischeHauptgruppe().getText());
-                   medikament.setTherapeutischeUntergruppe(wirkstoff.getTherapeutischeUntergruppe().getAtcCode());
-                   medikament.setTherapeutischeUntergruppeBezeichnung(wirkstoff.getTherapeutischeUntergruppe().getText());
-                   medikament.setPharmakologischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
-                   medikament.setPharmakolgischeUntergruppeBezeichnung(wirkstoff.getPharmakologischeUntegruppe().getText());
-                   medikament.setChemischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
-                   medikament.setChemischeUntergruppeBezeichnung(wirkstoff.getChemischeUntergruppe().getText());
-                   medikament.setChemischeSubstanz(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getAtcCode():"-1");
-                   medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
+                       wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
+                       medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
+                       medikament.setAnatomischeHauptgruppeBezeichnung(wirkstoff.getAnatomischeHauptgruppe().getText());
+                       medikament.setTherapeutischeUntergruppe(wirkstoff.getTherapeutischeUntergruppe().getAtcCode());
+                       medikament.setTherapeutischeUntergruppeBezeichnung(wirkstoff.getTherapeutischeUntergruppe().getText());
+                       medikament.setPharmakologischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
+                       medikament.setPharmakolgischeUntergruppeBezeichnung(wirkstoff.getPharmakologischeUntegruppe().getText());
+                       medikament.setChemischeUntergruppe(wirkstoff.getPharmakologischeUntegruppe().getAtcCode());
+                       medikament.setChemischeUntergruppeBezeichnung(wirkstoff.getChemischeUntergruppe().getText());
+                       medikament.setChemischeSubstanz(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getAtcCode():"-1");
+                       medikament.setChemischeSubstanzBezeichnung(wirkstoff.getAtcCode().trim().length()==7?wirkstoff.getText():"-1");
 
-                   vergleichsKennzeichenDimension.setKennzeichen(vergleich.getVergleichsKennzeichen());
-                   vergleichsKennzeichenDimension.setBezeichnung(vgkBezeichnung.get(vergleich.getVergleichsKennzeichen()));
+                       vergleichsKennzeichenDimension.setKennzeichen(vergleich.getVergleichsKennzeichen());
+                       vergleichsKennzeichenDimension.setBezeichnung(vgkBezeichnung.get(vergleich.getVergleichsKennzeichen()));
 
-                   datumDimension.setDate(med.getValidFrom().getDate());
-                   datumDimension.setMonth(med.getValidFrom().getMonthOfYear());
-                   datumDimension.setTheMonth(med.getValidFrom().getMonth());
-                   datumDimension.setYear(med.getValidFrom().getYear());
+                       datumDimension.setDate(med.getValidFrom().getDate());
+                       datumDimension.setMonth(med.getValidFrom().getMonthOfYear());
+                       datumDimension.setTheMonth(med.getValidFrom().getMonth());
+                       datumDimension.setYear(med.getValidFrom().getYear());
 
-                   faktRepository.save(vergleichsFakt);
+                       faktRepository.save(vergleichsFakt);
+                   }
                });
            });
     }
