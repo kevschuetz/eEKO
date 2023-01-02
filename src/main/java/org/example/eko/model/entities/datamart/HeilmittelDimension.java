@@ -34,17 +34,6 @@ public class HeilmittelDimension {
     private String darreichungsForm;
     private Integer positionPreisvergleich;
     private Double kvpEinheit;
-    @ManyToOne
-    @JoinColumn(name = "d_datum_id")
-    private DatumDimension D_datum;
-
-    public DatumDimension getD_datum() {
-        return D_datum;
-    }
-
-    public void setD_datum(DatumDimension D_datum) {
-        this.D_datum = D_datum;
-    }
 
     public HeilmittelDimension(){
 
