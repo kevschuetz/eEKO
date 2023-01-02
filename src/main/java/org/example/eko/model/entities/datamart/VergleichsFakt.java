@@ -28,14 +28,11 @@ public class VergleichsFakt {
     @ManyToOne
     @Cascade(org.hibernate.annotations.CascadeType.ALL)
     private DatumDimension D_datum;
-    @ManyToOne
-    @Cascade(org.hibernate.annotations.CascadeType.ALL)
-    private RangDimension D_rang;
 
     private Double F_kvp;
     private Double F_einsparungsPotenzial;
 
-    public VergleichsFakt(){
+    public VergleichsFakt() {
 
     }
 
@@ -93,13 +90,5 @@ public class VergleichsFakt {
 
     public void setF_einsparungsPotenzial(Double einsparungsPotenzial) {
         this.F_einsparungsPotenzial = einsparungsPotenzial;
-    }
-
-    public RangDimension getD_rang() {
-        return D_rang;
-    }
-
-    public void setD_rang(RangDimension d_rang) {
-        D_rang = d_rang;
     }
 }

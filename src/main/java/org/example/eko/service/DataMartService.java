@@ -60,6 +60,7 @@ public class DataMartService {
                    medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
                    medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
                    medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
+                   medikament.setD_datum(datumDimension);
 
                    var wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
                    medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
@@ -92,6 +93,7 @@ public class DataMartService {
                    medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
                    medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
                    medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
+                   medikament.setD_datum(datumDimension);
 
                    wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
                    medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
