@@ -5,6 +5,8 @@ import org.example.eko.service.DataMartService;
 import org.example.eko.service.DataService;
 import org.example.eko.service.ImportService;
 import org.example.eko.service.ScanningService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Component;
 
@@ -19,6 +21,8 @@ public class TestDataLoader {
     private final ImportService importService;
     private final DataMartService dataMartService;
 
+    private static Logger logger = LoggerFactory.getLogger(TestDataLoader.class);
+
     public TestDataLoader(DataService dataService, ScanningService scanningService, ImportService importService, DataMartService dataMartService) throws Exception {
         this.dataService = dataService;
         this.scanningService = scanningService;
@@ -32,8 +36,9 @@ public class TestDataLoader {
     private void loadData() throws Exception {
         if(!Boolean.parseBoolean(System.getenv("LOAD_TEST_DATA"))) return;
         boolean imported = false;
-        String fileName = "ehmv08_22_teil1.zip";
-
+        //String fileName = "ehmv08_22_teil1.zip";
+        String fileName = getFileName();
+        if(fileName.equals("NO_FILE")) return;
 
         while(getResourceFileAsInputStream(fileName) != null) {
             ZipInputStream zipInputStream = new ZipInputStream(getResourceFileAsInputStream(fileName));
@@ -58,7 +63,7 @@ public class TestDataLoader {
 
             int nextYear;
             int nextMonth;
-            if(month == 11) {
+            if(month == 12) {
                 nextYear = year + 1;
                 nextMonth = 1;
             }
@@ -73,6 +78,10 @@ public class TestDataLoader {
 
             if(nextMonth > 9) fileName = "ehmv" + nextMonth + "_" + nextYearString + "_teil1.zip";
             else fileName = "ehmv" + "0" + nextMonth + "_" + nextYearString + "_teil1.zip";
+
+
+            logger.info("Finished " + yearString + "_" + monthStr);
+            logger.info("Starting " + nextYearString + "_" + nextMonth);
 
         }
 
@@ -117,9 +126,20 @@ public class TestDataLoader {
         ClassLoader classLoader = TestDataLoader.class.getClassLoader();
         return classLoader.getResourceAsStream(fileName);
     }
-    private void saveToDateFile(String date) throws IOException {
-        File fileToWriteTo = new File(".../resources/importedDates.txt");
-        BufferedWriter writer = new BufferedWriter(new FileWriter(fileToWriteTo, true));
-        writer.append(".").append(date);
+
+    private String getFileName() {
+        String fileName;
+        for(int i = 10; i <= 30; i++) {
+            for(int j = 1; j <= 12; j++) {
+                if(j > 9) {
+                    fileName = "ehmv" + j + "_" + i + "_teil1.zip";
+                } else {
+                    fileName = "ehmv0" + j + "_" + i + "_teil1.zip";
+                }
+                System.out.println(fileName);
+                if(getResourceFileAsInputStream(fileName) != null) return fileName;
+            }
+        }
+        return "NO_FILE";
     }
 }
