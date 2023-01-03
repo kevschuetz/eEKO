@@ -30,7 +30,7 @@ public class TestDataLoader {
 
 
     private void loadData() throws Exception {
-        //if(!Boolean.parseBoolean(System.getenv("LOAD_TEST_DATA"))) return;
+        if(!Boolean.parseBoolean(System.getenv("LOAD_TEST_DATA"))) return;
         boolean imported = false;
         String fileName = "ehmv08_22_teil1.zip";
 
@@ -39,7 +39,7 @@ public class TestDataLoader {
             ZipInputStream zipInputStream = new ZipInputStream(getResourceFileAsInputStream(fileName));
             var map = dataService.getFileStringsFromZipIn(zipInputStream);
             String[] strings = fileName.split("_", 3);
-            fileName = strings[0] + strings[1] + "teil2.zip";
+            fileName = strings[0] + "_" + strings[1] + "_" + "teil2.zip";
             zipInputStream = new ZipInputStream(getResourceFileAsInputStream(fileName));
             map.putAll(dataService.getFileStringsFromZipIn(zipInputStream));
 
@@ -58,17 +58,26 @@ public class TestDataLoader {
 
             int nextYear;
             int nextMonth;
-            if(month == 11) nextYear = year + 1;
-            else nextYear = year;
-            nextMonth = month + 1;
+            if(month == 11) {
+                nextYear = year + 1;
+                nextMonth = 1;
+            }
+            else {
+                nextYear = year;
+                nextMonth = month + 1;
+            }
 
-            String nextYearString = String.valueOf(String.valueOf(nextYear).toCharArray()[2] + String.valueOf(nextYear).toCharArray()[3]);
 
-            fileName = "ehmv" + nextMonth + "_" + nextYearString + "_teil1.zip";
+            String nextYearString = "" + String.valueOf(nextYear).toCharArray()[2] + "" + String.valueOf(nextYear).toCharArray()[3];
+
+
+            if(nextMonth > 9) fileName = "ehmv" + nextMonth + "_" + nextYearString + "_teil1.zip";
+            else fileName = "ehmv" + "0" + nextMonth + "_" + nextYearString + "_teil1.zip";
+
         }
 
 
-        /*
+/*
         ZipInputStream zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv08_22_teil1.zip"));
         var map = dataService.getFileStringsFromZipIn(zipInputStream);
         zipInputStream = new ZipInputStream(getResourceFileAsInputStream("ehmv08_22_teil2.zip"));
@@ -101,7 +110,7 @@ public class TestDataLoader {
         imported=importService.importDataSet(scanningService.scanFileStrings(map), LocalDate.of(2022, 11, 1));
 
         if(imported)dataMartService.migrateDataForGivenDate(LocalDate.of(2022, 11, 1));
-        */
+*/
     }
 
     public static InputStream getResourceFileAsInputStream(String fileName) {
