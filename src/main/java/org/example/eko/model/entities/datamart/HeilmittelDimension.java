@@ -32,6 +32,11 @@ public class HeilmittelDimension {
     private String langzeitBewilligung;
     private String suchtgiftVignette;
     private String darreichungsForm;
+
+
+    private Double menge;
+    private String mengenArt;
+
     private Integer positionPreisvergleich;
     private Double kvpEinheit;
 
@@ -221,4 +226,20 @@ public class HeilmittelDimension {
     public void setKvpEinheit(Double kvpEinheit) {
         this.kvpEinheit = kvpEinheit;
     }
+    public Double getMenge() {
+        return menge;
+    }
+
+    public void setMenge(Double menge) {
+        this.menge = menge;
+    }
+
+    public String getMengenArt() {
+        return mengenArt;
+    }
+
+    public void setMengenArt(String mengenArt) {
+        this.mengenArt = mengenArt;
+    }
+
 }

@@ -36,7 +36,7 @@ public class DataMartService {
            medikamentRepository.findAll().stream().filter(med -> med.getValidFrom().getDate().equals(date)).forEach(med -> {
                med.getMedikamentVergleichsEntityList().stream().forEach(vergleich -> {
 
-                   if(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit() > 0) {
+                   if(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit() >= 0) {
 
                        VergleichsFakt vergleichsFakt = new VergleichsFakt();
                        HeilmittelDimension medikament = new HeilmittelDimension();
@@ -63,6 +63,8 @@ public class DataMartService {
                        medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
                        medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
                        medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
+                       medikament.setMenge(basis.getMenge());
+                       medikament.setMengenArt(basis.getMengenart());
 
                        var wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
                        medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
@@ -95,6 +97,9 @@ public class DataMartService {
                        medikament.setRezeptPflicht(basis.getRezeptpflichtBezeichnung());
                        medikament.setRezeptPflichtId(basis.getRezeptPflichtId());
                        medikament.setPreisModell(basis.getPreisModell()!=null?basis.getPreisModell():"Kein Preismodell");
+                       medikament.setMenge(basis.getMenge());
+                       medikament.setMengenArt(basis.getMengenart());
+
 
                        wirkstoff = basis.getWirkstoffe().stream().findFirst().get().getPharWirkstoff();
                        medikament.setAnatomischeHauptgruppe(wirkstoff.getAnatomischeHauptgruppe().getAtcCode());
