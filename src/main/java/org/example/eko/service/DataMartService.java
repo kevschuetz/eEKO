@@ -36,7 +36,7 @@ public class DataMartService {
            medikamentRepository.findAll().stream().filter(med -> med.getValidFrom().getDate().equals(date)).forEach(med -> {
                med.getMedikamentVergleichsEntityList().stream().forEach(vergleich -> {
 
-                   if(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit() >= 0) {
+                   if(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit() <= 0) {
 
                        VergleichsFakt vergleichsFakt = new VergleichsFakt();
                        HeilmittelDimension medikament = new HeilmittelDimension();
@@ -49,7 +49,7 @@ public class DataMartService {
                        vergleichsFakt.setVergleichsKennzeichen(vergleichsKennzeichenDimension);
 
                        Medikament basis = med;
-                       vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - basis.getKvpProEinheit());
+                       vergleichsFakt.setF_einsparungsPotenzial((vergleich.getVergleichsMedikament().getKvpProEinheit() - basis.getKvpProEinheit())*-1);
                        medikament.setKvpEinheit(basis.getKvpProEinheit());
                        vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
                        medikament.setBox(basis.getBox().charAt(0));
@@ -82,7 +82,7 @@ public class DataMartService {
                        basis = vergleich.getVergleichsMedikament();
                        vergleichsFakt.setD_vergleichsHeilmittel(medikament);
 
-                       vergleichsFakt.setF_einsparungsPotenzial(vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit());
+                       vergleichsFakt.setF_einsparungsPotenzial((vergleich.getVergleichsMedikament().getKvpProEinheit() - med.getKvpProEinheit())*-1);
                        medikament.setKvpEinheit(basis.getKvpProEinheit());
                        vergleichsFakt.setF_kvp(basis.getKassenverkaufspreis());
 
